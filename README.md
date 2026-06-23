@@ -169,4 +169,4 @@ Path generation and element extraction run in parallel after the input is loaded
 
 ## Evaluation:
 
-The evaluation.zip archive contains all evaluation artifacts, including the results obtained during the evaluation of ATLAS and the open-source web applications used in the study (available in the websites/ directory).
+The evaluation folder contains all evaluation artifacts, including the results obtained during the evaluation of ATLAS and the open-source web applications used in the study (available in the websites/ directory).
