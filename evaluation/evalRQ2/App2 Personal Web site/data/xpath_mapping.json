@@ -1,0 +1,113 @@
+{
+  "Home": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Research",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Tools",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Publications",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[4]/a"
+    },
+    {
+      "label": "Teaching",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[5]/a"
+    },
+    {
+      "label": "Projects",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[6]/a"
+    },
+    {
+      "label": "Contact",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[7]/a"
+    },
+    {
+      "label": "Name",
+      "xpath": "//*[@id=\"inputName\"]"
+    },
+    {
+      "label": "Email",
+      "xpath": "//*[@id=\"inputEmail\"]"
+    },
+    {
+      "label": "Message",
+      "xpath": "//*[@id=\"inputMessage\"]"
+    },
+    {
+      "label": "Send",
+      "xpath": "//*[@id=\"contact\"]/div[2]/div/div[2]/div[1]/form/button"
+    },
+    {
+      "label": "Testing",
+      "xpath": "//*[@id=\"projects\"]/div[2]/div/div[2]/div[1]/div/div/div/a[4]"
+    }
+  ],
+  "Research": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    }
+  ],
+  "Tools": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    }
+  ],
+  "Publications": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"top\"]/div[2]/div[2]/div/div/div[1]/div[1]/input"
+    },
+    {
+      "label": "On the Soundness and Consistency of LLM Agents for Executing Test Cases Written in Natural Language",
+      "xpath": "//*[@id=\"container-publications\"]/div[1]/div/a"
+    },
+    {
+      "label": "Type",
+      "xpath": "//*[@id=\"top\"]/div[2]/div[2]/div/div/div[1]/div[2]/select"
+    },
+    {
+      "label": "Date",
+      "xpath": "//*[@id=\"top\"]/div[2]/div[2]/div/div/div[1]/div[3]/select"
+    }
+  ],
+  "Teaching": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Cours software Engineering",
+      "xpath": "//*[@id=\"docs-nav\"]/ul/div[8]/a"
+    },
+    {
+      "label": "Cours PHP",
+      "xpath": "//*[@id=\"docs-nav\"]/ul/div[4]/a"
+    }
+  ],
+  "TeachingSE": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    }
+  ],
+
+  "Search": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+digraph Nav {
+  rankdir=LR;
+
+  "Start" [label="Start Gruyere"];
+  "HomeAnon" [label="Gruyere: Home (Anon)"];
+//   "Login" [label="Gruyere: Login"];
+  "SignUp" [label="Gruyere: Sign up"];
+  "AccountCreated" [label="Account created"];
+  "HomeAuth" [label="Gruyere: Home (Auth)"];
+  "NewSnippet" [label="Gruyere: New Snippet"];
+  "Upload" [label="Gruyere: Upload"];
+  "UploadComplete" [label="Gruyere: Upload Complete"];
+  "MySnippetsEmpty" [label="My Snippets Empty"];
+  "MySnippetsAdded" [label="My Snippets Added"];
+  "Profile" [label="Gruyere: Profile"];
+
+  "Start" -> "HomeAnon" [label="Agree & Start"];
+  
+//   "HomeAnon" -> "Login" [label="Sign in"];
+  "HomeAnon" -> "SignUp" [label="Sign up"];
+  
+//   "Login" -> "SignUp" [label="Sign up"];
+//   "Login" -> "HomeAuth" [label="Login"];
+//   "Login" -> "HomeAnon" [label="Home"];
+  
+  "SignUp" -> "AccountCreated" [label="Create account"];
+  "SignUp" -> "HomeAnon" [label="Home"];
+  
+  "AccountCreated" -> "HomeAuth" [label="Home"];
+//   "AccountCreated" -> "Login" [label="Sign in"];
+  
+  "HomeAuth" -> "HomeAnon" [label="Sign out"];
+  "HomeAuth" -> "NewSnippet" [label="New Snippet"];
+  "HomeAuth" -> "Upload" [label="Upload"];
+  "HomeAuth" -> "MySnippetsEmpty" [label="My Snippets"];
+  "HomeAuth" -> "Profile" [label="Profile"];
+  
+  "NewSnippet" -> "MySnippetsAdded" [label="Submit"];
+  
+  "Upload" -> "UploadComplete" [label="Upload"];
+                
+  "UploadComplete" -> "HomeAuth" [label="Home"];
+  
+  "MySnippetsEmpty" -> "HomeAuth" [label="Home"];
+  
+  "Profile" -> "HomeAuth" [label="Update"];
+}
+                         

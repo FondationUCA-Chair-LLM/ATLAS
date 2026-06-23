@@ -1,0 +1,461 @@
+{
+  "source": "manual",
+  "extractedAt": "2026-06-11T16:16:07.195Z",
+  "totalNodes": 31,
+  "totalEdges": 33,
+  "nodes": {
+    "Login": {
+      "id": "Login",
+      "name": "Sign in",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Register": {
+      "id": "Register",
+      "name": "Register",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Dashboard": {
+      "id": "Dashboard",
+      "name": "Dashboard",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Vendors": {
+      "id": "Vendors",
+      "name": "Vendors",
+      "data": {
+        "widgets": []
+      }
+    },
+    "VendorsSearchResults": {
+      "id": "VendorsSearchResults",
+      "name": "Vendors Search Results",
+      "data": {
+        "widgets": []
+      }
+    },
+    "AddVendor": {
+      "id": "AddVendor",
+      "name": "Add Vendor Details",
+      "data": {
+        "widgets": []
+      }
+    },
+    "AddVendorSuccess": {
+      "id": "AddVendorSuccess",
+      "name": "Add Vendor Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "EditVendor": {
+      "id": "EditVendor",
+      "name": "Edit Vendor Details",
+      "data": {
+        "widgets": []
+      }
+    },
+    "EditVendorSuccess": {
+      "id": "EditVendorSuccess",
+      "name": "Edit Vendor Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "DeleteVendorSuccess": {
+      "id": "DeleteVendorSuccess",
+      "name": "Delete Vendor Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "ConfirmBuy": {
+      "id": "ConfirmBuy",
+      "name": "Confirm Buy",
+      "data": {
+        "widgets": []
+      }
+    },
+    "BuySuccess": {
+      "id": "BuySuccess",
+      "name": "Buy Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Customers": {
+      "id": "Customers",
+      "name": "Customer",
+      "data": {
+        "widgets": []
+      }
+    },
+    "CustomersSearchResults": {
+      "id": "CustomersSearchResults",
+      "name": "Customers Search Results",
+      "data": {
+        "widgets": []
+      }
+    },
+    "AddCustomer": {
+      "id": "AddCustomer",
+      "name": "Add Customer",
+      "data": {
+        "widgets": []
+      }
+    },
+    "AddCustomerSuccess": {
+      "id": "AddCustomerSuccess",
+      "name": "Add Customer Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "EditCustomer": {
+      "id": "EditCustomer",
+      "name": "Edit Customer",
+      "data": {
+        "widgets": []
+      }
+    },
+    "EditCustomerSuccess": {
+      "id": "EditCustomerSuccess",
+      "name": "Edit Customer Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "DeleteCustomerSuccess": {
+      "id": "DeleteCustomerSuccess",
+      "name": "Delete Customer Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "SellProduct": {
+      "id": "SellProduct",
+      "name": "Sell Product",
+      "data": {
+        "widgets": []
+      }
+    },
+    "SellSuccess": {
+      "id": "SellSuccess",
+      "name": "Sell Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Products": {
+      "id": "Products",
+      "name": "Product",
+      "data": {
+        "widgets": []
+      }
+    },
+    "ProductsSearchResults": {
+      "id": "ProductsSearchResults",
+      "name": "Products Search Results",
+      "data": {
+        "widgets": []
+      }
+    },
+    "AddProduct": {
+      "id": "AddProduct",
+      "name": "Add product",
+      "data": {
+        "widgets": []
+      }
+    },
+    "AddProductSuccess": {
+      "id": "AddProductSuccess",
+      "name": "Add Product Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "EditProduct": {
+      "id": "EditProduct",
+      "name": "Edit Product",
+      "data": {
+        "widgets": []
+      }
+    },
+    "EditProductSuccess": {
+      "id": "EditProductSuccess",
+      "name": "Edit Product Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Orders": {
+      "id": "Orders",
+      "name": "Orders",
+      "data": {
+        "widgets": []
+      }
+    },
+    "UpdatePaidstatus": {
+      "id": "UpdatePaidstatus",
+      "name": "Update Order Pay",
+      "data": {
+        "widgets": []
+      }
+    },
+    "DeleteOrderSuccess": {
+      "id": "DeleteOrderSuccess",
+      "name": "Delete Order Success",
+      "data": {
+        "widgets": []
+      }
+    },
+    "ViewBill": {
+      "id": "ViewBill",
+      "name": "View Bill",
+      "data": {
+        "widgets": []
+      }
+    }
+  },
+  "edges": {
+    "Dashboard": [
+      {
+        "from": "Dashboard",
+        "to": "Vendors",
+        "action": "ON_CLICK",
+        "label": "Vendors"
+      },
+      {
+        "from": "Dashboard",
+        "to": "Customers",
+        "action": "ON_CLICK",
+        "label": "Customer"
+      },
+      {
+        "from": "Dashboard",
+        "to": "Products",
+        "action": "ON_CLICK",
+        "label": "Products"
+      },
+      {
+        "from": "Dashboard",
+        "to": "Orders",
+        "action": "ON_CLICK",
+        "label": "Orders"
+      }
+    ],
+    "Register": [
+      {
+        "from": "Register",
+        "to": "Login",
+        "action": "ON_CLICK",
+        "label": "Login"
+      }
+    ],
+    "Login": [
+      {
+        "from": "Login",
+        "to": "Dashboard",
+        "action": "ON_CLICK",
+        "label": "Login"
+      }
+    ],
+    "Vendors": [
+      {
+        "from": "Vendors",
+        "to": "VendorsSearchResults",
+        "action": "ON_CLICK",
+        "label": "Go"
+      },
+      {
+        "from": "Vendors",
+        "to": "AddVendor",
+        "action": "ON_CLICK",
+        "label": "+ Add Vendors"
+      },
+      {
+        "from": "Vendors",
+        "to": "EditVendor",
+        "action": "ON_CLICK",
+        "label": "Edit"
+      },
+      {
+        "from": "Vendors",
+        "to": "DeleteVendorSuccess",
+        "action": "ON_CLICK",
+        "label": "Delete"
+      },
+      {
+        "from": "Vendors",
+        "to": "ConfirmBuy",
+        "action": "ON_CLICK",
+        "label": "Buy"
+      }
+    ],
+    "VendorsSearchResults": [
+      {
+        "from": "VendorsSearchResults",
+        "to": "Vendors",
+        "action": "ON_CLICK",
+        "label": "Back"
+      }
+    ],
+    "AddVendor": [
+      {
+        "from": "AddVendor",
+        "to": "AddVendorSuccess",
+        "action": "ON_CLICK",
+        "label": "Submit"
+      }
+    ],
+    "EditVendor": [
+      {
+        "from": "EditVendor",
+        "to": "EditVendorSuccess",
+        "action": "ON_CLICK",
+        "label": "Submit"
+      }
+    ],
+    "ConfirmBuy": [
+      {
+        "from": "ConfirmBuy",
+        "to": "BuySuccess",
+        "action": "ON_CLICK",
+        "label": "Buy"
+      }
+    ],
+    "Customers": [
+      {
+        "from": "Customers",
+        "to": "CustomersSearchResults",
+        "action": "ON_CLICK",
+        "label": "Go"
+      },
+      {
+        "from": "Customers",
+        "to": "AddCustomer",
+        "action": "ON_CLICK",
+        "label": "+ Add Customer"
+      },
+      {
+        "from": "Customers",
+        "to": "EditCustomer",
+        "action": "ON_CLICK",
+        "label": "Edit"
+      },
+      {
+        "from": "Customers",
+        "to": "DeleteCustomerSuccess",
+        "action": "ON_CLICK",
+        "label": "Delete"
+      },
+      {
+        "from": "Customers",
+        "to": "SellProduct",
+        "action": "ON_CLICK",
+        "label": "Sell"
+      }
+    ],
+    "CustomersSearchResults": [
+      {
+        "from": "CustomersSearchResults",
+        "to": "Customers",
+        "action": "ON_CLICK",
+        "label": "Back"
+      }
+    ],
+    "AddCustomer": [
+      {
+        "from": "AddCustomer",
+        "to": "AddCustomerSuccess",
+        "action": "ON_CLICK",
+        "label": "Submit"
+      }
+    ],
+    "EditCustomer": [
+      {
+        "from": "EditCustomer",
+        "to": "EditCustomerSuccess",
+        "action": "ON_CLICK",
+        "label": "Submit"
+      }
+    ],
+    "SellProduct": [
+      {
+        "from": "SellProduct",
+        "to": "SellSuccess",
+        "action": "ON_CLICK",
+        "label": "Submit"
+      }
+    ],
+    "Products": [
+      {
+        "from": "Products",
+        "to": "ProductsSearchResults",
+        "action": "ON_CLICK",
+        "label": "Go"
+      },
+      {
+        "from": "Products",
+        "to": "AddProduct",
+        "action": "ON_CLICK",
+        "label": "+ Add product"
+      },
+      {
+        "from": "Products",
+        "to": "EditProduct",
+        "action": "ON_CLICK",
+        "label": "Edit"
+      }
+    ],
+    "ProductsSearchResults": [
+      {
+        "from": "ProductsSearchResults",
+        "to": "Products",
+        "action": "ON_CLICK",
+        "label": "Back"
+      }
+    ],
+    "AddProduct": [
+      {
+        "from": "AddProduct",
+        "to": "AddProductSuccess",
+        "action": "ON_CLICK",
+        "label": "Submit"
+      }
+    ],
+    "EditProduct": [
+      {
+        "from": "EditProduct",
+        "to": "EditProductSuccess",
+        "action": "ON_CLICK",
+        "label": "Submit"
+      }
+    ],
+    "Orders": [
+      {
+        "from": "Orders",
+        "to": "UpdatePaidstatus",
+        "action": "ON_CLICK",
+        "label": "Paid"
+      },
+      {
+        "from": "Orders",
+        "to": "DeleteOrderSuccess",
+        "action": "ON_CLICK",
+        "label": "Delete"
+      },
+      {
+        "from": "Orders",
+        "to": "ViewBill",
+        "action": "ON_CLICK",
+        "label": "BILL"
+      }
+    ]
+  }
+}

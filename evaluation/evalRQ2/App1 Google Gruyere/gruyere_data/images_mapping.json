@@ -1,0 +1,81 @@
+{
+  "mappings": [
+    {
+      "stateId": "Start",
+      "stateName": "Start Gruyere",
+      "image": "screenshots/start.png",
+      "description": "Initial landing/start page"
+    },
+    {
+      "stateId": "HomeAnon",
+      "stateName": "Gruyere: Home (Anon)",
+      "image": "screenshots/home.png",
+      "description": "Home page for anonymous users"
+    },
+    {
+      "stateId": "state-login",
+      "stateName": "Gruyere: Login",
+      "image": "screenshots/signin.png",
+      "description": "Login/sign in page"
+    },
+    {
+      "stateId": "SignUp",
+      "stateName": "Gruyere: Sign up",
+      "image": "screenshots/signup.png",
+      "description": "Registration/sign up page"
+    },
+    {
+      "stateId": "AccountCreated",
+      "stateName": "Account created",
+      "image": "screenshots/account_created.png",
+      "description": "Account creation success page"
+    },
+    {
+      "stateId": "HomeAuth",
+      "stateName": "Gruyere: Home (Auth)",
+      "image": "screenshots/home_logged.png",
+      "description": "Home page for authenticated users"
+    },
+    {
+      "stateId": "NewSnippet",
+      "stateName": "Gruyere: New Snippet",
+      "image": "screenshots/add_snippet.png",
+      "description": "Create new snippet form"
+    },
+    {
+      "stateId": "Upload",
+      "stateName": "Gruyere: Upload",
+      "image": "screenshots/upload_empty.png",
+      "variants": {
+        "empty": "screenshots/upload_empty.png",
+        "filled": "screenshots/upload_filled.png"
+      },
+      "description": "File upload page (initial empty state)"
+    },
+    {
+      "stateId": "UploadComplete",
+      "stateName": "Gruyere: Upload Complete",
+      "image": "screenshots/upload_complete_2.png",
+      "description": "Upload success confirmation"
+    },
+
+    {
+      "stateId": "MySnippetsEmpty",
+      "stateName": "My Snippets Empty",
+      "image": "screenshots/my_snippets_empty.png",
+      "description": "User's snippets list (empty state)"
+    },
+    {
+      "stateId": "MySnippetsAdded",
+      "stateName": "My Snippets Added",
+      "image": "screenshots/my_snippets_added.png",
+      "description": "User's snippets list (with content)"
+    },
+    {
+      "stateId": "Profile",
+      "stateName": "Gruyere: Profile",
+      "image": "screenshots/profile.png",
+      "description": "User profile/edit page"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+digraph Nav {
+  rankdir=LR;
+  
+  /* Main page states */
+  "Login" [label="Sign in"];
+  "Register" [label="Register"];
+  "Dashboard" [label="Dashboard"];
+  
+  /* Vendors states */
+  "Vendors" [label="Vendors"];
+  "VendorsSearchResults" [label="Vendors Search Results"];
+  "AddVendor" [label="Add Vendor Details"];
+  "AddVendorSuccess" [label="Add Vendor Success"];
+  "EditVendor" [label="Edit Vendor Details"];
+  "EditVendorSuccess" [label="Edit Vendor Success"];
+  "DeleteVendorSuccess" [label="Delete Vendor Success"];
+  "ConfirmBuy" [label="Confirm Buy"];
+  "BuySuccess" [label="Buy Success"];
+  
+  /* Customers states */
+  "Customers" [label="Customer"];
+   "CustomersSearchResults" [label="Customers Search Results"];
+   "AddCustomer" [label="Add Customer"];
+   "AddCustomerSuccess" [label="Add Customer Success"];
+   "EditCustomer" [label="Edit Customer"];
+   "EditCustomerSuccess" [label="Edit Customer Success"];
+   "DeleteCustomerSuccess" [label="Delete Customer Success"];
+   "SellProduct" [label="Sell Product"];
+   "SellSuccess" [label="Sell Success"];
+  
+  /* Products states */
+  "Products" [label="Product"];
+   "ProductsSearchResults" [label="Products Search Results"];
+   "AddProduct" [label="Add product"];
+   "AddProductSuccess" [label="Add Product Success"];
+   "EditProduct" [label="Edit Product"];
+   "EditProductSuccess" [label="Edit Product Success"];
+//   "DeleteProductSuccess" [label="Delete Product Success"];
+  
+  /* Orders states */
+  "Orders" [label="Orders"];
+//   "OrdersSearchResults" [label="Orders Search Results"];
+//   "PayOrder" [label="Pay Order"];
+   "UpdatePaidstatus" [label="Update Order Pay"];
+   "DeleteOrderSuccess" [label="Delete Order Success"];
+   "ViewBill" [label="View Bill"];
+  
+  /* Sidebar navigation (only on main pages) */
+  "Dashboard" -> "Vendors" [label="Vendors"];
+  "Dashboard" -> "Customers" [label="Customer"];
+  "Dashboard" -> "Products" [label="Products"];
+  "Dashboard" -> "Orders" [label="Orders"];
+  
+//   "Vendors" -> "Dashboard" [label="Dashboard"];
+//   "Vendors" -> "Customers" [label="Customer"];
+//   "Vendors" -> "Products" [label="Products"];
+//   "Vendors" -> "Orders" [label="Orders"];
+  
+//   "Customers" -> "Dashboard" [label="Dashboard"];
+//   "Customers" -> "Vendors" [label="Vendors"];
+//   "Customers" -> "Products" [label="Products"];
+//   "Customers" -> "Orders" [label="Orders"];
+  
+//   "Products" -> "Dashboard" [label="Dashboard"];
+//   "Products" -> "Vendors" [label="Vendors"];
+//   "Products" -> "Customers" [label="Customer"];
+//   "Products" -> "Orders" [label="Orders"];
+  
+//   "Orders" -> "Dashboard" [label="Dashboard"];
+//   "Orders" -> "Vendors" [label="Vendors"];
+//   "Orders" -> "Customers" [label="Customer"];
+//   "Orders" -> "Products" [label="Products"];
+  
+  /* Dashboard card links (View Details) */
+//   "Dashboard" -> "Vendors" [label="View Details"];
+//   "Dashboard" -> "Customers" [label="View Details"];
+//   "Dashboard" -> "Products" [label="View Details"];
+  
+  /* Authentication flow */
+//   "Login" -> "Register" [label="Register"];
+//   "Register" -> "Login" [label="Login"];
+  "Register" -> "Login" [label="Login"];
+  "Login" -> "Dashboard" [label="Login"];
+  
+  /* Vendors page interactions */
+  "Vendors" -> "VendorsSearchResults" [label="Go"];
+  "VendorsSearchResults" -> "Vendors" [label="Back"];
+  "Vendors" -> "AddVendor" [label="+ Add Vendors"];
+  "AddVendor" -> "AddVendorSuccess" [label="Submit"];
+  "Vendors" -> "EditVendor" [label="Edit"];
+  "EditVendor" -> "EditVendorSuccess" [label="Submit"];
+  "Vendors" -> "DeleteVendorSuccess" [label="Delete"];
+  "Vendors" -> "ConfirmBuy" [label="Buy"];
+  "ConfirmBuy" -> "BuySuccess" [label="Buy"];
+  
+  /* Customers page interactions */
+   "Customers" -> "CustomersSearchResults" [label="Go"];
+   "CustomersSearchResults" -> "Customers" [label="Back"];
+   "Customers" -> "AddCustomer" [label="+ Add Customer"];
+   "AddCustomer" -> "AddCustomerSuccess" [label="Submit"];
+   "Customers" -> "EditCustomer" [label="Edit"];
+   "EditCustomer" -> "EditCustomerSuccess" [label="Submit"];
+   "Customers" -> "DeleteCustomerSuccess" [label="Delete"];
+   "Customers" -> "SellProduct" [label="Sell"];
+   "SellProduct" -> "SellSuccess" [label="Submit"];
+  
+  /* Products page interactions */
+   "Products" -> "ProductsSearchResults" [label="Go"];
+   "ProductsSearchResults" -> "Products" [label="Back"];
+   "Products" -> "AddProduct" [label="+ Add product"];
+   "AddProduct" -> "AddProductSuccess" [label="Submit"];
+   "Products" -> "EditProduct" [label="Edit"];
+   "EditProduct" -> "EditProductSuccess" [label="Submit"];
+//   "Products" -> "DeleteProductSuccess" [label="Delete"];
+  
+  /* Orders page interactions */
+//   "Orders" -> "OrdersSearchResults" [label="Go"];
+//   "OrdersSearchResults" -> "Orders" [label="Back"];
+  "Orders" -> "UpdatePaidstatus" [label="Paid"];
+//   "Orders" -> "UpdatePaidstatus" [label="Pending"];
+
+  "Orders" -> "DeleteOrderSuccess" [label="Delete"];
+  "Orders" -> "ViewBill" [label="BILL"];
+}

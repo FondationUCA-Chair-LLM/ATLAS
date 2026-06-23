@@ -1,0 +1,15 @@
+{
+  "name": "watermanagement-playwright-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Acceptance tests for the Water Management web application, derived from navigation_graph.json, xpath_mapping.json and the application screenshots.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.46.0"
+  }
+}

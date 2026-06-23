@@ -1,0 +1,218 @@
+{
+  "mappings": [
+    {
+      "stateId": "Home_Anonymous",
+      "stateName": "OpenCart: Home (Anonymous)",
+      "images": [
+        "screenshots/Home_Anonymous.png",
+        "screenshots/Home_Anonymous_02.png",
+        "screenshots/Home_Anonymous_03.png"
+      ],
+      "description": "Home page with hero slider and featured products section"
+    },
+    {
+      "stateId": "Home_Anonymous_drop_down",
+      "stateName": "OpenCart: Home - Account Dropdown",
+      "images": [
+        "screenshots/Home_Anonymous_drop_down.png",
+        "screenshots/Home_Anonymous_02.png",
+        "screenshots/Home_Anonymous_03.png"
+      ],
+      "description": "Home page showing My Account dropdown menu with Register and Login options"
+    },
+    {
+      "stateId": "Home_Authenticated",
+      "stateName": "OpenCart: Home (Authenticated)",
+      "images": [
+        "screenshots/Home_Anonymous.png",
+        "screenshots/Home_Anonymous_02.png",
+        "screenshots/Home_Anonymous_03.png"
+      ],
+      "description": "Home page for authenticated users with hero slider and featured products"
+    },
+    {
+      "stateId": "Login_Page",
+      "stateName": "OpenCart: Login",
+      "images": ["screenshots/Login_Page.png"],
+      "description": "Login page with Returning Customer login form and New Customer registration option"
+    },
+    {
+      "stateId": "Register_Account",
+      "stateName": "OpenCart: Register Account",
+      "images": ["screenshots/Register_Account.png"],
+      "description": "Registration form with personal details, password fields, and newsletter subscription option"
+    },
+    {
+      "stateId": "Account_Created",
+      "stateName": "OpenCart: Account Created",
+      "images": [
+        "screenshots/Account_Created.png",
+        "screenshots/Footer_Common.png"
+      ],
+      "description": "Success confirmation page showing 'Your Account Has Been Created!' message"
+    },
+    {
+      "stateId": "Home_Authenticated_Desktop",
+      "stateName": "OpenCart: Home_Authenticated_Desktop",
+      "images": [
+        "screenshots/Home_Authenticated_Desktop.png",
+        "screenshots/Home_Anonymous_02.png",
+        "screenshots/Home_Anonymous_03.png"
+      ],
+      "description": "Home_Authenticated_Desktop"
+    },
+    {
+      "stateId": "Category_Mac_Auth",
+      "stateName": "OpenCart: Category Mac (Authenticated)",
+      "images": ["screenshots/Category_Mac_Auth.png"],
+      "description": "Category page showing Mac desktop products with sidebar navigation"
+    },
+    {
+      "stateId": "Product_Detail_Anon",
+      "stateName": "OpenCart: Product iMac (Anonymous)",
+      "images": [
+        "screenshots/Product_Detail_Anon.png",
+        "screenshots/Product_Detail_Anon_02.png"
+      ],
+      "description": "Product detail page for iMac showing product image, price $122.00, and empty cart"
+    },
+    {
+      "stateId": "Product_Detail_Auth",
+      "stateName": "OpenCart: Product iMac (Authenticated)",
+      "images": [
+        "screenshots/Product_Detail_Anon.png",
+        "screenshots/Product_Detail_Anon_02.png"
+      ],
+      "description": "Product detail page for iMac viewed by authenticated user"
+    },
+    {
+      "stateId": "Product_Detail_Auth_Cart",
+      "stateName": "OpenCart: Product iMac (Added to Cart)",
+      "images": [
+        "screenshots/Product_Detail_Auth_Cart.png",
+        "screenshots/Product_Detail_Auth_Cart_02.png"
+      ],
+      "description": "Product detail page showing iMac with updated cart showing items added"
+    },
+    {
+      "stateId": "Shopping_Cart_Empty",
+      "stateName": "OpenCart: Shopping Cart Empty",
+      "images": ["screenshots/Shopping_Cart_Empty.png"],
+      "description": "Empty shopping cart page displaying 'Your shopping cart is empty!' message"
+    },
+    {
+      "stateId": "Shopping_Cart_Auth",
+      "stateName": "OpenCart: Shopping Cart (With Items)",
+      "images": ["screenshots/Shopping_Cart_Auth.png"],
+      "description": "Shopping cart containing iMac showing subtotal, taxes, and total amount"
+    },
+    {
+      "stateId": "Checkout_Initial",
+      "stateName": "OpenCart: Checkout - Payment Address",
+      "images": [
+        "screenshots/Checkout_Initial.png",
+        "screenshots/Footer_Common.png"
+      ],
+      "description": "Checkout page showing payment address form with customer details"
+    },
+    {
+      "stateId": "Checkout_Auth_Shipping",
+      "stateName": "OpenCart: Checkout - Shipping Address",
+      "images": ["screenshots/Checkout_Auth_Shipping.png"],
+      "description": "Checkout page with shipping address section showing existing address options"
+    },
+    {
+      "stateId": "Checkout_Auth_Shipping_options",
+      "stateName": "OpenCart: Checkout - Shipping Method Options",
+      "images": ["screenshots/Checkout_Auth_Shipping_options.png"],
+      "description": "Modal dialog for selecting shipping method showing Flat Shipping Rate option"
+    },
+    {
+      "stateId": "Checkout_Auth_Shippement_method_selected",
+      "stateName": "OpenCart: Checkout - Shipping Selected",
+      "images": ["screenshots/Checkout_Auth_Shippement_method_selected.png"],
+      "description": "Checkout page with shipping method selected but payment method not yet chosen"
+    },
+    {
+      "stateId": "Checkout_Auth_Payment_options",
+      "stateName": "OpenCart: Checkout - Payment Method Options",
+      "images": ["screenshots/Checkout_Auth_Payment_options.png"],
+      "description": "Modal dialog for selecting payment method showing Bank Transfer, Cheque/Money Order, and Cash On Delivery"
+    },
+    {
+      "stateId": "Checkout_Auth_Final",
+      "stateName": "OpenCart: Checkout - Final Confirmation",
+      "images": ["screenshots/Checkout_Auth_Final.png"],
+      "description": "Final checkout page showing order summary with shipping and payment method selected"
+    },
+    {
+      "stateId": "Order_Success_Auth",
+      "stateName": "OpenCart: Order Success",
+      "images": [
+        "screenshots/Order_Success_Auth.png",
+        "screenshots/Footer_Common.png"
+      ],
+      "description": "Order confirmation page displaying 'Your order has been placed!' with links to order history"
+    },
+    {
+      "stateId": "My_Account",
+      "stateName": "OpenCart: My Account",
+      "images": ["screenshots/My_Account.png"],
+      "description": "My Account dashboard with sections for account information, orders, and newsletter"
+    },
+    {
+      "stateId": "Wishlist_Empty",
+      "stateName": "OpenCart: My Wishlist (Empty)",
+      "images": ["screenshots/Wishlist_Empty.png"],
+      "description": "Empty wishlist page showing 'Your wish list is empty' with sidebar navigation"
+    },
+    {
+      "stateId": "Reward_Points",
+      "stateName": "OpenCart: Reward Points",
+      "images": ["screenshots/Reward_Points.png"],
+      "description": "Reward Points page showing total points and reward history table"
+    },
+    {
+      "stateId": "Search_Results_Anon",
+      "stateName": "OpenCart: Search Results - imac (Anonymous)",
+      "images": [
+        "screenshots/Search_Results_Anon.png",
+        "screenshots/Footer_Common.png"
+      ],
+      "description": "Search results page showing iMac product matching 'imac' search criteria"
+    },
+    {
+      "stateId": "Search_Results_Auth",
+      "stateName": "OpenCart: Search Results - imac (Authenticated)",
+      "images": [
+        "screenshots/Search_Results_Anon.png",
+        "screenshots/Footer_Common.png"
+      ],
+      "description": "Search results page for authenticated user showing iMac product"
+    },
+    {
+      "stateId": "Contact_Us_Anon",
+      "stateName": "OpenCart: Contact Us (Anonymous)",
+      "images": ["screenshots/Contact_Us_Anon.png"],
+      "description": "Contact form page with store location information and enquiry form"
+    },
+    {
+      "stateId": "Contact_Us_Auth",
+      "stateName": "OpenCart: Contact Us (Authenticated)",
+      "images": ["screenshots/Contact_Us_Anon.png"],
+      "description": "Contact form page for authenticated users with pre-filled details"
+    },
+    {
+      "stateId": "Contact_Submitted_Anon",
+      "stateName": "OpenCart: Contact Us Submitted",
+      "images": ["screenshots/Contact_Submitted_Anon.png"],
+      "description": "Success page confirming enquiry has been sent to store owner"
+    },
+    {
+      "stateId": "Contact_Submitted_Auth",
+      "stateName": "OpenCart: Contact Us Submitted (Authenticated)",
+      "images": ["screenshots/Contact_Submitted_Anon.png"],
+      "description": "Success page for authenticated user confirming enquiry submission"
+    }
+  ]
+}

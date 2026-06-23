@@ -1,0 +1,197 @@
+{
+  "source": "manual",
+  "extractedAt": "2026-05-07T08:47:20.501Z",
+  "totalNodes": 11,
+  "totalEdges": 15,
+  "nodes": {
+    "Start": {
+      "id": "Start",
+      "name": "Start Gruyere",
+      "data": {
+        "widgets": []
+      }
+    },
+    "HomeAnon": {
+      "id": "HomeAnon",
+      "name": "Gruyere: Home (Anon)",
+      "data": {
+        "widgets": []
+      }
+    },
+    "SignUp": {
+      "id": "SignUp",
+      "name": "Gruyere: Sign up",
+      "data": {
+        "widgets": []
+      }
+    },
+    "AccountCreated": {
+      "id": "AccountCreated",
+      "name": "Account created",
+      "data": {
+        "widgets": []
+      }
+    },
+    "HomeAuth": {
+      "id": "HomeAuth",
+      "name": "Gruyere: Home (Auth)",
+      "data": {
+        "widgets": []
+      }
+    },
+    "NewSnippet": {
+      "id": "NewSnippet",
+      "name": "Gruyere: New Snippet",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Upload": {
+      "id": "Upload",
+      "name": "Gruyere: Upload",
+      "data": {
+        "widgets": []
+      }
+    },
+    "UploadComplete": {
+      "id": "UploadComplete",
+      "name": "Gruyere: Upload Complete",
+      "data": {
+        "widgets": []
+      }
+    },
+    "MySnippetsEmpty": {
+      "id": "MySnippetsEmpty",
+      "name": "My Snippets Empty",
+      "data": {
+        "widgets": []
+      }
+    },
+    "MySnippetsAdded": {
+      "id": "MySnippetsAdded",
+      "name": "My Snippets Added",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Profile": {
+      "id": "Profile",
+      "name": "Gruyere: Profile",
+      "data": {
+        "widgets": []
+      }
+    }
+  },
+  "edges": {
+    "Start": [
+      {
+        "from": "Start",
+        "to": "HomeAnon",
+        "action": "navigate",
+        "label": "Agree & Start"
+      }
+    ],
+    "HomeAnon": [
+      {
+        "from": "HomeAnon",
+        "to": "SignUp",
+        "action": "navigate",
+        "label": "Sign up"
+      }
+    ],
+    "SignUp": [
+      {
+        "from": "SignUp",
+        "to": "AccountCreated",
+        "action": "navigate",
+        "label": "Create account"
+      },
+      {
+        "from": "SignUp",
+        "to": "HomeAnon",
+        "action": "navigate",
+        "label": "Home"
+      }
+    ],
+    "AccountCreated": [
+      {
+        "from": "AccountCreated",
+        "to": "HomeAuth",
+        "action": "navigate",
+        "label": "Home"
+      }
+    ],
+    "HomeAuth": [
+      {
+        "from": "HomeAuth",
+        "to": "HomeAnon",
+        "action": "navigate",
+        "label": "Sign out"
+      },
+      {
+        "from": "HomeAuth",
+        "to": "NewSnippet",
+        "action": "navigate",
+        "label": "New Snippet"
+      },
+      {
+        "from": "HomeAuth",
+        "to": "Upload",
+        "action": "navigate",
+        "label": "Upload"
+      },
+      {
+        "from": "HomeAuth",
+        "to": "MySnippetsEmpty",
+        "action": "navigate",
+        "label": "My Snippets"
+      },
+      {
+        "from": "HomeAuth",
+        "to": "Profile",
+        "action": "navigate",
+        "label": "Profile"
+      }
+    ],
+    "NewSnippet": [
+      {
+        "from": "NewSnippet",
+        "to": "MySnippetsAdded",
+        "action": "navigate",
+        "label": "Submit"
+      }
+    ],
+    "Upload": [
+      {
+        "from": "Upload",
+        "to": "UploadComplete",
+        "action": "navigate",
+        "label": "Upload"
+      }
+    ],
+    "UploadComplete": [
+      {
+        "from": "UploadComplete",
+        "to": "HomeAuth",
+        "action": "navigate",
+        "label": "Home"
+      }
+    ],
+    "MySnippetsEmpty": [
+      {
+        "from": "MySnippetsEmpty",
+        "to": "HomeAuth",
+        "action": "navigate",
+        "label": "Home"
+      }
+    ],
+    "Profile": [
+      {
+        "from": "Profile",
+        "to": "HomeAuth",
+        "action": "navigate",
+        "label": "Update"
+      }
+    ]
+  }
+}

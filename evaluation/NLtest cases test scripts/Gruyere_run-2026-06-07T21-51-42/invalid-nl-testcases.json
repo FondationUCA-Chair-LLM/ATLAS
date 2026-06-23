@@ -1,0 +1,103 @@
+[
+  {
+    "id": "test-path-Start-to-SignUp",
+    "name": "start - agree & start - home anon - sign up - sign up",
+    "description": "Test case covering path: Path from Start to SignUp",
+    "actions": [
+      "Open the website 'https://google-gruyere.appspot.com/start'",
+      "Click on 'Agree & Start'",
+      "Click on 'Sign up'",
+      "Type in 'toto' in the field 'User name'",
+      "Type in 'toto' in the field 'Password'",
+      "Assert that 'Gruyere: Sign up' is  displayed on this page"
+    ],
+    "pathId": "path-Start-to-SignUp",
+    "assertions": [
+      "text(\"Gruyere: Sign up\")"
+    ],
+    "reasons": [
+      "The test case ends after filling the 'User name' and 'Password' fields without clicking the 'Create account' button, leaving the sign-up flow logically incomplete."
+    ]
+  },
+  {
+    "id": "test-path-Start-to-Upload",
+    "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload",
+    "description": "Test case covering path: Path from Start to Upload",
+    "actions": [
+      "Open the website 'https://google-gruyere.appspot.com/start'",
+      "Click on 'Agree & Start'",
+      "Click on 'Sign up'",
+      "Type in 'toto' in the field 'User name'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Create account'",
+      "Click on 'Home'",
+      "Click on 'Upload'",
+      "Type in 'No file chosen' in the field 'Select a file to upload to your account.'",
+      "Assert that 'Gruyere: Upload' is  displayed on this page"
+    ],
+    "pathId": "path-Start-to-Upload",
+    "assertions": [
+      "text(\"Gruyere: Upload\")"
+    ],
+    "reasons": [
+      "Action 9 attempts to type text into a file input element, which violates action compatibility rules. File inputs require file selection/upload actions, not text entry.",
+      "The input value 'No file chosen' is default UI placeholder text, not a valid file path or semantically correct data.",
+      "The test case is incomplete: it lacks a valid file selection step and does not trigger the final 'Upload' button on the Upload page, leaving the flow unfinished."
+    ]
+  },
+  {
+    "id": "test-path-Start-to-UploadComplete",
+    "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload - upload - upload complete",
+    "description": "Test case covering path: Path from Start to UploadComplete",
+    "actions": [
+      "Open the website 'https://google-gruyere.appspot.com/start'",
+      "Click on 'Agree & Start'",
+      "Click on 'Sign up'",
+      "Type in 'toto' in the field 'User name'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Create account'",
+      "Click on 'Home'",
+      "Click on 'Upload'",
+      "Type in 'No file chosen' in the field 'Select a file to upload to your account.'",
+      "Click on 'Upload'",
+      "Assert that 'Gruyere: Upload Complete' is  displayed on this page"
+    ],
+    "pathId": "path-Start-to-UploadComplete",
+    "assertions": [
+      "text(\"Gruyere: Upload Complete\")"
+    ],
+    "reasons": [
+      "Action 9 uses a 'Type' action on a file input element. File inputs require a file selection or upload action, not text input.",
+      "The input value 'No file chosen' is semantically incorrect as it copies the default UI placeholder text instead of providing a valid file path or selection.",
+      "The test case omits the mandatory intermediate step of actually selecting a file on the Upload page before triggering the submission button."
+    ]
+  },
+  {
+    "id": "test-path-Start-to-HomeAuth-peqr",
+    "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload - upload - upload complete - home - home auth",
+    "description": "Test case covering path: Path from Start to HomeAuth",
+    "actions": [
+      "Open the website 'https://google-gruyere.appspot.com/start'",
+      "Click on 'Agree & Start'",
+      "Click on 'Sign up'",
+      "Type in 'toto' in the field 'User name'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Create account'",
+      "Click on 'Home'",
+      "Click on 'Upload'",
+      "Type in 'No file chosen' in the field 'Select a file to upload to your account.'",
+      "Click on 'Upload'",
+      "Click on 'Home'",
+      "Assert that 'Cheddar Mac' is  displayed on this page"
+    ],
+    "pathId": "path-Start-to-HomeAuth-peqr",
+    "assertions": [
+      "text(\"Cheddar Mac\")"
+    ],
+    "reasons": [
+      "Step 9 attempts to type text into a file input field ('Select a file to upload to your account.'), which violates action compatibility rules. File inputs require a file selection or upload action, not text entry.",
+      "Missing required intermediate action: The test case does not include a valid file selection or upload step before triggering the 'Upload' button, violating the flow coherence rule that a file must be selected before upload.",
+      "Typing 'No file chosen' (default placeholder text) into a file field is semantically incorrect and technically impossible in standard web automation."
+    ]
+  }
+]

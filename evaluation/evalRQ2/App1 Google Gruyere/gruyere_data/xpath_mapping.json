@@ -1,0 +1,296 @@
+{
+  "Start": [
+    {
+      "label": "Agree & Start",
+      "xpath": "/html/body/h2/a"
+    }
+  ],
+  "HomeAnon": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a"
+    },
+    {
+      "label": "Sign in",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign up",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    }
+  ],
+  "SignUp": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a"
+    },
+    {
+      "label": "Sign in",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign up",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    },
+    {
+      "label": "User name:",
+      "xpath": "/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input"
+    },
+    {
+      "label": "Password:",
+      "xpath": "/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input"
+    },
+    {
+      "label": "Create account",
+      "xpath": "/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input"
+    }
+  ],
+  "AccountCreated": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a"
+    },
+    {
+      "label": "Sign in",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign up",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    }
+  ],
+  "HomeAuth": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a[1]"
+    },
+    {
+      "label": "My Snippets",
+      "xpath": "//*[@id=\"menu-left\"]/a[2]"
+    },
+    {
+      "label": "New Snippet",
+      "xpath": "//*[@id=\"menu-left\"]/a[3]"
+    },
+    {
+      "label": "Upload",
+      "xpath": "//*[@id=\"menu-left\"]/a[4]"
+    },
+    {
+      "label": "Profile",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign out",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    }
+  ],
+  "NewSnippet": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a[1]"
+    },
+    {
+      "label": "My Snippets",
+      "xpath": "//*[@id=\"menu-left\"]/a[2]"
+    },
+    {
+      "label": "New Snippet",
+      "xpath": "//*[@id=\"menu-left\"]/a[3]"
+    },
+    {
+      "label": "Upload",
+      "xpath": "//*[@id=\"menu-left\"]/a[4]"
+    },
+    {
+      "label": "Profile",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign out",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    },
+    {
+      "label": "Add a new snippet.",
+      "xpath": "/html/body/div[2]/div/form/textarea"
+    },
+    {
+      "label": "Submit",
+      "xpath": "/html/body/div[2]/div/form/table/tbody/tr/td[2]/input"
+    }
+  ],
+  "Upload": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a[1]"
+    },
+    {
+      "label": "My Snippets",
+      "xpath": "//*[@id=\"menu-left\"]/a[2]"
+    },
+    {
+      "label": "New Snippet",
+      "xpath": "//*[@id=\"menu-left\"]/a[3]"
+    },
+    {
+      "label": "Upload",
+      "xpath": "//*[@id=\"menu-left\"]/a[4]"
+    },
+    {
+      "label": "Profile",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign out",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    },
+    {
+      "label": "Select a file to upload to your account.",
+      "xpath": "/html/body/div[2]/div/form/table/tbody/tr[1]/td/input"
+    },
+    {
+      "label": "Upload",
+      "xpath": "/html/body/div[2]/div/form/table/tbody/tr[2]/td/input"
+    }
+  ],
+  "UploadComplete": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a[1]"
+    },
+    {
+      "label": "My Snippets",
+      "xpath": "//*[@id=\"menu-left\"]/a[2]"
+    },
+    {
+      "label": "New Snippet",
+      "xpath": "//*[@id=\"menu-left\"]/a[3]"
+    },
+    {
+      "label": "Upload",
+      "xpath": "//*[@id=\"menu-left\"]/a[4]"
+    },
+    {
+      "label": "Profile",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign out",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    }
+  ],
+  "MySnippetsEmpty": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a[1]"
+    },
+    {
+      "label": "My Snippets",
+      "xpath": "//*[@id=\"menu-left\"]/a[2]"
+    },
+    {
+      "label": "New Snippet",
+      "xpath": "//*[@id=\"menu-left\"]/a[3]"
+    },
+    {
+      "label": "Upload",
+      "xpath": "//*[@id=\"menu-left\"]/a[4]"
+    },
+    {
+      "label": "Profile",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign out",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    }
+  ],
+  "MySnippetsAdded": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a[1]"
+    },
+    {
+      "label": "My Snippets",
+      "xpath": "//*[@id=\"menu-left\"]/a[2]"
+    },
+    {
+      "label": "New Snippet",
+      "xpath": "//*[@id=\"menu-left\"]/a[3]"
+    },
+    {
+      "label": "Upload",
+      "xpath": "//*[@id=\"menu-left\"]/a[4]"
+    },
+    {
+      "label": "Profile",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign out",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    }
+  ],
+  "Profile": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"menu-left\"]/a[1]"
+    },
+    {
+      "label": "My Snippets",
+      "xpath": "//*[@id=\"menu-left\"]/a[2]"
+    },
+    {
+      "label": "New Snippet",
+      "xpath": "//*[@id=\"menu-left\"]/a[3]"
+    },
+    {
+      "label": "Upload",
+      "xpath": "//*[@id=\"menu-left\"]/a[4]"
+    },
+    {
+      "label": "Profile",
+      "xpath": "//*[@id=\"menu-right\"]/a[1]"
+    },
+    {
+      "label": "Sign out",
+      "xpath": "//*[@id=\"menu-right\"]/a[2]"
+    },
+    {
+      "label": "User name:",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[2]/td[2]/input"
+    },
+    {
+      "label": "User name:",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[2]/td[2]/input"
+    },
+    {
+      "label": "OLD Password:",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[3]/td[2]/input"
+    },
+    {
+      "label": "NEW Password:",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[4]/td[2]/input"
+    },
+    {
+      "label": "Icon:",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[5]/td[2]/input"
+    },
+    {
+      "label": "Homepage:",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[6]/td[2]/input"
+    },
+    {
+      "label": "Profile Color:",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[7]/td[2]/input"
+    },
+    {
+      "label": "Private Snippet:",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[8]/td[2]/textarea"
+    },
+    {
+      "label": "Update",
+      "xpath": "/html/body/div[3]/form/table/tbody/tr[9]/td[2]/input"
+    }
+  ]
+}

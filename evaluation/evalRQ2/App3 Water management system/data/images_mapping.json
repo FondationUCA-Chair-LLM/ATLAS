@@ -1,0 +1,202 @@
+{
+  "mappings": [
+    {
+      "stateId": "Login",
+      "stateName": "Sign in",
+      "images": ["screenshots/login.png"],
+      "description": "Login page with Username and Password fields"
+    },
+    {
+      "stateId": "Register",
+      "stateName": "Register",
+      "images": ["screenshots/register.png"],
+      "description": "Register page with Username, Email, and Password fields"
+    },
+    {
+      "stateId": "Dashboard",
+      "stateName": "Dashboard",
+      "images": ["screenshots/dashboard.png"],
+      "description": "Dashboard with summary cards for Vendors, Customers, and Products counts"
+    },
+    {
+      "stateId": "Vendors",
+      "stateName": "Vendors",
+      "images": ["screenshots/vendors.png"],
+      "description": "Vendors list page with search, Add Vendors button, and table of vendors with Edit/Delete/Buy actions"
+    },
+    {
+      "stateId": "VendorsSearchResults",
+      "stateName": "Vendors Search Results",
+      "images": ["screenshots/vendors-searchs-jorn-result.png"],
+      "description": "Search results filtered by Name/Contact on the Vendors page"
+    },
+    {
+      "stateId": "AddVendor",
+      "stateName": "Add Vendor Details",
+      "images": ["screenshots/vendor-add.png"],
+      "description": "Form to add a new vendor with Vendor Name, Contact, Product dropdown, Quantity, and Price fields"
+    },
+    {
+      "stateId": "AddVendorSuccess",
+      "stateName": "Add Vendor Success",
+      "images": ["screenshots/vendors_added_success.png"],
+      "description": "Vendors page with green 'Added Success' banner after submitting the add form"
+    },
+    {
+      "stateId": "EditVendor",
+      "stateName": "Edit Vendor Details",
+      "images": ["screenshots/edit-vendor.png"],
+      "description": "Form to edit an existing vendor (pre-filled with current values)"
+    },
+    {
+      "stateId": "EditVendorSuccess",
+      "stateName": "Edit Vendor Success",
+      "images": ["screenshots/vendor-edit-success.png"],
+      "description": "Vendors page with success banner after editing a vendor"
+    },
+    {
+      "stateId": "DeleteVendorSuccess",
+      "stateName": "Delete Vendor Success",
+      "images": ["screenshots/delete-vendor-success.png"],
+      "description": "Vendors page after deleting a vendor (row removed)"
+    },
+    {
+      "stateId": "ConfirmBuy",
+      "stateName": "Confirm Buy",
+      "images": ["screenshots/vendor_buy.png"],
+      "description": "Confirmation page showing vendor details (Name, Contact, Product Category, Product, Quantity, Price) with a Buy button"
+    },
+    {
+      "stateId": "BuySuccess",
+      "stateName": "Buy Success",
+      "images": ["screenshots/vendors-buy-success.png"],
+      "description": "Success state after confirming a purchase from a vendor"
+    },
+    {
+      "stateId": "Customers",
+      "stateName": "Customer",
+      "images": ["screenshots/customer.png"],
+      "description": "Customer list page with search, Add Customer button, and table with Edit/Delete/Sell actions"
+    },
+    {
+      "stateId": "CustomersSearchResults",
+      "stateName": "Customers Search Results",
+      "images": ["screenshots/customer-searchhello-results.png"],
+      "description": "Search results filtered by Name/Contact on the Customer page"
+    },
+    {
+      "stateId": "AddCustomer",
+      "stateName": "Add Customer",
+      "images": ["screenshots/customer-add-details.png"],
+      "description": "Form to add a new customer with Name and Contact fields"
+    },
+    {
+      "stateId": "AddCustomerSuccess",
+      "stateName": "Add Customer Success",
+      "images": ["screenshots/customer-add-success.png"],
+      "description": "Customer page with success banner after adding a customer"
+    },
+    {
+      "stateId": "EditCustomer",
+      "stateName": "Edit Customer",
+      "images": ["screenshots/customer-update-details.png"],
+      "description": "Form to edit an existing customer (pre-filled with current values)"
+    },
+    {
+      "stateId": "EditCustomerSuccess",
+      "stateName": "Edit Customer Success",
+      "images": ["screenshots/customer-update-success.png"],
+      "description": "Customer page with success banner after editing a customer"
+    },
+    {
+      "stateId": "DeleteCustomerSuccess",
+      "stateName": "Delete Customer Success",
+      "images": [],
+      "description": "Customer page after deleting a customer (row removed)"
+    },
+    {
+      "stateId": "SellProduct",
+      "stateName": "Sell Product",
+      "images": ["screenshots/customer-sell-details.png"],
+      "description": "Form/page to sell a product to a customer with product selection, quantity, and price"
+    },
+    {
+      "stateId": "SellSuccess",
+      "stateName": "Sell Success",
+      "images": ["screenshots/customer-sell-success.png"],
+      "description": "Success state after selling a product to a customer"
+    },
+    {
+      "stateId": "Products",
+      "stateName": "Product",
+      "images": ["screenshots/products.png"],
+      "description": "Product list page with search, Add product button, and table with Edit/Delete actions showing Product ID, Category, Name, Price, and Stocks"
+    },
+    {
+      "stateId": "ProductsSearchResults",
+      "stateName": "Products Search Results",
+      "images": ["screenshots/products-search-result.png"],
+      "description": "Search results filtered by Name/Contact on the Product page"
+    },
+    {
+      "stateId": "AddProduct",
+      "stateName": "Add product",
+      "images": ["screenshots/product-edit-details.png"],
+      "description": "Form to add a new product with Category, Name, Price, and Stocks fields"
+    },
+    {
+      "stateId": "AddProductSuccess",
+      "stateName": "Add Product Success",
+      "images": ["screenshots/product-add-success.png"],
+      "description": "Product page with success banner after adding a product"
+    },
+    {
+      "stateId": "EditProduct",
+      "stateName": "Edit Product",
+      "images": ["screenshots/product-edit-details.png"],
+      "description": "Form to edit an existing product (pre-filled with current values)"
+    },
+    {
+      "stateId": "EditProductSuccess",
+      "stateName": "Edit Product Success",
+      "images": ["screenshots/product-edit-succuss.png"],
+      "description": "Product page with success banner after editing a product"
+    },
+    {
+      "stateId": "DeleteProductSuccess",
+      "stateName": "Delete Product Success",
+      "images": [],
+      "description": "Product page after deleting a product (row removed)"
+    },
+    {
+      "stateId": "Orders",
+      "stateName": "Orders",
+      "images": ["screenshots/orders.png"],
+      "description": "Orders list page with search, and table showing Order ID, Customer Name, Payment Status (Paid/Pending), Date, Total, with Pay/Delete/BILL actions"
+    },
+    {
+      "stateId": "OrdersSearchResults",
+      "stateName": "Orders Search Results",
+      "images": [],
+      "description": "Search results filtered by Name/Order ID on the Orders page"
+    },
+    {
+      "stateId": "UpdatePaidstatus",
+      "stateName": "Update Order Pay",
+      "images": ["screenshots/order-updated-success.png"],
+      "description": "Update payment status of an order (Paid/Pending) via the green Pay button"
+    },
+    {
+      "stateId": "DeleteOrderSuccess",
+      "stateName": "Delete Order Success",
+      "images": ["screenshots/order-deleted-succuss.png"],
+      "description": "Orders page after deleting an order (row removed)"
+    },
+    {
+      "stateId": "ViewBill",
+      "stateName": "View Bill",
+      "images": ["screenshots/order-bill.png"],
+      "description": "Bill/invoice view for a specific order with order details and a Back button"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "nodes": [
+    {
+      "id": "Home",
+      "name": "Home",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Home",
+          "to_screen": "Research",
+          "action": "ON_CLICK",
+          "label": "Research"
+        },
+        {
+          "from_screen": "Home",
+          "to_screen": "Tools",
+          "action": "ON_CLICK",
+          "label": "Tools"
+        },
+        {
+          "from_screen": "Home",
+          "to_screen": "Publications",
+          "action": "ON_CLICK",
+          "label": "Publications"
+        },
+        {
+          "from_screen": "Home",
+          "to_screen": "Teaching",
+          "action": "ON_CLICK",
+          "label": "Teaching"
+        },
+        {
+          "from_screen": "Home",
+          "to_screen": "Home",
+          "action": "ON_CLICK",
+          "label": "Send"
+        },
+        {
+          "from_screen": "Home",
+          "to_screen": "Home",
+          "action": "ON_CLICK",
+          "label": "Projects"
+        },
+        {
+          "from_screen": "Home",
+          "to_screen": "Home",
+          "action": "ON_CLICK",
+          "label": "Contact"
+        }
+      ]
+    },
+    {
+      "id": "Research",
+      "name": "Research",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Research",
+          "to_screen": "Home",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ]
+    },
+    {
+      "id": "Tools",
+      "name": "Tools",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Tools",
+          "to_screen": "Home",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ]
+    },
+    {
+      "id": "Publications",
+      "name": "Publications",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Publications",
+          "to_screen": "Home",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from_screen": "Publications",
+          "to_screen": "PublicationsNLExec",
+          "action": "ON_CLICK",
+          "label": "On the Soundness and Consistency of LLM Agents for Executing Test Cases Written in Natural Language"
+        }
+      ]
+    },
+    {
+      "id": "PublicationsNLExec",
+      "name": "Publication NL Execution",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "Teaching",
+      "name": "Teaching",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Teaching",
+          "to_screen": "Home",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from_screen": "Teaching",
+          "to_screen": "TeachingSE",
+          "action": "ON_CLICK",
+          "label": "Cours software Engineering"
+        }
+      ]
+    },
+    {
+      "id": "TeachingSE",
+      "name": "Teaching Cours software Engineering",
+      "widgets": [],
+      "interactions": []
+    }
+  ],
+  "edges": [
+    {
+      "from_screen": "Home",
+      "to_screen": "Research",
+      "action": "ON_CLICK",
+      "label": "Research"
+    },
+    {
+      "from_screen": "Home",
+      "to_screen": "Tools",
+      "action": "ON_CLICK",
+      "label": "Tools"
+    },
+    {
+      "from_screen": "Home",
+      "to_screen": "Publications",
+      "action": "ON_CLICK",
+      "label": "Publications"
+    },
+    {
+      "from_screen": "Home",
+      "to_screen": "Teaching",
+      "action": "ON_CLICK",
+      "label": "Teaching"
+    },
+    {
+      "from_screen": "Home",
+      "to_screen": "Home",
+      "action": "ON_CLICK",
+      "label": "Send"
+    },
+    {
+      "from_screen": "Home",
+      "to_screen": "Home",
+      "action": "ON_CLICK",
+      "label": "Projects"
+    },
+    {
+      "from_screen": "Home",
+      "to_screen": "Home",
+      "action": "ON_CLICK",
+      "label": "Contact"
+    },
+    {
+      "from_screen": "Research",
+      "to_screen": "Home",
+      "action": "ON_CLICK",
+      "label": "Home"
+    },
+    {
+      "from_screen": "Tools",
+      "to_screen": "Home",
+      "action": "ON_CLICK",
+      "label": "Home"
+    },
+    {
+      "from_screen": "Publications",
+      "to_screen": "Home",
+      "action": "ON_CLICK",
+      "label": "Home"
+    },
+    {
+      "from_screen": "Teaching",
+      "to_screen": "Home",
+      "action": "ON_CLICK",
+      "label": "Home"
+    },
+    {
+      "from_screen": "Teaching",
+      "to_screen": "TeachingSE",
+      "action": "ON_CLICK",
+      "label": "Cours software Engineering"
+    },
+    {
+      "from_screen": "Publications",
+      "to_screen": "PublicationsNLExec",
+      "action": "ON_CLICK",
+      "label": "On the Soundness and Consistency of LLM Agents for Executing Test Cases Written in Natural Language"
+    }
+  ]
+}

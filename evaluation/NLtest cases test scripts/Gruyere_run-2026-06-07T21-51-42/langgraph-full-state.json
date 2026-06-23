@@ -1,0 +1,5997 @@
+{
+  "config": {
+    "figmaToken": "figd_AHweFJjd5W4XgGV-ncn48pnZtyU6Dc05gPqG-lfb",
+    "figmaFileKey": "xSQFRYdiqfykBk1v2G9ida",
+    "useCachedElements": false,
+    "useCachedFigmaResponse": true,
+    "inputSource": "manual",
+    "inputPath": "./data/gruyere_v1",
+    "ollamaUrl": "http://192.168.128.44:11434",
+    "modelId": "qwen3.6:27b",
+    "visionModelId": "qwen3.6:27b",
+    "targetUrl": "https://google-gruyere.appspot.com/start",
+    "outputDir": "./out/gruyere",
+    "startNode": "Start",
+    "enableConsistencyCheck": true,
+    "generateInvalidTests": false,
+    "fakerSeed": 42,
+    "fakerLocale": "en",
+    "debug": true
+  },
+  "graphRaw": {
+    "nodes": [
+      {
+        "id": "Start",
+        "name": "Start Gruyere",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "Start",
+            "to_screen": "HomeAnon",
+            "action": "ON_CLICK",
+            "label": "Agree & Start"
+          }
+        ]
+      },
+      {
+        "id": "HomeAnon",
+        "name": "Gruyere: Home (Anon)",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "HomeAnon",
+            "to_screen": "SignUp",
+            "action": "ON_CLICK",
+            "label": "Sign up"
+          }
+        ]
+      },
+      {
+        "id": "SignUp",
+        "name": "Gruyere: Sign up",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "SignUp",
+            "to_screen": "AccountCreated",
+            "action": "ON_CLICK",
+            "label": "Create account"
+          },
+          {
+            "from_screen": "SignUp",
+            "to_screen": "HomeAnon",
+            "action": "ON_CLICK",
+            "label": "Home"
+          }
+        ]
+      },
+      {
+        "id": "AccountCreated",
+        "name": "Account created",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "AccountCreated",
+            "to_screen": "HomeAuth",
+            "action": "ON_CLICK",
+            "label": "Home"
+          }
+        ]
+      },
+      {
+        "id": "HomeAuth",
+        "name": "Gruyere: Home (Auth)",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "HomeAuth",
+            "to_screen": "HomeAnon",
+            "action": "ON_CLICK",
+            "label": "Sign out"
+          },
+          {
+            "from_screen": "HomeAuth",
+            "to_screen": "NewSnippet",
+            "action": "ON_CLICK",
+            "label": "New Snippet"
+          },
+          {
+            "from_screen": "HomeAuth",
+            "to_screen": "Upload",
+            "action": "ON_CLICK",
+            "label": "Upload"
+          },
+          {
+            "from_screen": "HomeAuth",
+            "to_screen": "MySnippetsEmpty",
+            "action": "ON_CLICK",
+            "label": "My Snippets"
+          },
+          {
+            "from_screen": "HomeAuth",
+            "to_screen": "Profile",
+            "action": "ON_CLICK",
+            "label": "Profile"
+          }
+        ]
+      },
+      {
+        "id": "NewSnippet",
+        "name": "Gruyere: New Snippet",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "NewSnippet",
+            "to_screen": "MySnippetsAdded",
+            "action": "ON_CLICK",
+            "label": "Submit"
+          }
+        ]
+      },
+      {
+        "id": "Upload",
+        "name": "Gruyere: Upload",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "Upload",
+            "to_screen": "UploadComplete",
+            "action": "ON_CLICK",
+            "label": "Upload"
+          }
+        ]
+      },
+      {
+        "id": "UploadComplete",
+        "name": "Gruyere: Upload Complete",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "UploadComplete",
+            "to_screen": "HomeAuth",
+            "action": "ON_CLICK",
+            "label": "Home"
+          }
+        ]
+      },
+      {
+        "id": "MySnippetsEmpty",
+        "name": "My Snippets Empty",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "MySnippetsEmpty",
+            "to_screen": "HomeAuth",
+            "action": "ON_CLICK",
+            "label": "Home"
+          }
+        ]
+      },
+      {
+        "id": "MySnippetsAdded",
+        "name": "My Snippets Added",
+        "widgets": [],
+        "interactions": []
+      },
+      {
+        "id": "Profile",
+        "name": "Gruyere: Profile",
+        "widgets": [],
+        "interactions": [
+          {
+            "from_screen": "Profile",
+            "to_screen": "HomeAuth",
+            "action": "ON_CLICK",
+            "label": "Update"
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from_screen": "Start",
+        "to_screen": "HomeAnon",
+        "action": "ON_CLICK",
+        "label": "Agree & Start"
+      },
+      {
+        "from_screen": "HomeAnon",
+        "to_screen": "SignUp",
+        "action": "ON_CLICK",
+        "label": "Sign up"
+      },
+      {
+        "from_screen": "SignUp",
+        "to_screen": "AccountCreated",
+        "action": "ON_CLICK",
+        "label": "Create account"
+      },
+      {
+        "from_screen": "SignUp",
+        "to_screen": "HomeAnon",
+        "action": "ON_CLICK",
+        "label": "Home"
+      },
+      {
+        "from_screen": "AccountCreated",
+        "to_screen": "HomeAuth",
+        "action": "ON_CLICK",
+        "label": "Home"
+      },
+      {
+        "from_screen": "HomeAuth",
+        "to_screen": "HomeAnon",
+        "action": "ON_CLICK",
+        "label": "Sign out"
+      },
+      {
+        "from_screen": "HomeAuth",
+        "to_screen": "NewSnippet",
+        "action": "ON_CLICK",
+        "label": "New Snippet"
+      },
+      {
+        "from_screen": "HomeAuth",
+        "to_screen": "Upload",
+        "action": "ON_CLICK",
+        "label": "Upload"
+      },
+      {
+        "from_screen": "HomeAuth",
+        "to_screen": "MySnippetsEmpty",
+        "action": "ON_CLICK",
+        "label": "My Snippets"
+      },
+      {
+        "from_screen": "HomeAuth",
+        "to_screen": "Profile",
+        "action": "ON_CLICK",
+        "label": "Profile"
+      },
+      {
+        "from_screen": "NewSnippet",
+        "to_screen": "MySnippetsAdded",
+        "action": "ON_CLICK",
+        "label": "Submit"
+      },
+      {
+        "from_screen": "Upload",
+        "to_screen": "UploadComplete",
+        "action": "ON_CLICK",
+        "label": "Upload"
+      },
+      {
+        "from_screen": "UploadComplete",
+        "to_screen": "HomeAuth",
+        "action": "ON_CLICK",
+        "label": "Home"
+      },
+      {
+        "from_screen": "MySnippetsEmpty",
+        "to_screen": "HomeAuth",
+        "action": "ON_CLICK",
+        "label": "Home"
+      },
+      {
+        "from_screen": "Profile",
+        "to_screen": "HomeAuth",
+        "action": "ON_CLICK",
+        "label": "Update"
+      }
+    ]
+  },
+  "graphProcessed": {
+    "nodes": {
+      "Start": {
+        "id": "Start",
+        "name": "Start Gruyere",
+        "data": {
+          "widgets": []
+        }
+      },
+      "HomeAnon": {
+        "id": "HomeAnon",
+        "name": "Gruyere: Home (Anon)",
+        "data": {
+          "widgets": []
+        }
+      },
+      "SignUp": {
+        "id": "SignUp",
+        "name": "Gruyere: Sign up",
+        "data": {
+          "widgets": []
+        }
+      },
+      "AccountCreated": {
+        "id": "AccountCreated",
+        "name": "Account created",
+        "data": {
+          "widgets": []
+        }
+      },
+      "HomeAuth": {
+        "id": "HomeAuth",
+        "name": "Gruyere: Home (Auth)",
+        "data": {
+          "widgets": []
+        }
+      },
+      "NewSnippet": {
+        "id": "NewSnippet",
+        "name": "Gruyere: New Snippet",
+        "data": {
+          "widgets": []
+        }
+      },
+      "Upload": {
+        "id": "Upload",
+        "name": "Gruyere: Upload",
+        "data": {
+          "widgets": []
+        }
+      },
+      "UploadComplete": {
+        "id": "UploadComplete",
+        "name": "Gruyere: Upload Complete",
+        "data": {
+          "widgets": []
+        }
+      },
+      "MySnippetsEmpty": {
+        "id": "MySnippetsEmpty",
+        "name": "My Snippets Empty",
+        "data": {
+          "widgets": []
+        }
+      },
+      "MySnippetsAdded": {
+        "id": "MySnippetsAdded",
+        "name": "My Snippets Added",
+        "data": {
+          "widgets": []
+        }
+      },
+      "Profile": {
+        "id": "Profile",
+        "name": "Gruyere: Profile",
+        "data": {
+          "widgets": []
+        }
+      }
+    },
+    "edges": {
+      "Start": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        }
+      ],
+      "HomeAnon": [
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        }
+      ],
+      "SignUp": [
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "SignUp",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "AccountCreated": [
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "HomeAuth": [
+        {
+          "from": "HomeAuth",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Sign out"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "NewSnippet",
+          "action": "ON_CLICK",
+          "label": "New Snippet"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Upload",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "MySnippetsEmpty",
+          "action": "ON_CLICK",
+          "label": "My Snippets"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Profile",
+          "action": "ON_CLICK",
+          "label": "Profile"
+        }
+      ],
+      "NewSnippet": [
+        {
+          "from": "NewSnippet",
+          "to": "MySnippetsAdded",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ],
+      "Upload": [
+        {
+          "from": "Upload",
+          "to": "UploadComplete",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        }
+      ],
+      "UploadComplete": [
+        {
+          "from": "UploadComplete",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "MySnippetsEmpty": [
+        {
+          "from": "MySnippetsEmpty",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "Profile": [
+        {
+          "from": "Profile",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Update"
+        }
+      ]
+    },
+    "source": "manual",
+    "extractedAt": "2026-06-07T21:00:39.873Z",
+    "totalNodes": 11,
+    "totalEdges": 15
+  },
+  "graphMetadata": {
+    "source": "manual",
+    "extractedAt": "2026-06-07T21:00:39.873Z",
+    "totalNodes": 11,
+    "totalEdges": 15
+  },
+  "allPaths": [
+    {
+      "id": "path-Start-to-HomeAnon",
+      "name": "Path from Start to HomeAnon",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAnon",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "Start->HomeAnon"
+      }
+    },
+    {
+      "id": "path-Start-to-SignUp",
+      "name": "Path from Start to SignUp",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "SignUp",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAnon->SignUp"
+      }
+    },
+    {
+      "id": "path-Start-to-AccountCreated",
+      "name": "Path from Start to AccountCreated",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "AccountCreated",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "SignUp->AccountCreated"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAnon-rt28",
+      "name": "Path from Start to HomeAnon",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAnon",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "SignUp->HomeAnon"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAuth",
+      "name": "Path from Start to HomeAuth",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAuth",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "AccountCreated->HomeAuth"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAnon-cvhm",
+      "name": "Path from Start to HomeAnon",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Sign out"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAnon",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->HomeAnon"
+      }
+    },
+    {
+      "id": "path-Start-to-NewSnippet",
+      "name": "Path from Start to NewSnippet",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "NewSnippet",
+          "action": "ON_CLICK",
+          "label": "New Snippet"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "NewSnippet",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->NewSnippet"
+      }
+    },
+    {
+      "id": "path-Start-to-Upload",
+      "name": "Path from Start to Upload",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Upload",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "Upload",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->Upload"
+      }
+    },
+    {
+      "id": "path-Start-to-MySnippetsEmpty",
+      "name": "Path from Start to MySnippetsEmpty",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "MySnippetsEmpty",
+          "action": "ON_CLICK",
+          "label": "My Snippets"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "MySnippetsEmpty",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->MySnippetsEmpty"
+      }
+    },
+    {
+      "id": "path-Start-to-Profile",
+      "name": "Path from Start to Profile",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Profile",
+          "action": "ON_CLICK",
+          "label": "Profile"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "Profile",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->Profile"
+      }
+    },
+    {
+      "id": "path-Start-to-MySnippetsAdded",
+      "name": "Path from Start to MySnippetsAdded",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "NewSnippet",
+          "action": "ON_CLICK",
+          "label": "New Snippet"
+        },
+        {
+          "from": "NewSnippet",
+          "to": "MySnippetsAdded",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "MySnippetsAdded",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "NewSnippet->MySnippetsAdded"
+      }
+    },
+    {
+      "id": "path-Start-to-UploadComplete",
+      "name": "Path from Start to UploadComplete",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Upload",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        },
+        {
+          "from": "Upload",
+          "to": "UploadComplete",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "UploadComplete",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "Upload->UploadComplete"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAuth-peqr",
+      "name": "Path from Start to HomeAuth",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Upload",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        },
+        {
+          "from": "Upload",
+          "to": "UploadComplete",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        },
+        {
+          "from": "UploadComplete",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAuth",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "UploadComplete->HomeAuth"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAuth-mz09",
+      "name": "Path from Start to HomeAuth",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "MySnippetsEmpty",
+          "action": "ON_CLICK",
+          "label": "My Snippets"
+        },
+        {
+          "from": "MySnippetsEmpty",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAuth",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "MySnippetsEmpty->HomeAuth"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAuth-9gn2",
+      "name": "Path from Start to HomeAuth",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Profile",
+          "action": "ON_CLICK",
+          "label": "Profile"
+        },
+        {
+          "from": "Profile",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Update"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAuth",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "Profile->HomeAuth"
+      }
+    }
+  ],
+  "selectedPaths": [
+    {
+      "id": "path-Start-to-HomeAnon",
+      "name": "Path from Start to HomeAnon",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAnon",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "Start->HomeAnon"
+      }
+    },
+    {
+      "id": "path-Start-to-SignUp",
+      "name": "Path from Start to SignUp",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "SignUp",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAnon->SignUp"
+      }
+    },
+    {
+      "id": "path-Start-to-AccountCreated",
+      "name": "Path from Start to AccountCreated",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "AccountCreated",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "SignUp->AccountCreated"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAnon-rt28",
+      "name": "Path from Start to HomeAnon",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAnon",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "SignUp->HomeAnon"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAuth",
+      "name": "Path from Start to HomeAuth",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAuth",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "AccountCreated->HomeAuth"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAnon-cvhm",
+      "name": "Path from Start to HomeAnon",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Sign out"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAnon",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->HomeAnon"
+      }
+    },
+    {
+      "id": "path-Start-to-NewSnippet",
+      "name": "Path from Start to NewSnippet",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "NewSnippet",
+          "action": "ON_CLICK",
+          "label": "New Snippet"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "NewSnippet",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->NewSnippet"
+      }
+    },
+    {
+      "id": "path-Start-to-Upload",
+      "name": "Path from Start to Upload",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Upload",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "Upload",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->Upload"
+      }
+    },
+    {
+      "id": "path-Start-to-MySnippetsEmpty",
+      "name": "Path from Start to MySnippetsEmpty",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "MySnippetsEmpty",
+          "action": "ON_CLICK",
+          "label": "My Snippets"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "MySnippetsEmpty",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->MySnippetsEmpty"
+      }
+    },
+    {
+      "id": "path-Start-to-Profile",
+      "name": "Path from Start to Profile",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Profile",
+          "action": "ON_CLICK",
+          "label": "Profile"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "Profile",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "HomeAuth->Profile"
+      }
+    },
+    {
+      "id": "path-Start-to-MySnippetsAdded",
+      "name": "Path from Start to MySnippetsAdded",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "NewSnippet",
+          "action": "ON_CLICK",
+          "label": "New Snippet"
+        },
+        {
+          "from": "NewSnippet",
+          "to": "MySnippetsAdded",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "MySnippetsAdded",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "NewSnippet->MySnippetsAdded"
+      }
+    },
+    {
+      "id": "path-Start-to-UploadComplete",
+      "name": "Path from Start to UploadComplete",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Upload",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        },
+        {
+          "from": "Upload",
+          "to": "UploadComplete",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "UploadComplete",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "Upload->UploadComplete"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAuth-peqr",
+      "name": "Path from Start to HomeAuth",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Upload",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        },
+        {
+          "from": "Upload",
+          "to": "UploadComplete",
+          "action": "ON_CLICK",
+          "label": "Upload"
+        },
+        {
+          "from": "UploadComplete",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAuth",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "UploadComplete->HomeAuth"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAuth-mz09",
+      "name": "Path from Start to HomeAuth",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "MySnippetsEmpty",
+          "action": "ON_CLICK",
+          "label": "My Snippets"
+        },
+        {
+          "from": "MySnippetsEmpty",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAuth",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "MySnippetsEmpty->HomeAuth"
+      }
+    },
+    {
+      "id": "path-Start-to-HomeAuth-9gn2",
+      "name": "Path from Start to HomeAuth",
+      "steps": [
+        {
+          "from": "Start",
+          "to": "HomeAnon",
+          "action": "ON_CLICK",
+          "label": "Agree & Start"
+        },
+        {
+          "from": "HomeAnon",
+          "to": "SignUp",
+          "action": "ON_CLICK",
+          "label": "Sign up"
+        },
+        {
+          "from": "SignUp",
+          "to": "AccountCreated",
+          "action": "ON_CLICK",
+          "label": "Create account"
+        },
+        {
+          "from": "AccountCreated",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from": "HomeAuth",
+          "to": "Profile",
+          "action": "ON_CLICK",
+          "label": "Profile"
+        },
+        {
+          "from": "Profile",
+          "to": "HomeAuth",
+          "action": "ON_CLICK",
+          "label": "Update"
+        }
+      ],
+      "startNode": "Start",
+      "endNode": "HomeAuth",
+      "metadata": {
+        "type": "edge-coverage",
+        "edgeKey": "Profile->HomeAuth"
+      }
+    }
+  ],
+  "pathCoverage": {
+    "nodeCoverage": [],
+    "edgeCoverage": []
+  },
+  "elementsByPage": {
+    "Start": [
+      {
+        "type": "text",
+        "text": "Start Gruyere"
+      },
+      {
+        "type": "text",
+        "text": "Your Gruyere instance id is 540098464359571551718709912995145546587."
+      },
+      {
+        "type": "text",
+        "text": "WARNING: Gruyere is not secure. Do not upload any personal or private data."
+      },
+      {
+        "type": "text",
+        "text": "By using Gruyere you agree to the"
+      },
+      {
+        "type": "link",
+        "text": "terms of service"
+      },
+      {
+        "type": "link",
+        "text": "Agree & Start"
+      }
+    ],
+    "HomeAnon": [
+      {
+        "id": "home-link",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "sign-in-link",
+        "type": "link",
+        "text": "Sign in"
+      },
+      {
+        "id": "sign-up-link",
+        "type": "link",
+        "text": "Sign up"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "Gruyere: Home"
+      },
+      {
+        "id": "refresh-link",
+        "type": "link",
+        "text": "Refresh"
+      },
+      {
+        "id": "snippets-header",
+        "type": "text",
+        "text": "Most recent snippets:"
+      },
+      {
+        "id": "snippet-1-title",
+        "type": "link",
+        "text": "Cheddar"
+      },
+      {
+        "id": "snippet-1-body",
+        "type": "text",
+        "text": "Gruyere is the cheesiest application on the web."
+      },
+      {
+        "id": "snippet-1-tag",
+        "type": "link",
+        "text": "Mac"
+      },
+      {
+        "id": "snippet-1-link-all",
+        "type": "link",
+        "text": "All snippets"
+      },
+      {
+        "id": "snippet-1-link-home",
+        "type": "link",
+        "text": "Homepage"
+      },
+      {
+        "id": "snippet-2-title",
+        "type": "link",
+        "text": "Brie"
+      },
+      {
+        "id": "snippet-2-body",
+        "type": "text",
+        "text": "Brie is the queen of the cheeses!!!"
+      },
+      {
+        "id": "snippet-2-link-all",
+        "type": "link",
+        "text": "All snippets"
+      },
+      {
+        "id": "snippet-2-link-home",
+        "type": "link",
+        "text": "Homepage"
+      }
+    ],
+    "SignUp": [
+      {
+        "id": "home-link",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "sign-in-link",
+        "type": "link",
+        "text": "Sign in"
+      },
+      {
+        "id": "sign-up-link",
+        "type": "link",
+        "text": "Sign up"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "Gruyere: Sign up"
+      },
+      {
+        "id": "form-instruction",
+        "type": "text",
+        "text": "Sign up for a new account."
+      },
+      {
+        "id": "username-input",
+        "type": "input",
+        "label": "User name",
+        "value": "toto"
+      },
+      {
+        "id": "password-input",
+        "type": "input",
+        "label": "Password",
+        "value": "toto"
+      },
+      {
+        "id": "warning-text",
+        "type": "text",
+        "text": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service. Do not upload any personal or private data."
+      },
+      {
+        "id": "create-account-button",
+        "type": "button",
+        "text": "Create account"
+      }
+    ],
+    "AccountCreated": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "Sign in"
+      },
+      {
+        "type": "link",
+        "text": "Sign up"
+      },
+      {
+        "type": "text",
+        "text": "Account created."
+      }
+    ],
+    "HomeAuth": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "type": "text",
+        "text": "Gruyere: Home"
+      },
+      {
+        "type": "link",
+        "text": "Refresh"
+      },
+      {
+        "type": "text",
+        "text": "Most recent snippets:"
+      },
+      {
+        "type": "link",
+        "text": "Brie"
+      },
+      {
+        "type": "text",
+        "text": "Brie is the queen of the cheeses!!!"
+      },
+      {
+        "type": "link",
+        "text": "All snippets"
+      },
+      {
+        "type": "link",
+        "text": "Homepage"
+      },
+      {
+        "type": "link",
+        "text": "Cheddar Mac"
+      },
+      {
+        "type": "text",
+        "text": "Gruyere is the cheesiest application on the web."
+      },
+      {
+        "type": "link",
+        "text": "All snippets"
+      },
+      {
+        "type": "link",
+        "text": "Homepage"
+      }
+    ],
+    "NewSnippet": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "type": "text",
+        "text": "Gruyere: New Snippet"
+      },
+      {
+        "type": "textarea",
+        "label": "Add a new snippet.",
+        "value": "hello snippet",
+        "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+      },
+      {
+        "type": "button",
+        "text": "Submit"
+      }
+    ],
+    "Upload": [
+      {
+        "id": "nav-home",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "nav-my-snippets",
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "id": "nav-new-snippet",
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "id": "nav-upload",
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "id": "nav-user",
+        "type": "link",
+        "text": "toto <toto>"
+      },
+      {
+        "id": "nav-profile",
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "id": "nav-sign-out",
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "Gruyere: Upload"
+      },
+      {
+        "id": "file-input",
+        "type": "input",
+        "label": "Select a file to upload to your account.",
+        "text": "Choose File",
+        "value": "No file chosen"
+      },
+      {
+        "id": "upload-btn",
+        "type": "button",
+        "text": "Upload"
+      }
+    ],
+    "UploadComplete": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "type": "text",
+        "text": "Gruyere: Upload Complete"
+      },
+      {
+        "type": "text",
+        "text": "File uploaded!"
+      },
+      {
+        "type": "text",
+        "text": "File accessible at:"
+      }
+    ],
+    "MySnippetsEmpty": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "type": "text",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "Refresh"
+      },
+      {
+        "type": "text",
+        "text": "No snippets."
+      },
+      {
+        "type": "link",
+        "text": "My site"
+      }
+    ],
+    "MySnippetsAdded": [
+      {
+        "id": "nav-home",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "nav-my-snippets",
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "id": "nav-new-snippet",
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "id": "nav-upload",
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "id": "user-info",
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "id": "nav-profile",
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "id": "nav-sign-out",
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "My Snippets"
+      },
+      {
+        "id": "refresh-link",
+        "type": "link",
+        "text": "Refresh"
+      },
+      {
+        "id": "list-label",
+        "type": "text",
+        "text": "All snippets:"
+      },
+      {
+        "id": "list-item-number",
+        "type": "text",
+        "text": "1"
+      },
+      {
+        "id": "delete-snippet",
+        "type": "link",
+        "text": "[X]"
+      },
+      {
+        "id": "snippet-title",
+        "type": "link",
+        "text": "hello snippet"
+      },
+      {
+        "id": "my-site-link",
+        "type": "link",
+        "text": "My site"
+      }
+    ],
+    "Profile": [
+      {
+        "id": "nav-home",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "nav-my-snippets",
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "id": "nav-new-snippet",
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "id": "nav-upload",
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "id": "user-info",
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "id": "nav-profile",
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "id": "nav-sign-out",
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "Gruyere: Profile"
+      },
+      {
+        "id": "form-heading",
+        "type": "text",
+        "text": "Edit your profile."
+      },
+      {
+        "id": "user-id-value",
+        "type": "text",
+        "label": "User id",
+        "text": "toto"
+      },
+      {
+        "id": "input-user-name",
+        "type": "input",
+        "label": "User name",
+        "value": "toto"
+      },
+      {
+        "id": "input-old-password",
+        "type": "input",
+        "label": "OLD Password",
+        "value": "toto"
+      },
+      {
+        "id": "input-new-password",
+        "type": "input",
+        "label": "NEW Password",
+        "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+      },
+      {
+        "id": "input-icon",
+        "type": "input",
+        "label": "Icon",
+        "hint": "(32x32 image, URL to image location)"
+      },
+      {
+        "id": "input-homepage",
+        "type": "input",
+        "label": "Homepage"
+      },
+      {
+        "id": "input-profile-color",
+        "type": "input",
+        "label": "Profile Color"
+      },
+      {
+        "id": "textarea-private-snippet",
+        "type": "textarea",
+        "label": "Private Snippet"
+      },
+      {
+        "id": "btn-update",
+        "type": "button",
+        "text": "Update"
+      }
+    ]
+  },
+  "extractionResults": [
+    {
+      "elements": [
+        {
+          "type": "text",
+          "text": "Start Gruyere"
+        },
+        {
+          "type": "text",
+          "text": "Your Gruyere instance id is 540098464359571551718709912995145546587."
+        },
+        {
+          "type": "text",
+          "text": "WARNING: Gruyere is not secure. Do not upload any personal or private data."
+        },
+        {
+          "type": "text",
+          "text": "By using Gruyere you agree to the"
+        },
+        {
+          "type": "link",
+          "text": "terms of service"
+        },
+        {
+          "type": "link",
+          "text": "Agree & Start"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "id": "home-link",
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "id": "sign-in-link",
+          "type": "link",
+          "text": "Sign in"
+        },
+        {
+          "id": "sign-up-link",
+          "type": "link",
+          "text": "Sign up"
+        },
+        {
+          "id": "page-title",
+          "type": "text",
+          "text": "Gruyere: Home"
+        },
+        {
+          "id": "refresh-link",
+          "type": "link",
+          "text": "Refresh"
+        },
+        {
+          "id": "snippets-header",
+          "type": "text",
+          "text": "Most recent snippets:"
+        },
+        {
+          "id": "snippet-1-title",
+          "type": "link",
+          "text": "Cheddar"
+        },
+        {
+          "id": "snippet-1-body",
+          "type": "text",
+          "text": "Gruyere is the cheesiest application on the web."
+        },
+        {
+          "id": "snippet-1-tag",
+          "type": "link",
+          "text": "Mac"
+        },
+        {
+          "id": "snippet-1-link-all",
+          "type": "link",
+          "text": "All snippets"
+        },
+        {
+          "id": "snippet-1-link-home",
+          "type": "link",
+          "text": "Homepage"
+        },
+        {
+          "id": "snippet-2-title",
+          "type": "link",
+          "text": "Brie"
+        },
+        {
+          "id": "snippet-2-body",
+          "type": "text",
+          "text": "Brie is the queen of the cheeses!!!"
+        },
+        {
+          "id": "snippet-2-link-all",
+          "type": "link",
+          "text": "All snippets"
+        },
+        {
+          "id": "snippet-2-link-home",
+          "type": "link",
+          "text": "Homepage"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "id": "home-link",
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "id": "sign-in-link",
+          "type": "link",
+          "text": "Sign in"
+        },
+        {
+          "id": "sign-up-link",
+          "type": "link",
+          "text": "Sign up"
+        },
+        {
+          "id": "page-title",
+          "type": "text",
+          "text": "Gruyere: Sign up"
+        },
+        {
+          "id": "form-instruction",
+          "type": "text",
+          "text": "Sign up for a new account."
+        },
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "warning-text",
+          "type": "text",
+          "text": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service. Do not upload any personal or private data."
+        },
+        {
+          "id": "create-account-button",
+          "type": "button",
+          "text": "Create account"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "type": "link",
+          "text": "Sign in"
+        },
+        {
+          "type": "link",
+          "text": "Sign up"
+        },
+        {
+          "type": "text",
+          "text": "Account created."
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "type": "link",
+          "text": "My Snippets"
+        },
+        {
+          "type": "link",
+          "text": "New Snippet"
+        },
+        {
+          "type": "link",
+          "text": "Upload"
+        },
+        {
+          "type": "text",
+          "text": "toto <toto>"
+        },
+        {
+          "type": "link",
+          "text": "Profile"
+        },
+        {
+          "type": "link",
+          "text": "Sign out"
+        },
+        {
+          "type": "text",
+          "text": "Gruyere: Home"
+        },
+        {
+          "type": "link",
+          "text": "Refresh"
+        },
+        {
+          "type": "text",
+          "text": "Most recent snippets:"
+        },
+        {
+          "type": "link",
+          "text": "Brie"
+        },
+        {
+          "type": "text",
+          "text": "Brie is the queen of the cheeses!!!"
+        },
+        {
+          "type": "link",
+          "text": "All snippets"
+        },
+        {
+          "type": "link",
+          "text": "Homepage"
+        },
+        {
+          "type": "link",
+          "text": "Cheddar Mac"
+        },
+        {
+          "type": "text",
+          "text": "Gruyere is the cheesiest application on the web."
+        },
+        {
+          "type": "link",
+          "text": "All snippets"
+        },
+        {
+          "type": "link",
+          "text": "Homepage"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "type": "link",
+          "text": "My Snippets"
+        },
+        {
+          "type": "link",
+          "text": "New Snippet"
+        },
+        {
+          "type": "link",
+          "text": "Upload"
+        },
+        {
+          "type": "text",
+          "text": "toto <toto>"
+        },
+        {
+          "type": "link",
+          "text": "Profile"
+        },
+        {
+          "type": "link",
+          "text": "Sign out"
+        },
+        {
+          "type": "text",
+          "text": "Gruyere: New Snippet"
+        },
+        {
+          "type": "textarea",
+          "label": "Add a new snippet.",
+          "value": "hello snippet",
+          "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+        },
+        {
+          "type": "button",
+          "text": "Submit"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "id": "nav-home",
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "id": "nav-my-snippets",
+          "type": "link",
+          "text": "My Snippets"
+        },
+        {
+          "id": "nav-new-snippet",
+          "type": "link",
+          "text": "New Snippet"
+        },
+        {
+          "id": "nav-upload",
+          "type": "link",
+          "text": "Upload"
+        },
+        {
+          "id": "nav-user",
+          "type": "link",
+          "text": "toto <toto>"
+        },
+        {
+          "id": "nav-profile",
+          "type": "link",
+          "text": "Profile"
+        },
+        {
+          "id": "nav-sign-out",
+          "type": "link",
+          "text": "Sign out"
+        },
+        {
+          "id": "page-title",
+          "type": "text",
+          "text": "Gruyere: Upload"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        },
+        {
+          "id": "upload-btn",
+          "type": "button",
+          "text": "Upload"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "type": "link",
+          "text": "My Snippets"
+        },
+        {
+          "type": "link",
+          "text": "New Snippet"
+        },
+        {
+          "type": "link",
+          "text": "Upload"
+        },
+        {
+          "type": "text",
+          "text": "toto <toto>"
+        },
+        {
+          "type": "link",
+          "text": "Profile"
+        },
+        {
+          "type": "link",
+          "text": "Sign out"
+        },
+        {
+          "type": "text",
+          "text": "Gruyere: Upload Complete"
+        },
+        {
+          "type": "text",
+          "text": "File uploaded!"
+        },
+        {
+          "type": "text",
+          "text": "File accessible at:"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "type": "link",
+          "text": "My Snippets"
+        },
+        {
+          "type": "link",
+          "text": "New Snippet"
+        },
+        {
+          "type": "link",
+          "text": "Upload"
+        },
+        {
+          "type": "text",
+          "text": "toto <toto>"
+        },
+        {
+          "type": "link",
+          "text": "Profile"
+        },
+        {
+          "type": "link",
+          "text": "Sign out"
+        },
+        {
+          "type": "text",
+          "text": "My Snippets"
+        },
+        {
+          "type": "link",
+          "text": "Refresh"
+        },
+        {
+          "type": "text",
+          "text": "No snippets."
+        },
+        {
+          "type": "link",
+          "text": "My site"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "id": "nav-home",
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "id": "nav-my-snippets",
+          "type": "link",
+          "text": "My Snippets"
+        },
+        {
+          "id": "nav-new-snippet",
+          "type": "link",
+          "text": "New Snippet"
+        },
+        {
+          "id": "nav-upload",
+          "type": "link",
+          "text": "Upload"
+        },
+        {
+          "id": "user-info",
+          "type": "text",
+          "text": "toto <toto>"
+        },
+        {
+          "id": "nav-profile",
+          "type": "link",
+          "text": "Profile"
+        },
+        {
+          "id": "nav-sign-out",
+          "type": "link",
+          "text": "Sign out"
+        },
+        {
+          "id": "page-title",
+          "type": "text",
+          "text": "My Snippets"
+        },
+        {
+          "id": "refresh-link",
+          "type": "link",
+          "text": "Refresh"
+        },
+        {
+          "id": "list-label",
+          "type": "text",
+          "text": "All snippets:"
+        },
+        {
+          "id": "list-item-number",
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "id": "delete-snippet",
+          "type": "link",
+          "text": "[X]"
+        },
+        {
+          "id": "snippet-title",
+          "type": "link",
+          "text": "hello snippet"
+        },
+        {
+          "id": "my-site-link",
+          "type": "link",
+          "text": "My site"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "id": "nav-home",
+          "type": "link",
+          "text": "Home"
+        },
+        {
+          "id": "nav-my-snippets",
+          "type": "link",
+          "text": "My Snippets"
+        },
+        {
+          "id": "nav-new-snippet",
+          "type": "link",
+          "text": "New Snippet"
+        },
+        {
+          "id": "nav-upload",
+          "type": "link",
+          "text": "Upload"
+        },
+        {
+          "id": "user-info",
+          "type": "text",
+          "text": "toto <toto>"
+        },
+        {
+          "id": "nav-profile",
+          "type": "link",
+          "text": "Profile"
+        },
+        {
+          "id": "nav-sign-out",
+          "type": "link",
+          "text": "Sign out"
+        },
+        {
+          "id": "page-title",
+          "type": "text",
+          "text": "Gruyere: Profile"
+        },
+        {
+          "id": "form-heading",
+          "type": "text",
+          "text": "Edit your profile."
+        },
+        {
+          "id": "user-id-value",
+          "type": "text",
+          "label": "User id",
+          "text": "toto"
+        },
+        {
+          "id": "input-user-name",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "input-old-password",
+          "type": "input",
+          "label": "OLD Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-new-password",
+          "type": "input",
+          "label": "NEW Password",
+          "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+        },
+        {
+          "id": "input-icon",
+          "type": "input",
+          "label": "Icon",
+          "hint": "(32x32 image, URL to image location)"
+        },
+        {
+          "id": "input-homepage",
+          "type": "input",
+          "label": "Homepage"
+        },
+        {
+          "id": "input-profile-color",
+          "type": "input",
+          "label": "Profile Color"
+        },
+        {
+          "id": "textarea-private-snippet",
+          "type": "textarea",
+          "label": "Private Snippet"
+        },
+        {
+          "id": "btn-update",
+          "type": "button",
+          "text": "Update"
+        }
+      ]
+    }
+  ],
+  "elementLocators": {},
+  "ocrResults": [],
+  "ocrTextByPage": {},
+  "verifiedElementsByPage": {
+    "Start": [
+      {
+        "type": "text",
+        "text": "Start Gruyere"
+      },
+      {
+        "type": "text",
+        "text": "Your Gruyere instance id is 540098464359571551718709912995145546587."
+      },
+      {
+        "type": "text",
+        "text": "WARNING: Gruyere is not secure. Do not upload any personal or private data."
+      },
+      {
+        "type": "text",
+        "text": "By using Gruyere you agree to the"
+      },
+      {
+        "type": "link",
+        "text": "terms of service"
+      },
+      {
+        "type": "link",
+        "text": "Agree & Start"
+      }
+    ],
+    "HomeAnon": [
+      {
+        "id": "home-link",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "sign-in-link",
+        "type": "link",
+        "text": "Sign in"
+      },
+      {
+        "id": "sign-up-link",
+        "type": "link",
+        "text": "Sign up"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "Gruyere: Home"
+      },
+      {
+        "id": "refresh-link",
+        "type": "link",
+        "text": "Refresh"
+      },
+      {
+        "id": "snippets-header",
+        "type": "text",
+        "text": "Most recent snippets:"
+      },
+      {
+        "id": "snippet-1-title",
+        "type": "link",
+        "text": "Cheddar"
+      },
+      {
+        "id": "snippet-1-body",
+        "type": "text",
+        "text": "Gruyere is the cheesiest application on the web."
+      },
+      {
+        "id": "snippet-1-tag",
+        "type": "link",
+        "text": "Mac"
+      },
+      {
+        "id": "snippet-1-link-all",
+        "type": "link",
+        "text": "All snippets"
+      },
+      {
+        "id": "snippet-1-link-home",
+        "type": "link",
+        "text": "Homepage"
+      },
+      {
+        "id": "snippet-2-title",
+        "type": "link",
+        "text": "Brie"
+      },
+      {
+        "id": "snippet-2-body",
+        "type": "text",
+        "text": "Brie is the queen of the cheeses!!!"
+      },
+      {
+        "id": "snippet-2-link-all",
+        "type": "link",
+        "text": "All snippets"
+      },
+      {
+        "id": "snippet-2-link-home",
+        "type": "link",
+        "text": "Homepage"
+      }
+    ],
+    "SignUp": [
+      {
+        "id": "home-link",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "sign-in-link",
+        "type": "link",
+        "text": "Sign in"
+      },
+      {
+        "id": "sign-up-link",
+        "type": "link",
+        "text": "Sign up"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "Gruyere: Sign up"
+      },
+      {
+        "id": "form-instruction",
+        "type": "text",
+        "text": "Sign up for a new account."
+      },
+      {
+        "id": "username-input",
+        "type": "input",
+        "label": "User name",
+        "value": "toto"
+      },
+      {
+        "id": "password-input",
+        "type": "input",
+        "label": "Password",
+        "value": "toto"
+      },
+      {
+        "id": "warning-text",
+        "type": "text",
+        "text": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service. Do not upload any personal or private data."
+      },
+      {
+        "id": "create-account-button",
+        "type": "button",
+        "text": "Create account"
+      }
+    ],
+    "AccountCreated": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "Sign in"
+      },
+      {
+        "type": "link",
+        "text": "Sign up"
+      },
+      {
+        "type": "text",
+        "text": "Account created."
+      }
+    ],
+    "HomeAuth": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "type": "text",
+        "text": "Gruyere: Home"
+      },
+      {
+        "type": "link",
+        "text": "Refresh"
+      },
+      {
+        "type": "text",
+        "text": "Most recent snippets:"
+      },
+      {
+        "type": "link",
+        "text": "Brie"
+      },
+      {
+        "type": "text",
+        "text": "Brie is the queen of the cheeses!!!"
+      },
+      {
+        "type": "link",
+        "text": "All snippets"
+      },
+      {
+        "type": "link",
+        "text": "Homepage"
+      },
+      {
+        "type": "link",
+        "text": "Cheddar Mac"
+      },
+      {
+        "type": "text",
+        "text": "Gruyere is the cheesiest application on the web."
+      },
+      {
+        "type": "link",
+        "text": "All snippets"
+      },
+      {
+        "type": "link",
+        "text": "Homepage"
+      }
+    ],
+    "NewSnippet": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "type": "text",
+        "text": "Gruyere: New Snippet"
+      },
+      {
+        "type": "textarea",
+        "label": "Add a new snippet.",
+        "value": "hello snippet",
+        "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+      },
+      {
+        "type": "button",
+        "text": "Submit"
+      }
+    ],
+    "Upload": [
+      {
+        "id": "nav-home",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "nav-my-snippets",
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "id": "nav-new-snippet",
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "id": "nav-upload",
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "id": "nav-user",
+        "type": "link",
+        "text": "toto <toto>"
+      },
+      {
+        "id": "nav-profile",
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "id": "nav-sign-out",
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "Gruyere: Upload"
+      },
+      {
+        "id": "file-input",
+        "type": "input",
+        "label": "Select a file to upload to your account.",
+        "text": "Choose File",
+        "value": "No file chosen"
+      },
+      {
+        "id": "upload-btn",
+        "type": "button",
+        "text": "Upload"
+      }
+    ],
+    "UploadComplete": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "type": "text",
+        "text": "Gruyere: Upload Complete"
+      },
+      {
+        "type": "text",
+        "text": "File uploaded!"
+      },
+      {
+        "type": "text",
+        "text": "File accessible at:"
+      }
+    ],
+    "MySnippetsEmpty": [
+      {
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "type": "text",
+        "text": "My Snippets"
+      },
+      {
+        "type": "link",
+        "text": "Refresh"
+      },
+      {
+        "type": "text",
+        "text": "No snippets."
+      },
+      {
+        "type": "link",
+        "text": "My site"
+      }
+    ],
+    "MySnippetsAdded": [
+      {
+        "id": "nav-home",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "nav-my-snippets",
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "id": "nav-new-snippet",
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "id": "nav-upload",
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "id": "user-info",
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "id": "nav-profile",
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "id": "nav-sign-out",
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "My Snippets"
+      },
+      {
+        "id": "refresh-link",
+        "type": "link",
+        "text": "Refresh"
+      },
+      {
+        "id": "list-label",
+        "type": "text",
+        "text": "All snippets:"
+      },
+      {
+        "id": "list-item-number",
+        "type": "text",
+        "text": "1"
+      },
+      {
+        "id": "delete-snippet",
+        "type": "link",
+        "text": "[X]"
+      },
+      {
+        "id": "snippet-title",
+        "type": "link",
+        "text": "hello snippet"
+      },
+      {
+        "id": "my-site-link",
+        "type": "link",
+        "text": "My site"
+      }
+    ],
+    "Profile": [
+      {
+        "id": "nav-home",
+        "type": "link",
+        "text": "Home"
+      },
+      {
+        "id": "nav-my-snippets",
+        "type": "link",
+        "text": "My Snippets"
+      },
+      {
+        "id": "nav-new-snippet",
+        "type": "link",
+        "text": "New Snippet"
+      },
+      {
+        "id": "nav-upload",
+        "type": "link",
+        "text": "Upload"
+      },
+      {
+        "id": "user-info",
+        "type": "text",
+        "text": "toto <toto>"
+      },
+      {
+        "id": "nav-profile",
+        "type": "link",
+        "text": "Profile"
+      },
+      {
+        "id": "nav-sign-out",
+        "type": "link",
+        "text": "Sign out"
+      },
+      {
+        "id": "page-title",
+        "type": "text",
+        "text": "Gruyere: Profile"
+      },
+      {
+        "id": "form-heading",
+        "type": "text",
+        "text": "Edit your profile."
+      },
+      {
+        "id": "user-id-value",
+        "type": "text",
+        "label": "User id",
+        "text": "toto"
+      },
+      {
+        "id": "input-user-name",
+        "type": "input",
+        "label": "User name",
+        "value": "toto"
+      },
+      {
+        "id": "input-old-password",
+        "type": "input",
+        "label": "OLD Password",
+        "value": "toto"
+      },
+      {
+        "id": "input-new-password",
+        "type": "input",
+        "label": "NEW Password",
+        "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+      },
+      {
+        "id": "input-icon",
+        "type": "input",
+        "label": "Icon",
+        "hint": "(32x32 image, URL to image location)"
+      },
+      {
+        "id": "input-homepage",
+        "type": "input",
+        "label": "Homepage"
+      },
+      {
+        "id": "input-profile-color",
+        "type": "input",
+        "label": "Profile Color"
+      },
+      {
+        "id": "textarea-private-snippet",
+        "type": "textarea",
+        "label": "Private Snippet"
+      },
+      {
+        "id": "btn-update",
+        "type": "button",
+        "text": "Update"
+      }
+    ]
+  },
+  "verificationResults": [
+    {
+      "page": "Start",
+      "pageId": "Start",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "HomeAnon",
+      "pageId": "HomeAnon",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "SignUp",
+      "pageId": "SignUp",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "AccountCreated",
+      "pageId": "AccountCreated",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "HomeAuth",
+      "pageId": "HomeAuth",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "NewSnippet",
+      "pageId": "NewSnippet",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "Upload",
+      "pageId": "Upload",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "UploadComplete",
+      "pageId": "UploadComplete",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "MySnippetsEmpty",
+      "pageId": "MySnippetsEmpty",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "MySnippetsAdded",
+      "pageId": "MySnippetsAdded",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    },
+    {
+      "page": "Profile",
+      "pageId": "Profile",
+      "confidence": "high",
+      "issues": [],
+      "navigationAligned": true,
+      "ocrAligned": true
+    }
+  ],
+  "assertionsByPage": {
+    "Start": [
+      "not text(\"Home\")"
+    ],
+    "HomeAnon": [
+      "text(\"Cheddar\")"
+    ],
+    "SignUp": [
+      "text(\"Gruyere: Sign up\")"
+    ],
+    "AccountCreated": [
+      "text(\"Account created.\")"
+    ],
+    "HomeAuth": [
+      "text(\"Cheddar Mac\")"
+    ],
+    "NewSnippet": [
+      "text(\"Gruyere: New Snippet\")"
+    ],
+    "Upload": [
+      "text(\"Gruyere: Upload\")"
+    ],
+    "UploadComplete": [
+      "text(\"Gruyere: Upload Complete\")"
+    ],
+    "MySnippetsEmpty": [
+      "text(\"No snippets.\")"
+    ],
+    "MySnippetsAdded": [
+      "text(\"All snippets:\")"
+    ],
+    "Profile": [
+      "text(\"Gruyere: Profile\")"
+    ]
+  },
+  "assertionWeights": {
+    "text(\"Start Gruyere\")": 1,
+    "text(\"Your Gruyere instance id is 540098464359571551718709912995145546587.\")": 1,
+    "text(\"WARNING: Gruyere is not secure. Do not upload any personal or private data.\")": 1,
+    "text(\"By using Gruyere you agree to the\")": 1,
+    "text(\"terms of service\")": 1,
+    "text(\"Agree & Start\")": 1,
+    "text(\"Home\")": 10,
+    "text(\"Sign in\")": 3,
+    "text(\"Sign up\")": 3,
+    "text(\"Gruyere: Home\")": 2,
+    "text(\"Refresh\")": 4,
+    "text(\"Most recent snippets:\")": 2,
+    "text(\"Cheddar\")": 1,
+    "text(\"Gruyere is the cheesiest application on the web.\")": 2,
+    "text(\"Mac\")": 1,
+    "text(\"All snippets\")": 2,
+    "text(\"Homepage\")": 3,
+    "text(\"Brie\")": 2,
+    "text(\"Brie is the queen of the cheeses!!!\")": 2,
+    "text(\"Gruyere: Sign up\")": 1,
+    "text(\"Sign up for a new account.\")": 1,
+    "text(\"User name\")": 2,
+    "text(\"Password\")": 1,
+    "text(\"WARNING: Gruyere is not secure. Do not use a password that you use for any real service. Do not upload any personal or private data.\")": 1,
+    "text(\"Create account\")": 1,
+    "text(\"Account created.\")": 1,
+    "text(\"My Snippets\")": 7,
+    "text(\"New Snippet\")": 7,
+    "text(\"Upload\")": 7,
+    "text(\"toto <toto>\")": 7,
+    "text(\"Profile\")": 7,
+    "text(\"Sign out\")": 7,
+    "text(\"Cheddar Mac\")": 1,
+    "text(\"Gruyere: New Snippet\")": 1,
+    "text(\"Add a new snippet.\")": 1,
+    "text(\"Submit\")": 1,
+    "text(\"Gruyere: Upload\")": 1,
+    "text(\"Select a file to upload to your account.\")": 1,
+    "text(\"Gruyere: Upload Complete\")": 1,
+    "text(\"File uploaded!\")": 1,
+    "text(\"File accessible at:\")": 1,
+    "text(\"No snippets.\")": 1,
+    "text(\"My site\")": 2,
+    "text(\"All snippets:\")": 1,
+    "text(\"1\")": 1,
+    "text(\"[X]\")": 1,
+    "text(\"hello snippet\")": 1,
+    "text(\"Gruyere: Profile\")": 1,
+    "text(\"Edit your profile.\")": 1,
+    "text(\"toto\")": 1,
+    "text(\"OLD Password\")": 1,
+    "text(\"NEW Password\")": 1,
+    "text(\"Icon\")": 1,
+    "text(\"Profile Color\")": 1,
+    "text(\"Private Snippet\")": 1,
+    "text(\"Update\")": 1
+  },
+  "nlTestsByPath": {
+    "path-Start-to-HomeAnon": {
+      "id": "test-path-Start-to-HomeAnon",
+      "name": "start - agree & start - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon",
+      "metadata": {
+        "pathLength": 1,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": []
+    },
+    "path-Start-to-SignUp": {
+      "id": "test-path-Start-to-SignUp",
+      "name": "start - agree & start - home anon - sign up - sign up",
+      "description": "Test case covering path: Path from Start to SignUp",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Assert that 'Gruyere: Sign up' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Sign up\")"
+      ],
+      "pathId": "path-Start-to-SignUp",
+      "metadata": {
+        "pathLength": 2,
+        "startNode": "Start",
+        "endNode": "SignUp"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    "path-Start-to-AccountCreated": {
+      "id": "test-path-Start-to-AccountCreated",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created",
+      "description": "Test case covering path: Path from Start to AccountCreated",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Assert that 'Account created.' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Account created.\")"
+      ],
+      "pathId": "path-Start-to-AccountCreated",
+      "metadata": {
+        "pathLength": 3,
+        "startNode": "Start",
+        "endNode": "AccountCreated"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    "path-Start-to-HomeAnon-rt28": {
+      "id": "test-path-Start-to-HomeAnon-rt28",
+      "name": "start - agree & start - home anon - sign up - sign up - home - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon-rt28",
+      "metadata": {
+        "pathLength": 3,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    "path-Start-to-HomeAuth": {
+      "id": "test-path-Start-to-HomeAuth",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth",
+      "metadata": {
+        "pathLength": 4,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    "path-Start-to-HomeAnon-cvhm": {
+      "id": "test-path-Start-to-HomeAnon-cvhm",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - sign out - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Sign out'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon-cvhm",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    "path-Start-to-NewSnippet": {
+      "id": "test-path-Start-to-NewSnippet",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet",
+      "description": "Test case covering path: Path from Start to NewSnippet",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'New Snippet'",
+        "Type in <Add a new snippet.> in the field 'Add a new snippet.'",
+        "Assert that 'Gruyere: New Snippet' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: New Snippet\")"
+      ],
+      "pathId": "path-Start-to-NewSnippet",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "NewSnippet"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "type": "textarea",
+          "label": "Add a new snippet.",
+          "value": "hello snippet",
+          "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+        }
+      ]
+    },
+    "path-Start-to-Upload": {
+      "id": "test-path-Start-to-Upload",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload",
+      "description": "Test case covering path: Path from Start to Upload",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Assert that 'Gruyere: Upload' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Upload\")"
+      ],
+      "pathId": "path-Start-to-Upload",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "Upload"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    },
+    "path-Start-to-MySnippetsEmpty": {
+      "id": "test-path-Start-to-MySnippetsEmpty",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty",
+      "description": "Test case covering path: Path from Start to MySnippetsEmpty",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'My Snippets'",
+        "Assert that 'No snippets.' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"No snippets.\")"
+      ],
+      "pathId": "path-Start-to-MySnippetsEmpty",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "MySnippetsEmpty"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    "path-Start-to-Profile": {
+      "id": "test-path-Start-to-Profile",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile",
+      "description": "Test case covering path: Path from Start to Profile",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Profile'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <OLD Password> in the field 'OLD Password'",
+        "Type in <NEW Password> in the field 'NEW Password'",
+        "Type in <Icon> in the field 'Icon'",
+        "Type in <Homepage> in the field 'Homepage'",
+        "Type in <Profile Color> in the field 'Profile Color'",
+        "Type in <Private Snippet> in the field 'Private Snippet'",
+        "Assert that 'Gruyere: Profile' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Profile\")"
+      ],
+      "pathId": "path-Start-to-Profile",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "Profile"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-user-name",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "input-old-password",
+          "type": "input",
+          "label": "OLD Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-new-password",
+          "type": "input",
+          "label": "NEW Password",
+          "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+        },
+        {
+          "id": "input-icon",
+          "type": "input",
+          "label": "Icon",
+          "hint": "(32x32 image, URL to image location)"
+        },
+        {
+          "id": "input-homepage",
+          "type": "input",
+          "label": "Homepage"
+        },
+        {
+          "id": "input-profile-color",
+          "type": "input",
+          "label": "Profile Color"
+        },
+        {
+          "id": "textarea-private-snippet",
+          "type": "textarea",
+          "label": "Private Snippet"
+        }
+      ]
+    },
+    "path-Start-to-MySnippetsAdded": {
+      "id": "test-path-Start-to-MySnippetsAdded",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet - submit - my snippets added",
+      "description": "Test case covering path: Path from Start to MySnippetsAdded",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'New Snippet'",
+        "Type in <Add a new snippet.> in the field 'Add a new snippet.'",
+        "Click on 'Submit'",
+        "Assert that 'All snippets:' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"All snippets:\")"
+      ],
+      "pathId": "path-Start-to-MySnippetsAdded",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "MySnippetsAdded"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "type": "textarea",
+          "label": "Add a new snippet.",
+          "value": "hello snippet",
+          "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+        }
+      ]
+    },
+    "path-Start-to-UploadComplete": {
+      "id": "test-path-Start-to-UploadComplete",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload - upload - upload complete",
+      "description": "Test case covering path: Path from Start to UploadComplete",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Click on 'Upload'",
+        "Assert that 'Gruyere: Upload Complete' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Upload Complete\")"
+      ],
+      "pathId": "path-Start-to-UploadComplete",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "UploadComplete"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    },
+    "path-Start-to-HomeAuth-peqr": {
+      "id": "test-path-Start-to-HomeAuth-peqr",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload - upload - upload complete - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Click on 'Upload'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-peqr",
+      "metadata": {
+        "pathLength": 7,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    },
+    "path-Start-to-HomeAuth-mz09": {
+      "id": "test-path-Start-to-HomeAuth-mz09",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'My Snippets'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-mz09",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    "path-Start-to-HomeAuth-9gn2": {
+      "id": "test-path-Start-to-HomeAuth-9gn2",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile - update - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Profile'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <OLD Password> in the field 'OLD Password'",
+        "Type in <NEW Password> in the field 'NEW Password'",
+        "Type in <Icon> in the field 'Icon'",
+        "Type in <Homepage> in the field 'Homepage'",
+        "Type in <Profile Color> in the field 'Profile Color'",
+        "Type in <Private Snippet> in the field 'Private Snippet'",
+        "Click on 'Update'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-9gn2",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-user-name",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "input-old-password",
+          "type": "input",
+          "label": "OLD Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-new-password",
+          "type": "input",
+          "label": "NEW Password",
+          "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+        },
+        {
+          "id": "input-icon",
+          "type": "input",
+          "label": "Icon",
+          "hint": "(32x32 image, URL to image location)"
+        },
+        {
+          "id": "input-homepage",
+          "type": "input",
+          "label": "Homepage"
+        },
+        {
+          "id": "input-profile-color",
+          "type": "input",
+          "label": "Profile Color"
+        },
+        {
+          "id": "textarea-private-snippet",
+          "type": "textarea",
+          "label": "Private Snippet"
+        }
+      ]
+    }
+  },
+  "nlTestCases": [
+    {
+      "id": "test-path-Start-to-HomeAnon",
+      "name": "start - agree & start - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon",
+      "metadata": {
+        "pathLength": 1,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": []
+    },
+    {
+      "id": "test-path-Start-to-SignUp",
+      "name": "start - agree & start - home anon - sign up - sign up",
+      "description": "Test case covering path: Path from Start to SignUp",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Assert that 'Gruyere: Sign up' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Sign up\")"
+      ],
+      "pathId": "path-Start-to-SignUp",
+      "metadata": {
+        "pathLength": 2,
+        "startNode": "Start",
+        "endNode": "SignUp"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-AccountCreated",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created",
+      "description": "Test case covering path: Path from Start to AccountCreated",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Assert that 'Account created.' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Account created.\")"
+      ],
+      "pathId": "path-Start-to-AccountCreated",
+      "metadata": {
+        "pathLength": 3,
+        "startNode": "Start",
+        "endNode": "AccountCreated"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAnon-rt28",
+      "name": "start - agree & start - home anon - sign up - sign up - home - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon-rt28",
+      "metadata": {
+        "pathLength": 3,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAuth",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth",
+      "metadata": {
+        "pathLength": 4,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAnon-cvhm",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - sign out - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Sign out'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon-cvhm",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-NewSnippet",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet",
+      "description": "Test case covering path: Path from Start to NewSnippet",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'New Snippet'",
+        "Type in <Add a new snippet.> in the field 'Add a new snippet.'",
+        "Assert that 'Gruyere: New Snippet' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: New Snippet\")"
+      ],
+      "pathId": "path-Start-to-NewSnippet",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "NewSnippet"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "type": "textarea",
+          "label": "Add a new snippet.",
+          "value": "hello snippet",
+          "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-Upload",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload",
+      "description": "Test case covering path: Path from Start to Upload",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Assert that 'Gruyere: Upload' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Upload\")"
+      ],
+      "pathId": "path-Start-to-Upload",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "Upload"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-MySnippetsEmpty",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty",
+      "description": "Test case covering path: Path from Start to MySnippetsEmpty",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'My Snippets'",
+        "Assert that 'No snippets.' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"No snippets.\")"
+      ],
+      "pathId": "path-Start-to-MySnippetsEmpty",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "MySnippetsEmpty"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-Profile",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile",
+      "description": "Test case covering path: Path from Start to Profile",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Profile'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <OLD Password> in the field 'OLD Password'",
+        "Type in <NEW Password> in the field 'NEW Password'",
+        "Type in <Icon> in the field 'Icon'",
+        "Type in <Homepage> in the field 'Homepage'",
+        "Type in <Profile Color> in the field 'Profile Color'",
+        "Type in <Private Snippet> in the field 'Private Snippet'",
+        "Assert that 'Gruyere: Profile' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Profile\")"
+      ],
+      "pathId": "path-Start-to-Profile",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "Profile"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-user-name",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "input-old-password",
+          "type": "input",
+          "label": "OLD Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-new-password",
+          "type": "input",
+          "label": "NEW Password",
+          "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+        },
+        {
+          "id": "input-icon",
+          "type": "input",
+          "label": "Icon",
+          "hint": "(32x32 image, URL to image location)"
+        },
+        {
+          "id": "input-homepage",
+          "type": "input",
+          "label": "Homepage"
+        },
+        {
+          "id": "input-profile-color",
+          "type": "input",
+          "label": "Profile Color"
+        },
+        {
+          "id": "textarea-private-snippet",
+          "type": "textarea",
+          "label": "Private Snippet"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-MySnippetsAdded",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet - submit - my snippets added",
+      "description": "Test case covering path: Path from Start to MySnippetsAdded",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'New Snippet'",
+        "Type in <Add a new snippet.> in the field 'Add a new snippet.'",
+        "Click on 'Submit'",
+        "Assert that 'All snippets:' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"All snippets:\")"
+      ],
+      "pathId": "path-Start-to-MySnippetsAdded",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "MySnippetsAdded"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "type": "textarea",
+          "label": "Add a new snippet.",
+          "value": "hello snippet",
+          "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-UploadComplete",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload - upload - upload complete",
+      "description": "Test case covering path: Path from Start to UploadComplete",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Click on 'Upload'",
+        "Assert that 'Gruyere: Upload Complete' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Upload Complete\")"
+      ],
+      "pathId": "path-Start-to-UploadComplete",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "UploadComplete"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAuth-peqr",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload - upload - upload complete - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Click on 'Upload'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-peqr",
+      "metadata": {
+        "pathLength": 7,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAuth-mz09",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'My Snippets'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-mz09",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAuth-9gn2",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile - update - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Profile'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <OLD Password> in the field 'OLD Password'",
+        "Type in <NEW Password> in the field 'NEW Password'",
+        "Type in <Icon> in the field 'Icon'",
+        "Type in <Homepage> in the field 'Homepage'",
+        "Type in <Profile Color> in the field 'Profile Color'",
+        "Type in <Private Snippet> in the field 'Private Snippet'",
+        "Click on 'Update'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-9gn2",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-user-name",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "input-old-password",
+          "type": "input",
+          "label": "OLD Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-new-password",
+          "type": "input",
+          "label": "NEW Password",
+          "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+        },
+        {
+          "id": "input-icon",
+          "type": "input",
+          "label": "Icon",
+          "hint": "(32x32 image, URL to image location)"
+        },
+        {
+          "id": "input-homepage",
+          "type": "input",
+          "label": "Homepage"
+        },
+        {
+          "id": "input-profile-color",
+          "type": "input",
+          "label": "Profile Color"
+        },
+        {
+          "id": "textarea-private-snippet",
+          "type": "textarea",
+          "label": "Private Snippet"
+        }
+      ]
+    }
+  ],
+  "validTestCases": [
+    {
+      "id": "test-path-Start-to-HomeAnon",
+      "name": "start - agree & start - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon",
+      "metadata": {
+        "pathLength": 1,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": []
+    },
+    {
+      "id": "test-path-Start-to-AccountCreated",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created",
+      "description": "Test case covering path: Path from Start to AccountCreated",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Assert that 'Account created.' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Account created.\")"
+      ],
+      "pathId": "path-Start-to-AccountCreated",
+      "metadata": {
+        "pathLength": 3,
+        "startNode": "Start",
+        "endNode": "AccountCreated"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAnon-rt28",
+      "name": "start - agree & start - home anon - sign up - sign up - home - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon-rt28",
+      "metadata": {
+        "pathLength": 3,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAuth",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth",
+      "metadata": {
+        "pathLength": 4,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAnon-cvhm",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - sign out - home anon",
+      "description": "Test case covering path: Path from Start to HomeAnon",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Sign out'",
+        "Assert that 'Cheddar' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar\")"
+      ],
+      "pathId": "path-Start-to-HomeAnon-cvhm",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "HomeAnon"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-NewSnippet",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet",
+      "description": "Test case covering path: Path from Start to NewSnippet",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'New Snippet'",
+        "Type in <Add a new snippet.> in the field 'Add a new snippet.'",
+        "Assert that 'Gruyere: New Snippet' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: New Snippet\")"
+      ],
+      "pathId": "path-Start-to-NewSnippet",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "NewSnippet"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "type": "textarea",
+          "label": "Add a new snippet.",
+          "value": "hello snippet",
+          "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-MySnippetsEmpty",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty",
+      "description": "Test case covering path: Path from Start to MySnippetsEmpty",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'My Snippets'",
+        "Assert that 'No snippets.' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"No snippets.\")"
+      ],
+      "pathId": "path-Start-to-MySnippetsEmpty",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "MySnippetsEmpty"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-Profile",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile",
+      "description": "Test case covering path: Path from Start to Profile",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Profile'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <OLD Password> in the field 'OLD Password'",
+        "Type in <NEW Password> in the field 'NEW Password'",
+        "Type in <Icon> in the field 'Icon'",
+        "Type in <Homepage> in the field 'Homepage'",
+        "Type in <Profile Color> in the field 'Profile Color'",
+        "Type in <Private Snippet> in the field 'Private Snippet'",
+        "Assert that 'Gruyere: Profile' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Profile\")"
+      ],
+      "pathId": "path-Start-to-Profile",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "Profile"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-user-name",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "input-old-password",
+          "type": "input",
+          "label": "OLD Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-new-password",
+          "type": "input",
+          "label": "NEW Password",
+          "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+        },
+        {
+          "id": "input-icon",
+          "type": "input",
+          "label": "Icon",
+          "hint": "(32x32 image, URL to image location)"
+        },
+        {
+          "id": "input-homepage",
+          "type": "input",
+          "label": "Homepage"
+        },
+        {
+          "id": "input-profile-color",
+          "type": "input",
+          "label": "Profile Color"
+        },
+        {
+          "id": "textarea-private-snippet",
+          "type": "textarea",
+          "label": "Private Snippet"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-MySnippetsAdded",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet - submit - my snippets added",
+      "description": "Test case covering path: Path from Start to MySnippetsAdded",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'New Snippet'",
+        "Type in <Add a new snippet.> in the field 'Add a new snippet.'",
+        "Click on 'Submit'",
+        "Assert that 'All snippets:' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"All snippets:\")"
+      ],
+      "pathId": "path-Start-to-MySnippetsAdded",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "MySnippetsAdded"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "type": "textarea",
+          "label": "Add a new snippet.",
+          "value": "hello snippet",
+          "hint": "Limited HTML is now supported in snippets (e.g., <b>, <i>, etc.)!"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAuth-mz09",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'My Snippets'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-mz09",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAuth-9gn2",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile - update - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Profile'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <OLD Password> in the field 'OLD Password'",
+        "Type in <NEW Password> in the field 'NEW Password'",
+        "Type in <Icon> in the field 'Icon'",
+        "Type in <Homepage> in the field 'Homepage'",
+        "Type in <Profile Color> in the field 'Profile Color'",
+        "Type in <Private Snippet> in the field 'Private Snippet'",
+        "Click on 'Update'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-9gn2",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-user-name",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "input-old-password",
+          "type": "input",
+          "label": "OLD Password",
+          "value": "toto"
+        },
+        {
+          "id": "input-new-password",
+          "type": "input",
+          "label": "NEW Password",
+          "hint": "WARNING: Gruyere is not secure. Do not use a password that you use for any real service."
+        },
+        {
+          "id": "input-icon",
+          "type": "input",
+          "label": "Icon",
+          "hint": "(32x32 image, URL to image location)"
+        },
+        {
+          "id": "input-homepage",
+          "type": "input",
+          "label": "Homepage"
+        },
+        {
+          "id": "input-profile-color",
+          "type": "input",
+          "label": "Profile Color"
+        },
+        {
+          "id": "textarea-private-snippet",
+          "type": "textarea",
+          "label": "Private Snippet"
+        }
+      ]
+    }
+  ],
+  "invalidTestCases": [
+    {
+      "id": "test-path-Start-to-SignUp",
+      "name": "start - agree & start - home anon - sign up - sign up",
+      "description": "Test case covering path: Path from Start to SignUp",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Assert that 'Gruyere: Sign up' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Sign up\")"
+      ],
+      "pathId": "path-Start-to-SignUp",
+      "metadata": {
+        "pathLength": 2,
+        "startNode": "Start",
+        "endNode": "SignUp"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-Upload",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload",
+      "description": "Test case covering path: Path from Start to Upload",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Assert that 'Gruyere: Upload' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Upload\")"
+      ],
+      "pathId": "path-Start-to-Upload",
+      "metadata": {
+        "pathLength": 5,
+        "startNode": "Start",
+        "endNode": "Upload"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-UploadComplete",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload - upload - upload complete",
+      "description": "Test case covering path: Path from Start to UploadComplete",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Click on 'Upload'",
+        "Assert that 'Gruyere: Upload Complete' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Gruyere: Upload Complete\")"
+      ],
+      "pathId": "path-Start-to-UploadComplete",
+      "metadata": {
+        "pathLength": 6,
+        "startNode": "Start",
+        "endNode": "UploadComplete"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    },
+    {
+      "id": "test-path-Start-to-HomeAuth-peqr",
+      "name": "start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - upload - upload - upload - upload complete - home - home auth",
+      "description": "Test case covering path: Path from Start to HomeAuth",
+      "actions": [
+        "Open the website 'https://google-gruyere.appspot.com/start'",
+        "Click on 'Agree & Start'",
+        "Click on 'Sign up'",
+        "Type in <User name> in the field 'User name'",
+        "Type in <Password> in the field 'Password'",
+        "Click on 'Create account'",
+        "Click on 'Home'",
+        "Click on 'Upload'",
+        "Type in <Select a file to upload to your account.> in the field 'Select a file to upload to your account.'",
+        "Click on 'Upload'",
+        "Click on 'Home'",
+        "Assert that 'Cheddar Mac' is  displayed on this page"
+      ],
+      "assertions": [
+        "text(\"Cheddar Mac\")"
+      ],
+      "pathId": "path-Start-to-HomeAuth-peqr",
+      "metadata": {
+        "pathLength": 7,
+        "startNode": "Start",
+        "endNode": "HomeAuth"
+      },
+      "interactiveElements": [
+        {
+          "id": "username-input",
+          "type": "input",
+          "label": "User name",
+          "value": "toto"
+        },
+        {
+          "id": "password-input",
+          "type": "input",
+          "label": "Password",
+          "value": "toto"
+        },
+        {
+          "id": "file-input",
+          "type": "input",
+          "label": "Select a file to upload to your account.",
+          "text": "Choose File",
+          "value": "No file chosen"
+        }
+      ]
+    }
+  ],
+  "consistencyReports": {
+    "test-path-Start-to-HomeAnon": {
+      "pathId": "path-Start-to-HomeAnon",
+      "testCaseId": "test-path-Start-to-HomeAnon",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-SignUp": {
+      "pathId": "path-Start-to-SignUp",
+      "testCaseId": "test-path-Start-to-SignUp",
+      "valid": false,
+      "confidence": "high",
+      "issues": [
+        "The test case ends after filling the 'User name' and 'Password' fields without clicking the 'Create account' button, leaving the sign-up flow logically incomplete."
+      ]
+    },
+    "test-path-Start-to-AccountCreated": {
+      "pathId": "path-Start-to-AccountCreated",
+      "testCaseId": "test-path-Start-to-AccountCreated",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-HomeAnon-rt28": {
+      "pathId": "path-Start-to-HomeAnon-rt28",
+      "testCaseId": "test-path-Start-to-HomeAnon-rt28",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-HomeAuth": {
+      "pathId": "path-Start-to-HomeAuth",
+      "testCaseId": "test-path-Start-to-HomeAuth",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-HomeAnon-cvhm": {
+      "pathId": "path-Start-to-HomeAnon-cvhm",
+      "testCaseId": "test-path-Start-to-HomeAnon-cvhm",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-NewSnippet": {
+      "pathId": "path-Start-to-NewSnippet",
+      "testCaseId": "test-path-Start-to-NewSnippet",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-Upload": {
+      "pathId": "path-Start-to-Upload",
+      "testCaseId": "test-path-Start-to-Upload",
+      "valid": false,
+      "confidence": "high",
+      "issues": [
+        "Action 9 attempts to type text into a file input element, which violates action compatibility rules. File inputs require file selection/upload actions, not text entry.",
+        "The input value 'No file chosen' is default UI placeholder text, not a valid file path or semantically correct data.",
+        "The test case is incomplete: it lacks a valid file selection step and does not trigger the final 'Upload' button on the Upload page, leaving the flow unfinished."
+      ]
+    },
+    "test-path-Start-to-MySnippetsEmpty": {
+      "pathId": "path-Start-to-MySnippetsEmpty",
+      "testCaseId": "test-path-Start-to-MySnippetsEmpty",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-Profile": {
+      "pathId": "path-Start-to-Profile",
+      "testCaseId": "test-path-Start-to-Profile",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-MySnippetsAdded": {
+      "pathId": "path-Start-to-MySnippetsAdded",
+      "testCaseId": "test-path-Start-to-MySnippetsAdded",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-UploadComplete": {
+      "pathId": "path-Start-to-UploadComplete",
+      "testCaseId": "test-path-Start-to-UploadComplete",
+      "valid": false,
+      "confidence": "high",
+      "issues": [
+        "Action 9 uses a 'Type' action on a file input element. File inputs require a file selection or upload action, not text input.",
+        "The input value 'No file chosen' is semantically incorrect as it copies the default UI placeholder text instead of providing a valid file path or selection.",
+        "The test case omits the mandatory intermediate step of actually selecting a file on the Upload page before triggering the submission button."
+      ]
+    },
+    "test-path-Start-to-HomeAuth-peqr": {
+      "pathId": "path-Start-to-HomeAuth-peqr",
+      "testCaseId": "test-path-Start-to-HomeAuth-peqr",
+      "valid": false,
+      "confidence": "high",
+      "issues": [
+        "Step 9 attempts to type text into a file input field ('Select a file to upload to your account.'), which violates action compatibility rules. File inputs require a file selection or upload action, not text entry.",
+        "Missing required intermediate action: The test case does not include a valid file selection or upload step before triggering the 'Upload' button, violating the flow coherence rule that a file must be selected before upload.",
+        "Typing 'No file chosen' (default placeholder text) into a file field is semantically incorrect and technically impossible in standard web automation."
+      ]
+    },
+    "test-path-Start-to-HomeAuth-mz09": {
+      "pathId": "path-Start-to-HomeAuth-mz09",
+      "testCaseId": "test-path-Start-to-HomeAuth-mz09",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    },
+    "test-path-Start-to-HomeAuth-9gn2": {
+      "pathId": "path-Start-to-HomeAuth-9gn2",
+      "testCaseId": "test-path-Start-to-HomeAuth-9gn2",
+      "valid": true,
+      "confidence": "high",
+      "issues": []
+    }
+  },
+  "testDataByTest": {
+    "test-path-Start-to-HomeAnon": {},
+    "test-path-Start-to-SignUp": {
+      "user_name": "toto",
+      "password": "toto"
+    },
+    "test-path-Start-to-AccountCreated": {
+      "user_name": "toto",
+      "password": "toto"
+    },
+    "test-path-Start-to-HomeAnon-rt28": {
+      "user_name": "toto",
+      "password": "toto"
+    },
+    "test-path-Start-to-HomeAuth": {
+      "user_name": "toto",
+      "password": "toto"
+    },
+    "test-path-Start-to-HomeAnon-cvhm": {
+      "user_name": "toto",
+      "password": "toto"
+    },
+    "test-path-Start-to-NewSnippet": {
+      "user_name": "toto",
+      "password": "toto",
+      "add_a_new_snippet": "hello snippet"
+    },
+    "test-path-Start-to-Upload": {
+      "user_name": "toto",
+      "password": "toto",
+      "select_a_file_to_upload_to_your_account": "No file chosen"
+    },
+    "test-path-Start-to-MySnippetsEmpty": {
+      "user_name": "toto",
+      "password": "toto"
+    },
+    "test-path-Start-to-Profile": {
+      "user_name": "toto",
+      "password": "toto",
+      "old_password": "toto",
+      "new_password": "DfYsZdp522RJ",
+      "icon": "clamo",
+      "homepage": "perspiciatis",
+      "profile_color": "apud",
+      "private_snippet": "Defleo territo aveho doloribus omnis. Pectus assumenda advoco."
+    },
+    "test-path-Start-to-MySnippetsAdded": {
+      "user_name": "toto",
+      "password": "toto",
+      "add_a_new_snippet": "hello snippet"
+    },
+    "test-path-Start-to-UploadComplete": {
+      "user_name": "toto",
+      "password": "toto",
+      "select_a_file_to_upload_to_your_account": "No file chosen"
+    },
+    "test-path-Start-to-HomeAuth-peqr": {
+      "user_name": "toto",
+      "password": "toto",
+      "select_a_file_to_upload_to_your_account": "No file chosen"
+    },
+    "test-path-Start-to-HomeAuth-mz09": {
+      "user_name": "toto",
+      "password": "toto"
+    },
+    "test-path-Start-to-HomeAuth-9gn2": {
+      "user_name": "toto",
+      "password": "toto",
+      "old_password": "toto",
+      "new_password": "mbJPw9_RT2jz",
+      "icon": "varius",
+      "homepage": "patrocinor",
+      "profile_color": "verus",
+      "private_snippet": "Adipisci comparo creta cernuus. Consuasor cicuta illo aqua thorax aestas vos ter avarus."
+    }
+  },
+  "generatedTestFiles": {
+    "general.spec.ts": "import { test, expect } from '@playwright/test';\n\n// Base URL: https://google-gruyere.appspot.com/start\n\n// Test Data\nconst testData = {\n  'test-path-Start-to-HomeAnon': {\n  },\n  'test-path-Start-to-AccountCreated': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-HomeAnon-rt28': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-HomeAuth': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-HomeAnon-cvhm': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-NewSnippet': {\n    'user_name': 'toto',\n    'password': 'toto',\n    'add_a_new_snippet': 'hello snippet',\n  },\n  'test-path-Start-to-MySnippetsEmpty': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-Profile': {\n    'user_name': 'toto',\n    'password': 'toto',\n    'old_password': 'toto',\n    'new_password': 'DfYsZdp522RJ',\n    'icon': 'clamo',\n    'homepage': 'perspiciatis',\n    'profile_color': 'apud',\n    'private_snippet': 'Defleo territo aveho doloribus omnis. Pectus assumenda advoco.',\n  },\n  'test-path-Start-to-MySnippetsAdded': {\n    'user_name': 'toto',\n    'password': 'toto',\n    'add_a_new_snippet': 'hello snippet',\n  },\n  'test-path-Start-to-HomeAuth-mz09': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-HomeAuth-9gn2': {\n    'user_name': 'toto',\n    'password': 'toto',\n    'old_password': 'toto',\n    'new_password': 'mbJPw9_RT2jz',\n    'icon': 'varius',\n    'homepage': 'patrocinor',\n    'profile_color': 'verus',\n    'private_snippet': 'Adipisci comparo creta cernuus. Consuasor cicuta illo aqua thorax aestas vos ter avarus.',\n  },\n};\n\ntest('start - agree & start - home anon', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAnon'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  // Verify: text(\"Cheddar\")\n  var item = page.getByText('Cheddar', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created', async ({ page }) => {\n  const data = testData['test-path-Start-to-AccountCreated'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  // Verify: text(\"Account created.\")\n  var item = page.getByText('Account created.', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - home - home anon', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAnon-rt28'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Home').click();\n  // Verify: text(\"Cheddar\")\n  var item = page.getByText('Cheddar', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAuth'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  await page.getByText('Home').click();\n  // Verify: text(\"Cheddar Mac\")\n  var item = page.getByText('Cheddar Mac', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - sign out - home anon', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAnon-cvhm'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  await page.getByText('Home').click();\n  await page.getByText('Sign out').click();\n  // Verify: text(\"Cheddar\")\n  var item = page.getByText('Cheddar', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet', async ({ page }) => {\n  const data = testData['test-path-Start-to-NewSnippet'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  await page.getByText('Home').click();\n  await page.getByLabel('Add a new snippet.').click();\n  await page.getByLabel('Add a new snippet.').fill(data['add_a_new_snippet']);\n  // Verify: text(\"Gruyere: New Snippet\")\n  var item = page.getByText('Gruyere: New Snippet', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty', async ({ page }) => {\n  const data = testData['test-path-Start-to-MySnippetsEmpty'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  await page.getByText('Home').click();\n  await page.getByText('My Snippets').click();\n  // Verify: text(\"No snippets.\")\n  var item = page.getByText('No snippets.', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile', async ({ page }) => {\n  const data = testData['test-path-Start-to-Profile'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  await page.getByLabel('Homepage').click();\n  await page.getByLabel('Profile Color').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('OLD Password').fill(data['old_password']);\n  await page.getByLabel('NEW Password').fill(data['new_password']);\n  await page.getByLabel('Icon').fill(data['icon']);\n  await page.getByLabel('Homepage').fill(data['homepage']);\n  await page.getByLabel('Profile Color').fill(data['profile_color']);\n  await page.getByLabel('Private Snippet').fill(data['private_snippet']);\n  // Verify: text(\"Gruyere: Profile\")\n  var item = page.getByText('Gruyere: Profile', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet - submit - my snippets added', async ({ page }) => {\n  const data = testData['test-path-Start-to-MySnippetsAdded'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  await page.getByText('Home').click();\n  await page.getByLabel('Add a new snippet.').click();\n  await page.getByLabel('Add a new snippet.').fill(data['add_a_new_snippet']);\n  await page.getByText('Submit').click();\n  // Verify: text(\"All snippets:\")\n  var item = page.getByText('All snippets:', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty - home - home auth', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAuth-mz09'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  await page.getByText('Home').click();\n  await page.getByText('My Snippets').click();\n  await page.getByText('Home').click();\n  // Verify: text(\"Cheddar Mac\")\n  var item = page.getByText('Cheddar Mac', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile - update - home auth', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAuth-9gn2'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.getByText('Agree & Start').click();\n  await page.getByText('Sign up').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('Password').fill(data['password']);\n  await page.getByText('Create account').click();\n  await page.getByLabel('Homepage').click();\n  await page.getByLabel('Profile Color').click();\n  await page.getByLabel('User name').fill(data['user_name']);\n  await page.getByLabel('OLD Password').fill(data['old_password']);\n  await page.getByLabel('NEW Password').fill(data['new_password']);\n  await page.getByLabel('Icon').fill(data['icon']);\n  await page.getByLabel('Homepage').fill(data['homepage']);\n  await page.getByLabel('Profile Color').fill(data['profile_color']);\n  await page.getByLabel('Private Snippet').fill(data['private_snippet']);\n  await page.getByText('Update').click();\n  // Verify: text(\"Cheddar Mac\")\n  var item = page.getByText('Cheddar Mac', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n",
+    "general.xpath.spec.ts": "import { test, expect } from '@playwright/test';\n\n// Base URL: https://google-gruyere.appspot.com/start\n\n// Test Data\nconst testData = {\n  'test-path-Start-to-HomeAnon': {\n  },\n  'test-path-Start-to-AccountCreated': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-HomeAnon-rt28': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-HomeAuth': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-HomeAnon-cvhm': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-NewSnippet': {\n    'user_name': 'toto',\n    'password': 'toto',\n    'add_a_new_snippet': 'hello snippet',\n  },\n  'test-path-Start-to-MySnippetsEmpty': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-Profile': {\n    'user_name': 'toto',\n    'password': 'toto',\n    'old_password': 'toto',\n    'new_password': 'DfYsZdp522RJ',\n    'icon': 'clamo',\n    'homepage': 'perspiciatis',\n    'profile_color': 'apud',\n    'private_snippet': 'Defleo territo aveho doloribus omnis. Pectus assumenda advoco.',\n  },\n  'test-path-Start-to-MySnippetsAdded': {\n    'user_name': 'toto',\n    'password': 'toto',\n    'add_a_new_snippet': 'hello snippet',\n  },\n  'test-path-Start-to-HomeAuth-mz09': {\n    'user_name': 'toto',\n    'password': 'toto',\n  },\n  'test-path-Start-to-HomeAuth-9gn2': {\n    'user_name': 'toto',\n    'password': 'toto',\n    'old_password': 'toto',\n    'new_password': 'mbJPw9_RT2jz',\n    'icon': 'varius',\n    'homepage': 'patrocinor',\n    'profile_color': 'verus',\n    'private_snippet': 'Adipisci comparo creta cernuus. Consuasor cicuta illo aqua thorax aestas vos ter avarus.',\n  },\n};\n\ntest('start - agree & start - home anon', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAnon'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  // Verify: text(\"Cheddar\")\n  var item = page.getByText('Cheddar', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created', async ({ page }) => {\n  const data = testData['test-path-Start-to-AccountCreated'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  // Verify: text(\"Account created.\")\n  var item = page.getByText('Account created.', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - home - home anon', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAnon-rt28'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  // Verify: text(\"Cheddar\")\n  var item = page.getByText('Cheddar', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAuth'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  // Verify: text(\"Cheddar Mac\")\n  var item = page.getByText('Cheddar Mac', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - sign out - home anon', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAnon-cvhm'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  // Verify: text(\"Cheddar\")\n  var item = page.getByText('Cheddar', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet', async ({ page }) => {\n  const data = testData['test-path-Start-to-NewSnippet'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a[3]').click();\n  await page.locator('xpath=/html/body/div[2]/div/form/textarea').fill(data['add_a_new_snippet']);\n  // Verify: text(\"Gruyere: New Snippet\")\n  var item = page.getByText('Gruyere: New Snippet', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty', async ({ page }) => {\n  const data = testData['test-path-Start-to-MySnippetsEmpty'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a[2]').click();\n  // Verify: text(\"No snippets.\")\n  var item = page.getByText('No snippets.', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile', async ({ page }) => {\n  const data = testData['test-path-Start-to-Profile'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[1]').click();\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[2]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[3]/td[2]/input').fill(data['old_password']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[4]/td[2]/input').fill(data['new_password']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[5]/td[2]/input').fill(data['icon']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[6]/td[2]/input').fill(data['homepage']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[7]/td[2]/input').fill(data['profile_color']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[8]/td[2]/textarea').fill(data['private_snippet']);\n  // Verify: text(\"Gruyere: Profile\")\n  var item = page.getByText('Gruyere: Profile', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet - submit - my snippets added', async ({ page }) => {\n  const data = testData['test-path-Start-to-MySnippetsAdded'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a[3]').click();\n  await page.locator('xpath=/html/body/div[2]/div/form/textarea').fill(data['add_a_new_snippet']);\n  await page.locator('xpath=/html/body/div[2]/div/form/table/tbody/tr/td[2]/input').click();\n  // Verify: text(\"All snippets:\")\n  var item = page.getByText('All snippets:', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty - home - home auth', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAuth-mz09'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a[2]').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a[1]').click();\n  // Verify: text(\"Cheddar Mac\")\n  var item = page.getByText('Cheddar Mac', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n\ntest('start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile - update - home auth', async ({ page }) => {\n  const data = testData['test-path-Start-to-HomeAuth-9gn2'];\n\n  await page.goto('https://google-gruyere.appspot.com/start');\n  await page.locator('xpath=/html/body/h2/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[2]').click();\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[1]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[2]/td[2]/input').fill(data['password']);\n  await page.locator('xpath=/html/body/div[2]/form/table/tbody/tr[3]/td[2]/input').click();\n  await page.locator('xpath=//*[@id=\"menu-left\"]/a').click();\n  await page.locator('xpath=//*[@id=\"menu-right\"]/a[1]').click();\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[2]/td[2]/input').fill(data['user_name']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[3]/td[2]/input').fill(data['old_password']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[4]/td[2]/input').fill(data['new_password']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[5]/td[2]/input').fill(data['icon']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[6]/td[2]/input').fill(data['homepage']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[7]/td[2]/input').fill(data['profile_color']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[8]/td[2]/textarea').fill(data['private_snippet']);\n  await page.locator('xpath=/html/body/div[3]/form/table/tbody/tr[9]/td[2]/input').click();\n  // Verify: text(\"Cheddar Mac\")\n  var item = page.getByText('Cheddar Mac', { exact: true })\n  if (await item.count() > 1) {\n  await expect(item.first()).toBeVisible();\n  } else {\n  await expect(item).toBeVisible();\n  }\n});\n"
+  },
+  "currentStage": "PathGenerationAgent",
+  "completedStages": [
+    "InputLoaderAgent",
+    "ElementExtractionAgent",
+    "PathGenerationAgent",
+    "ElementVerificationAgent",
+    "AssertionGenerationAgent",
+    "NLTestBuilderAgent",
+    "TestDataGenerationAgent",
+    "SemanticConsistencyAgent",
+    "CodeGenerationAgent"
+  ],
+  "executionErrors": []
+}

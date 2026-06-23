@@ -1,0 +1,15 @@
+{
+  "name": "watermanagement-acceptance-tests",
+  "version": "1.0.0",
+  "description": "Playwright acceptance tests for the Water Management web application",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:chromium": "playwright test --project=chromium",
+    "install:browsers": "playwright install --with-deps chromium firefox"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}

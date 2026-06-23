@@ -1,0 +1,866 @@
+{
+  "Home_Anonymous": [
+    {
+      "label": "My Account",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[2]/div/a"
+    },
+    {
+      "label": "123456789",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[1]/a"
+    },
+    {
+      "label": "Wish List (0)",
+      "xpath": "//*[@id=\"wishlist-total\"]"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[4]/a"
+    },
+    {
+      "label": "Checkout",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[5]/a"
+    },
+    {
+      "label": "Desktops",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Laptops & Notebooks",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Components",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Tablets",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[4]/a"
+    },
+    {
+      "label": "Software",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[5]/a"
+    },
+    {
+      "label": "Phones & PDAs",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[6]/a"
+    },
+    {
+      "label": "Cameras",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[7]/a"
+    },
+    {
+      "label": "MP3 Players",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[8]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/input"
+    },
+    {
+      "label": "Search-Button",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/button"
+    },
+    {
+      "label": "PC (0)",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/div/ul/li[1]/a"
+    },
+    {
+      "label": "Mac (1)",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/div/ul/li[2]/a"
+    },
+    {
+      "label": "Show All Desktops",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/ul/li[2]/a"
+    }
+  ],
+  "Home_Anonymous_drop_down": [
+    {
+      "label": "Register",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[2]/div/ul/li[1]/a"
+    },
+    {
+      "label": "Login",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[2]/div/ul/li[2]/a"
+    }
+  ],
+  "Home_Authenticated": [
+    {
+      "label": "My Account",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[2]/div/a"
+    },
+    {
+      "label": "123456789",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[1]/a"
+    },
+    {
+      "label": "Wish List (0)",
+      "xpath": "//*[@id=\"wishlist-total\"]"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[4]/a"
+    },
+    {
+      "label": "Checkout",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[5]/a"
+    },
+    {
+      "label": "Desktops",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Laptops & Notebooks",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Components",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Tablets",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[4]/a"
+    },
+    {
+      "label": "Software",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[5]/a"
+    },
+    {
+      "label": "Phones & PDAs",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[6]/a"
+    },
+    {
+      "label": "Cameras",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[7]/a"
+    },
+    {
+      "label": "MP3 Players",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[8]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/input"
+    },
+    {
+      "label": "Search Button",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/button"
+    },
+    {
+      "label": "PC (0)",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/div/ul/li[1]/a"
+    },
+    {
+      "label": "Mac (1)",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/div/ul/li[2]/a"
+    },
+    {
+      "label": "Show All Desktops",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/ul/li[2]/a"
+    }
+  ],
+  "Home_Authenticated_Desktop": [
+    {
+      "label": "My Account",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[2]/div/a"
+    },
+    {
+      "label": "123456789",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[1]/a"
+    },
+    {
+      "label": "Wish List (0)",
+      "xpath": "//*[@id=\"wishlist-total\"]"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[4]/a"
+    },
+    {
+      "label": "Checkout",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[5]/a"
+    },
+    {
+      "label": "Desktops",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Laptops & Notebooks",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Components",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Tablets",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[4]/a"
+    },
+    {
+      "label": "Software",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[5]/a"
+    },
+    {
+      "label": "Phones & PDAs",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[6]/a"
+    },
+    {
+      "label": "Cameras",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[7]/a"
+    },
+    {
+      "label": "MP3 Players",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[8]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/input"
+    },
+    {
+      "label": "Search Button",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/button"
+    },
+    {
+      "label": "PC (0)",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/div/ul/li[1]/a"
+    },
+    {
+      "label": "Mac (1)",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/div/ul/li[2]/a"
+    },
+    {
+      "label": "Show All Desktops",
+      "xpath": "//*[@id=\"navbar-menu\"]/ul/li[1]/div/ul/li[2]/a"
+    }
+  ],
+  "Login_Page": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Account",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Login",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "E-Mail Address",
+      "xpath": "//*[@id=\"input-email\"]"
+    },
+    {
+      "label": "Password",
+      "xpath": "//*[@id=\"input-password\"]"
+    },
+    {
+      "label": "Login",
+      "xpath": "//*[@id=\"form-login\"]/div[3]/button"
+    },
+    {
+      "label": "Forgotten Password",
+      "xpath": "//*[@id=\"form-login\"]/div[2]/a"
+    },
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"content\"]/div/div[1]/div/div/a"
+    }
+  ],
+  "Register_Account": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Account",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Register",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "First Name",
+      "xpath": "//*[@id=\"input-firstname\"]"
+    },
+    {
+      "label": "Last Name",
+      "xpath": "//*[@id=\"input-lastname\"]"
+    },
+    {
+      "label": "E-Mail",
+      "xpath": "//*[@id=\"input-email\"]"
+    },
+    {
+      "label": "Password",
+      "xpath": "//*[@id=\"input-password\"]"
+    },
+    {
+      "label": "Subscribe",
+      "xpath": "//*[@id=\"input-newsletter\"]"
+    },
+    {
+      "label": "Privacy Policy",
+      "xpath": "//*[@id=\"form-register\"]/div/label/a"
+    },
+    {
+      "label": "I have read and agree to the Privacy Policy",
+      "xpath": "//*[@id=\"input-agree\"]"
+    },
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"form-register\"]/div/button"
+    }
+  ],
+  "Account_Created": [
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"content\"]/div/a"
+    }
+  ],
+  "My_Account": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"logo\"]/a"
+    },
+    {
+      "label": "Edit your account information",
+      "xpath": "//*[@id=\"content\"]/ul[1]/li[1]/a"
+    },
+    {
+      "label": "Change your password",
+      "xpath": "//*[@id=\"content\"]/ul[1]/li[2]/a"
+    },
+    {
+      "label": "Stored payment methods",
+      "xpath": "//*[@id=\"content\"]/ul[1]/li[3]/a"
+    },
+    {
+      "label": "Modify your address book entries",
+      "xpath": "//*[@id=\"content\"]/ul[1]/li[4]/a"
+    },
+    {
+      "label": "Modify your wish list",
+      "xpath": "//*[@id=\"content\"]/ul[1]/li[5]/a"
+    },
+    {
+      "label": "View your order history",
+      "xpath": "//*[@id=\"content\"]/ul[2]/li[1]/a"
+    },
+    {
+      "label": "Subscriptions",
+      "xpath": "//*[@id=\"content\"]/ul[2]/li[2]/a"
+    },
+    {
+      "label": "Downloads",
+      "xpath": "//*[@id=\"content\"]/ul[2]/li[3]/a"
+    },
+    {
+      "label": "Your Reward Points",
+      "xpath": "//*[@id=\"content\"]/ul[2]/li[4]/a"
+    },
+    {
+      "label": "View your return requests",
+      "xpath": "//*[@id=\"content\"]/ul[2]/li[5]/a"
+    },
+    {
+      "label": "Your Transactions",
+      "xpath": "//*[@id=\"content\"]/ul[2]/li[6]/a"
+    },
+    {
+      "label": "Register for an affiliate account",
+      "xpath": "//*[@id=\"content\"]/ul[3]/li/a"
+    },
+    {
+      "label": "Subscribe / unsubscribe to newsletter",
+      "xpath": "//*[@id=\"content\"]/ul[4]/li/a"
+    },
+    {
+      "label": "My Account",
+      "xpath": "//*[@id=\"column-right\"]/div/a[1]"
+    },
+    {
+      "label": "Edit Account",
+      "xpath": "//*[@id=\"column-right\"]/div/a[2]"
+    },
+    {
+      "label": "Password",
+      "xpath": "//*[@id=\"column-right\"]/div/a[3]"
+    },
+    {
+      "label": "Payment Methods",
+      "xpath": "//*[@id=\"column-right\"]/div/a[4]"
+    },
+    {
+      "label": "Address Book",
+      "xpath": "//*[@id=\"column-right\"]/div/a[5]"
+    },
+    {
+      "label": "Wish List",
+      "xpath": "//*[@id=\"column-right\"]/div/a[6]"
+    },
+    {
+      "label": "Order History",
+      "xpath": "//*[@id=\"column-right\"]/div/a[7]"
+    },
+    {
+      "label": "Downloads",
+      "xpath": "//*[@id=\"column-right\"]/div/a[8]"
+    },
+    {
+      "label": "Subscriptions",
+      "xpath": "//*[@id=\"column-right\"]/div/a[9]"
+    },
+    {
+      "label": "Reward Points",
+      "xpath": "//*[@id=\"column-right\"]/div/a[10]"
+    },
+    {
+      "label": "Returns",
+      "xpath": "//*[@id=\"column-right\"]/div/a[11]"
+    },
+    {
+      "label": "Transactions",
+      "xpath": "//*[@id=\"column-right\"]/div/a[12]"
+    },
+    {
+      "label": "Newsletter",
+      "xpath": "//*[@id=\"column-right\"]/div/a[13]"
+    },
+    {
+      "label": "Logout",
+      "xpath": "//*[@id=\"column-right\"]/div/a[14]"
+    }
+  ],
+  "Category_Mac_Anon": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Desktops",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Mac",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "iMac",
+      "xpath": "//*[@id=\"product-list\"]/div/div/div[2]/div/h4/a"
+    },
+    {
+      "label": "Product Compare",
+      "xpath": "//*[@id=\"product-category\"]/div/div[2]/div[1]/a"
+    }
+  ],
+  "Category_Mac_Auth": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Desktops",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Mac",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "iMac",
+      "xpath": "//*[@id=\"product-list\"]/div/div/div[2]/div/h4/a"
+    },
+    {
+      "label": "Product Compare",
+      "xpath": "//*[@id=\"product-category\"]/div/div[2]/div[1]/a"
+    }
+  ],
+  "Product_Detail_Anon": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/input"
+    },
+    {
+      "label": "iMac",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Add to Cart",
+      "xpath": "//*[@id=\"button-cart\"]"
+    },
+    {
+      "label": "Qty",
+      "xpath": "//*[@id=\"input-quantity\"]"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[4]/a"
+    },
+    {
+      "label": "Checkout",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[5]/a"
+    }
+  ],
+  "Product_Detail_Auth": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/input"
+    },
+    {
+      "label": "iMac",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Add to Cart",
+      "xpath": "//*[@id=\"button-cart\"]"
+    },
+    {
+      "label": "Qty",
+      "xpath": "//*[@id=\"input-quantity\"]"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[4]/a"
+    },
+    {
+      "label": "Checkout",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[5]/a"
+    }
+  ],
+  "Product_Detail_Auth_Cart": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"container\"]/header/div/div/div[2]/form/input"
+    },
+    {
+      "label": "iMac",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Add to Cart",
+      "xpath": "//*[@id=\"button-cart\"]"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"top\"]/div/div/div[2]/ul/li[4]/a"
+    }
+  ],
+  "Shopping_Cart_Empty": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"shopping-cart\"]/div/a"
+    }
+  ],
+  "Shopping_Cart_Auth": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Checkout",
+      "xpath": "//*[@id=\"content\"]/div[3]/div[2]/a"
+    },
+    {
+      "label": "Continue Shopping",
+      "xpath": "//*[@id=\"content\"]/div[3]/div[1]/a"
+    },
+    {
+      "label": "iMac",
+      "xpath": "//*[@id=\"shopping-cart\"]/div/table/tbody/tr/td[2]/a"
+    },
+    {
+      "label": "Update",
+      "xpath": "//*[@id=\"shopping-cart\"]/div/table/tbody/tr/td[4]/div/span/button[1]"
+    },
+    {
+      "label": "Remove",
+      "xpath": "//*[@id=\"shopping-cart\"]/div/table/tbody/tr/td[4]/div/span/button[2]"
+    }
+  ],
+  "Checkout_Auth": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Checkout",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "First Name",
+      "xpath": "//*[@id=\"input-shipping-firstname\"]"
+    },
+    {
+      "label": "Last Name",
+      "xpath": "//*[@id=\"input-shipping-lastname\"]"
+    },
+    {
+      "label": "Company",
+      "xpath": "//*[@id=\"input-shipping-company\"]"
+    },
+    {
+      "label": "Address 1",
+      "xpath": "//*[@id=\"input-shipping-address-1\"]"
+    },
+    {
+      "label": "Address 2",
+      "xpath": "//*[@id=\"input-shipping-address-2\"]"
+    },
+    {
+      "label": "City",
+      "xpath": "//*[@id=\"input-shipping-city\"]"
+    },
+    {
+      "label": "Post Code",
+      "xpath": "//*[@id=\"input-shipping-postcode\"]"
+    },
+    {
+      "label": "Country",
+      "xpath": "//*[@id=\"input-shipping-country\"]"
+    },
+    {
+      "label": "Region / State",
+      "xpath": "//*[@id=\"input-shipping-zone\"]"
+    },
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"button-shipping-address\"]"
+    }
+  ],
+  "Checkout_Auth_Shipping": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Shopping Cart",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Checkout",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Choose Shipping Method",
+      "xpath": "//*[@id=\"checkout-shipping-method\"]/div/button"
+    },
+    {
+      "label": "Choose Payment Method",
+      "xpath": "//*[@id=\"checkout-payment-method\"]/div/button"
+    },
+    {
+      "label": "Add Comments About Your Order",
+      "xpath": "//*[@id=\"input-comment\"]"
+    }
+  ],
+  "Checkout_Auth_Shipping_options": [
+    {
+      "label": "Flat Shipping Rate",
+      "xpath": "//*[@id=\"input-shipping-method-flat-flat\"]"
+    },
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"form-shipping-method\"]/div/button"
+    }
+  ],
+  "Checkout_Auth_Shippement_method_selected": [
+    {
+      "label": "Flat Shipping Rate - $5.00",
+      "xpath": "//*[@id=\"checkout-shipping-method\"]/div/div/span"
+    },
+    {
+      "label": "Choose Payment Method",
+      "xpath": "//*[@id=\"checkout-payment-method\"]/div/button"
+    }
+  ],
+  "Checkout_Auth_Payment_options": [
+    {
+      "label": "Bank Transfer",
+      "xpath": "//*[@id=\"input-payment-method-bank_transfer\"]"
+    },
+    {
+      "label": "Cheque / Money Order",
+      "xpath": "//*[@id=\"input-payment-method-cheque\"]"
+    },
+    {
+      "label": "Cash On Delivery",
+      "xpath": "//*[@id=\"input-payment-method-cod\"]"
+    },
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"form-payment-method\"]/div/button"
+    }
+  ],
+  "Checkout_Auth_Final": [
+    {
+      "label": "Confirm Order",
+      "xpath": "//*[@id=\"checkout-payment\"]/div/button"
+    }
+  ],
+  "Order_Success_Auth": [
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"content\"]/div/div/a"
+    }
+  ],
+  "Wishlist_Empty": [
+    {
+      "label": "Account",
+      "xpath": "//*[@id=\"account-wishlist\"]/ul/li[2]/a"
+    },
+    {
+      "label": "My Wishlist",
+      "xpath": "//*[@id=\"account-wishlist\"]/ul/li[3]/a"
+    },
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"content\"]/div[2]/a"
+    }
+  ],
+  "Reward_Points": [
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"content\"]/div[3]/a"
+    }
+  ],
+  "Search_Results_Anon": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input-search\"]"
+    },
+    {
+      "label": "Search Button Field",
+      "xpath": "//*[@id=\"button-search\"]"
+    },
+    {
+      "label": "iMac",
+      "xpath": "//*[@id=\"product-list\"]/div/div/div[2]/div/h4/a"
+    },
+    {
+      "label": "Search in subcategories",
+      "xpath": "//*[@id=\"input-category\"]"
+    },
+    {
+      "label": "Search in subcategories",
+      "xpath": ""
+    },
+    {
+      "label": "Search in product descriptions",
+      "xpath": ""
+    }
+  ],
+  "Search_Results_Auth": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input-search\"]"
+    },
+    {
+      "label": "Search Button Field",
+      "xpath": "//*[@id=\"button-search\"]"
+    },
+    {
+      "label": "iMac",
+      "xpath": "//*[@id=\"product-list\"]/div/div/div[2]/div/h4/a"
+    }
+  ],
+  "Contact_Us_Anon": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Contact Us",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Your Name",
+      "xpath": "//*[@id=\"input-name\"]"
+    },
+    {
+      "label": "E-Mail Address",
+      "xpath": "//*[@id=\"input-email\"]"
+    },
+    {
+      "label": "Enquiry",
+      "xpath": "//*[@id=\"input-enquiry\"]"
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"form-contact\"]/div/button"
+    }
+  ],
+  "Contact_Us_Auth": [
+    {
+      "label": "Home",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[1]/a"
+    },
+    {
+      "label": "Contact Us",
+      "xpath": "//*[@id=\"navbar-content\"]/ul/li[2]/a"
+    },
+    {
+      "label": "Your Name",
+      "xpath": "//*[@id=\"input-name\"]"
+    },
+    {
+      "label": "E-Mail Address",
+      "xpath": "//*[@id=\"input-email\"]"
+    },
+    {
+      "label": "Enquiry",
+      "xpath": "//*[@id=\"input-enquiry\"]"
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"form-contact\"]/div/button"
+    }
+  ],
+  "Contact_Submitted_Anon": [
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"content\"]/div/a"
+    }
+  ],
+  "Contact_Submitted_Auth": [
+    {
+      "label": "Continue",
+      "xpath": "//*[@id=\"content\"]/div/a"
+    }
+  ]
+}

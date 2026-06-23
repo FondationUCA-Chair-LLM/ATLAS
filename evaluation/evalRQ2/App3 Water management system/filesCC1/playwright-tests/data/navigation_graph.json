@@ -1,0 +1,606 @@
+{
+  "nodes": [
+    {
+      "id": "Login",
+      "name": "Sign in",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Login",
+          "to_screen": "Dashboard",
+          "action": "ON_CLICK",
+          "label": "Login"
+        }
+      ]
+    },
+    {
+      "id": "Register",
+      "name": "Register",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Register",
+          "to_screen": "Login",
+          "action": "ON_CLICK",
+          "label": "Login"
+        }
+      ]
+    },
+    {
+      "id": "Dashboard",
+      "name": "Dashboard",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Dashboard",
+          "to_screen": "Vendors",
+          "action": "ON_CLICK",
+          "label": "Vendors"
+        },
+        {
+          "from_screen": "Dashboard",
+          "to_screen": "Customers",
+          "action": "ON_CLICK",
+          "label": "Customer"
+        },
+        {
+          "from_screen": "Dashboard",
+          "to_screen": "Products",
+          "action": "ON_CLICK",
+          "label": "Products"
+        },
+        {
+          "from_screen": "Dashboard",
+          "to_screen": "Orders",
+          "action": "ON_CLICK",
+          "label": "Orders"
+        }
+      ]
+    },
+    {
+      "id": "Vendors",
+      "name": "Vendors",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Vendors",
+          "to_screen": "VendorsSearchResults",
+          "action": "ON_CLICK",
+          "label": "Go"
+        },
+        {
+          "from_screen": "Vendors",
+          "to_screen": "AddVendor",
+          "action": "ON_CLICK",
+          "label": "+ Add Vendors"
+        },
+        {
+          "from_screen": "Vendors",
+          "to_screen": "EditVendor",
+          "action": "ON_CLICK",
+          "label": "Edit"
+        },
+        {
+          "from_screen": "Vendors",
+          "to_screen": "DeleteVendorSuccess",
+          "action": "ON_CLICK",
+          "label": "Delete"
+        },
+        {
+          "from_screen": "Vendors",
+          "to_screen": "ConfirmBuy",
+          "action": "ON_CLICK",
+          "label": "Buy"
+        }
+      ]
+    },
+    {
+      "id": "VendorsSearchResults",
+      "name": "Vendors Search Results",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "VendorsSearchResults",
+          "to_screen": "Vendors",
+          "action": "ON_CLICK",
+          "label": "Back"
+        }
+      ]
+    },
+    {
+      "id": "AddVendor",
+      "name": "Add Vendor Details",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "AddVendor",
+          "to_screen": "AddVendorSuccess",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "AddVendorSuccess",
+      "name": "Add Vendor Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "EditVendor",
+      "name": "Edit Vendor Details",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "EditVendor",
+          "to_screen": "EditVendorSuccess",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "EditVendorSuccess",
+      "name": "Edit Vendor Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "DeleteVendorSuccess",
+      "name": "Delete Vendor Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "ConfirmBuy",
+      "name": "Confirm Buy",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "ConfirmBuy",
+          "to_screen": "BuySuccess",
+          "action": "ON_CLICK",
+          "label": "Buy"
+        }
+      ]
+    },
+    {
+      "id": "BuySuccess",
+      "name": "Buy Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "Customers",
+      "name": "Customer",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Customers",
+          "to_screen": "CustomersSearchResults",
+          "action": "ON_CLICK",
+          "label": "Go"
+        },
+        {
+          "from_screen": "Customers",
+          "to_screen": "AddCustomer",
+          "action": "ON_CLICK",
+          "label": "+ Add Customer"
+        },
+        {
+          "from_screen": "Customers",
+          "to_screen": "EditCustomer",
+          "action": "ON_CLICK",
+          "label": "Edit"
+        },
+        {
+          "from_screen": "Customers",
+          "to_screen": "DeleteCustomerSuccess",
+          "action": "ON_CLICK",
+          "label": "Delete"
+        },
+        {
+          "from_screen": "Customers",
+          "to_screen": "SellProduct",
+          "action": "ON_CLICK",
+          "label": "Sell"
+        }
+      ]
+    },
+    {
+      "id": "CustomersSearchResults",
+      "name": "Customers Search Results",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "CustomersSearchResults",
+          "to_screen": "Customers",
+          "action": "ON_CLICK",
+          "label": "Back"
+        }
+      ]
+    },
+    {
+      "id": "AddCustomer",
+      "name": "Add Customer",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "AddCustomer",
+          "to_screen": "AddCustomerSuccess",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "AddCustomerSuccess",
+      "name": "Add Customer Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "EditCustomer",
+      "name": "Edit Customer",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "EditCustomer",
+          "to_screen": "EditCustomerSuccess",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "EditCustomerSuccess",
+      "name": "Edit Customer Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "DeleteCustomerSuccess",
+      "name": "Delete Customer Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "SellProduct",
+      "name": "Sell Product",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "SellProduct",
+          "to_screen": "SellSuccess",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "SellSuccess",
+      "name": "Sell Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "Products",
+      "name": "Product",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Products",
+          "to_screen": "ProductsSearchResults",
+          "action": "ON_CLICK",
+          "label": "Go"
+        },
+        {
+          "from_screen": "Products",
+          "to_screen": "AddProduct",
+          "action": "ON_CLICK",
+          "label": "+ Add product"
+        },
+        {
+          "from_screen": "Products",
+          "to_screen": "EditProduct",
+          "action": "ON_CLICK",
+          "label": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "ProductsSearchResults",
+      "name": "Products Search Results",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "ProductsSearchResults",
+          "to_screen": "Products",
+          "action": "ON_CLICK",
+          "label": "Back"
+        }
+      ]
+    },
+    {
+      "id": "AddProduct",
+      "name": "Add product",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "AddProduct",
+          "to_screen": "AddProductSuccess",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "AddProductSuccess",
+      "name": "Add Product Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "EditProduct",
+      "name": "Edit Product",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "EditProduct",
+          "to_screen": "EditProductSuccess",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "EditProductSuccess",
+      "name": "Edit Product Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "Orders",
+      "name": "Orders",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Orders",
+          "to_screen": "UpdatePaidstatus",
+          "action": "ON_CLICK",
+          "label": "Paid"
+        },
+        {
+          "from_screen": "Orders",
+          "to_screen": "DeleteOrderSuccess",
+          "action": "ON_CLICK",
+          "label": "Delete"
+        },
+        {
+          "from_screen": "Orders",
+          "to_screen": "ViewBill",
+          "action": "ON_CLICK",
+          "label": "BILL"
+        }
+      ]
+    },
+    {
+      "id": "UpdatePaidstatus",
+      "name": "Update Order Pay",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "DeleteOrderSuccess",
+      "name": "Delete Order Success",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "ViewBill",
+      "name": "View Bill",
+      "widgets": [],
+      "interactions": []
+    }
+  ],
+  "edges": [
+    {
+      "from_screen": "Dashboard",
+      "to_screen": "Vendors",
+      "action": "ON_CLICK",
+      "label": "Vendors"
+    },
+    {
+      "from_screen": "Dashboard",
+      "to_screen": "Customers",
+      "action": "ON_CLICK",
+      "label": "Customer"
+    },
+    {
+      "from_screen": "Dashboard",
+      "to_screen": "Products",
+      "action": "ON_CLICK",
+      "label": "Products"
+    },
+    {
+      "from_screen": "Dashboard",
+      "to_screen": "Orders",
+      "action": "ON_CLICK",
+      "label": "Orders"
+    },
+    {
+      "from_screen": "Register",
+      "to_screen": "Login",
+      "action": "ON_CLICK",
+      "label": "Login"
+    },
+    {
+      "from_screen": "Login",
+      "to_screen": "Dashboard",
+      "action": "ON_CLICK",
+      "label": "Login"
+    },
+    {
+      "from_screen": "Vendors",
+      "to_screen": "VendorsSearchResults",
+      "action": "ON_CLICK",
+      "label": "Go"
+    },
+    {
+      "from_screen": "VendorsSearchResults",
+      "to_screen": "Vendors",
+      "action": "ON_CLICK",
+      "label": "Back"
+    },
+    {
+      "from_screen": "Vendors",
+      "to_screen": "AddVendor",
+      "action": "ON_CLICK",
+      "label": "+ Add Vendors"
+    },
+    {
+      "from_screen": "AddVendor",
+      "to_screen": "AddVendorSuccess",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Vendors",
+      "to_screen": "EditVendor",
+      "action": "ON_CLICK",
+      "label": "Edit"
+    },
+    {
+      "from_screen": "EditVendor",
+      "to_screen": "EditVendorSuccess",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Vendors",
+      "to_screen": "DeleteVendorSuccess",
+      "action": "ON_CLICK",
+      "label": "Delete"
+    },
+    {
+      "from_screen": "Vendors",
+      "to_screen": "ConfirmBuy",
+      "action": "ON_CLICK",
+      "label": "Buy"
+    },
+    {
+      "from_screen": "ConfirmBuy",
+      "to_screen": "BuySuccess",
+      "action": "ON_CLICK",
+      "label": "Buy"
+    },
+    {
+      "from_screen": "Customers",
+      "to_screen": "CustomersSearchResults",
+      "action": "ON_CLICK",
+      "label": "Go"
+    },
+    {
+      "from_screen": "CustomersSearchResults",
+      "to_screen": "Customers",
+      "action": "ON_CLICK",
+      "label": "Back"
+    },
+    {
+      "from_screen": "Customers",
+      "to_screen": "AddCustomer",
+      "action": "ON_CLICK",
+      "label": "+ Add Customer"
+    },
+    {
+      "from_screen": "AddCustomer",
+      "to_screen": "AddCustomerSuccess",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Customers",
+      "to_screen": "EditCustomer",
+      "action": "ON_CLICK",
+      "label": "Edit"
+    },
+    {
+      "from_screen": "EditCustomer",
+      "to_screen": "EditCustomerSuccess",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Customers",
+      "to_screen": "DeleteCustomerSuccess",
+      "action": "ON_CLICK",
+      "label": "Delete"
+    },
+    {
+      "from_screen": "Customers",
+      "to_screen": "SellProduct",
+      "action": "ON_CLICK",
+      "label": "Sell"
+    },
+    {
+      "from_screen": "SellProduct",
+      "to_screen": "SellSuccess",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Products",
+      "to_screen": "ProductsSearchResults",
+      "action": "ON_CLICK",
+      "label": "Go"
+    },
+    {
+      "from_screen": "ProductsSearchResults",
+      "to_screen": "Products",
+      "action": "ON_CLICK",
+      "label": "Back"
+    },
+    {
+      "from_screen": "Products",
+      "to_screen": "AddProduct",
+      "action": "ON_CLICK",
+      "label": "+ Add product"
+    },
+    {
+      "from_screen": "AddProduct",
+      "to_screen": "AddProductSuccess",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Products",
+      "to_screen": "EditProduct",
+      "action": "ON_CLICK",
+      "label": "Edit"
+    },
+    {
+      "from_screen": "EditProduct",
+      "to_screen": "EditProductSuccess",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Orders",
+      "to_screen": "UpdatePaidstatus",
+      "action": "ON_CLICK",
+      "label": "Paid"
+    },
+    {
+      "from_screen": "Orders",
+      "to_screen": "DeleteOrderSuccess",
+      "action": "ON_CLICK",
+      "label": "Delete"
+    },
+    {
+      "from_screen": "Orders",
+      "to_screen": "ViewBill",
+      "action": "ON_CLICK",
+      "label": "BILL"
+    }
+  ]
+}

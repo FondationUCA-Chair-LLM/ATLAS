@@ -1,0 +1,15 @@
+{
+  "name": "opencart-acceptance-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright acceptance test suite for http://localhost/opencart, driven by navigation_graph + xpath_mapping.json",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.46.0"
+  }
+}

@@ -1,0 +1,712 @@
+{
+  "nodes": [
+    {
+      "id": "Home_Anonymous_drop_down",
+      "name": "Home_Anonymous_drop_down",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Home_Anonymous_drop_down",
+          "to_screen": "Login_Page",
+          "action": "ON_CLICK",
+          "label": "Login"
+        },
+        {
+          "from_screen": "Home_Anonymous_drop_down",
+          "to_screen": "Register_Account",
+          "action": "ON_CLICK",
+          "label": "Register"
+        }
+      ]
+    },
+    {
+      "id": "Login_Page",
+      "name": "Login_Page",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Login_Page",
+          "to_screen": "Register_Account",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        },
+        {
+          "from_screen": "Login_Page",
+          "to_screen": "My_Account",
+          "action": "ON_CLICK",
+          "label": "Login"
+        }
+      ]
+    },
+    {
+      "id": "Register_Account",
+      "name": "Register_Account",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Register_Account",
+          "to_screen": "Login_Page",
+          "action": "ON_CLICK",
+          "label": "login page"
+        },
+        {
+          "from_screen": "Register_Account",
+          "to_screen": "Account_Created",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Account_Created",
+      "name": "Account_Created",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Account_Created",
+          "to_screen": "My_Account",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "My_Account",
+      "name": "My_Account",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "My_Account",
+          "to_screen": "Home_Authenticated",
+          "action": "ON_CLICK",
+          "label": "Home"
+        },
+        {
+          "from_screen": "My_Account",
+          "to_screen": "Reward_Points",
+          "action": "ON_CLICK",
+          "label": "Reward Points"
+        },
+        {
+          "from_screen": "My_Account",
+          "to_screen": "Wishlist_Empty",
+          "action": "ON_CLICK",
+          "label": "Wish List"
+        },
+        {
+          "from_screen": "My_Account",
+          "to_screen": "Home_Anonymous",
+          "action": "ON_CLICK",
+          "label": "Logout"
+        }
+      ]
+    },
+    {
+      "id": "Home_Anonymous",
+      "name": "Home_Anonymous",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Home_Anonymous",
+          "to_screen": "Home_Anonymous_drop_down",
+          "action": "ON_CLICK",
+          "label": "My Account"
+        },
+        {
+          "from_screen": "Home_Anonymous",
+          "to_screen": "Search_Results_Anon",
+          "action": "ON_CLICK",
+          "label": "Search"
+        },
+        {
+          "from_screen": "Home_Anonymous",
+          "to_screen": "Shopping_Cart_Empty",
+          "action": "ON_CLICK",
+          "label": "Shopping Cart"
+        },
+        {
+          "from_screen": "Home_Anonymous",
+          "to_screen": "Contact_Us_Anon",
+          "action": "ON_CLICK",
+          "label": "123456789"
+        }
+      ]
+    },
+    {
+      "id": "Search_Results_Anon",
+      "name": "Search_Results_Anon",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Search_Results_Anon",
+          "to_screen": "Product_Detail_Anon",
+          "action": "ON_CLICK",
+          "label": "iMac"
+        },
+        {
+          "from_screen": "Search_Results_Anon",
+          "to_screen": "Home_Anonymous",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ]
+    },
+    {
+      "id": "Shopping_Cart_Empty",
+      "name": "Shopping_Cart_Empty",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Shopping_Cart_Empty",
+          "to_screen": "Home_Anonymous",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Contact_Us_Anon",
+      "name": "Contact_Us_Anon",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Contact_Us_Anon",
+          "to_screen": "Contact_Submitted_Anon",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "Product_Detail_Anon",
+      "name": "Product_Detail_Anon",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "Contact_Submitted_Anon",
+      "name": "Contact_Submitted_Anon",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Contact_Submitted_Anon",
+          "to_screen": "Home_Anonymous",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Home_Authenticated",
+      "name": "Home_Authenticated",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Home_Authenticated",
+          "to_screen": "Home_Authenticated_Desktop",
+          "action": "ON_CLICK",
+          "label": "Desktops"
+        },
+        {
+          "from_screen": "Home_Authenticated",
+          "to_screen": "Search_Results_Auth",
+          "action": "ON_CLICK",
+          "label": "Search"
+        },
+        {
+          "from_screen": "Home_Authenticated",
+          "to_screen": "Contact_Us_Auth",
+          "action": "ON_CLICK",
+          "label": "123456789"
+        }
+      ]
+    },
+    {
+      "id": "Reward_Points",
+      "name": "Reward_Points",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Reward_Points",
+          "to_screen": "My_Account",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Home_Authenticated_Desktop",
+      "name": "Home_Authenticated_Desktop",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Home_Authenticated_Desktop",
+          "to_screen": "Category_Mac_Auth",
+          "action": "ON_CLICK",
+          "label": "Mac (1)"
+        }
+      ]
+    },
+    {
+      "id": "Category_Mac_Auth",
+      "name": "Category_Mac_Auth",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Category_Mac_Auth",
+          "to_screen": "Product_Detail_Auth",
+          "action": "ON_CLICK",
+          "label": "iMac"
+        }
+      ]
+    },
+    {
+      "id": "Search_Results_Auth",
+      "name": "Search_Results_Auth",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Search_Results_Auth",
+          "to_screen": "Product_Detail_Auth",
+          "action": "ON_CLICK",
+          "label": "iMac"
+        },
+        {
+          "from_screen": "Search_Results_Auth",
+          "to_screen": "Home_Authenticated",
+          "action": "ON_CLICK",
+          "label": "Home"
+        }
+      ]
+    },
+    {
+      "id": "Contact_Us_Auth",
+      "name": "Contact_Us_Auth",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Contact_Us_Auth",
+          "to_screen": "Contact_Submitted_Auth",
+          "action": "ON_CLICK",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "Product_Detail_Auth",
+      "name": "Product_Detail_Auth",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Product_Detail_Auth",
+          "to_screen": "Product_Detail_Auth_Cart",
+          "action": "ON_CLICK",
+          "label": "Add to Cart"
+        }
+      ]
+    },
+    {
+      "id": "Product_Detail_Auth_Cart",
+      "name": "Product_Detail_Auth_Cart",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Product_Detail_Auth_Cart",
+          "to_screen": "Shopping_Cart_Auth",
+          "action": "ON_CLICK",
+          "label": "Shopping Cart"
+        }
+      ]
+    },
+    {
+      "id": "Shopping_Cart_Auth",
+      "name": "Shopping_Cart_Auth",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Shopping_Cart_Auth",
+          "to_screen": "Checkout_Initial",
+          "action": "ON_CLICK",
+          "label": "Checkout"
+        },
+        {
+          "from_screen": "Shopping_Cart_Auth",
+          "to_screen": "Home_Authenticated",
+          "action": "ON_CLICK",
+          "label": "Continue Shopping"
+        }
+      ]
+    },
+    {
+      "id": "Wishlist_Empty",
+      "name": "Wishlist_Empty",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Wishlist_Empty",
+          "to_screen": "My_Account",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Checkout_Initial",
+      "name": "Checkout_Initial",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Checkout_Initial",
+          "to_screen": "Checkout_Auth_Shipping",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Checkout_Auth_Shipping",
+      "name": "Checkout_Auth_Shipping",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Checkout_Auth_Shipping",
+          "to_screen": "Checkout_Auth_Shipping_options",
+          "action": "ON_CLICK",
+          "label": "Choose"
+        }
+      ]
+    },
+    {
+      "id": "Checkout_Auth_Shipping_options",
+      "name": "Checkout_Auth_Shipping_options",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Checkout_Auth_Shipping_options",
+          "to_screen": "Checkout_Auth_Shippement_method_selected",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Checkout_Auth_Shippement_method_selected",
+      "name": "Checkout_Auth_Shippement_method_selected",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Checkout_Auth_Shippement_method_selected",
+          "to_screen": "Checkout_Auth_Payment_options",
+          "action": "ON_CLICK",
+          "label": "Choose"
+        }
+      ]
+    },
+    {
+      "id": "Checkout_Auth_Payment_options",
+      "name": "Checkout_Auth_Payment_options",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Checkout_Auth_Payment_options",
+          "to_screen": "Checkout_Auth_Final",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Checkout_Auth_Final",
+      "name": "Checkout_Auth_Final",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Checkout_Auth_Final",
+          "to_screen": "Order_Success_Auth",
+          "action": "ON_CLICK",
+          "label": "Confirm Order"
+        }
+      ]
+    },
+    {
+      "id": "Order_Success_Auth",
+      "name": "Order_Success_Auth",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Order_Success_Auth",
+          "to_screen": "Home_Authenticated",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    },
+    {
+      "id": "Contact_Submitted_Auth",
+      "name": "Contact_Submitted_Auth",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Contact_Submitted_Auth",
+          "to_screen": "Home_Authenticated",
+          "action": "ON_CLICK",
+          "label": "Continue"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from_screen": "Home_Anonymous_drop_down",
+      "to_screen": "Login_Page",
+      "action": "ON_CLICK",
+      "label": "Login"
+    },
+    {
+      "from_screen": "Home_Anonymous_drop_down",
+      "to_screen": "Register_Account",
+      "action": "ON_CLICK",
+      "label": "Register"
+    },
+    {
+      "from_screen": "Login_Page",
+      "to_screen": "Register_Account",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Register_Account",
+      "to_screen": "Login_Page",
+      "action": "ON_CLICK",
+      "label": "login page"
+    },
+    {
+      "from_screen": "Register_Account",
+      "to_screen": "Account_Created",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Account_Created",
+      "to_screen": "My_Account",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Login_Page",
+      "to_screen": "My_Account",
+      "action": "ON_CLICK",
+      "label": "Login"
+    },
+    {
+      "from_screen": "Home_Anonymous",
+      "to_screen": "Home_Anonymous_drop_down",
+      "action": "ON_CLICK",
+      "label": "My Account"
+    },
+    {
+      "from_screen": "Home_Anonymous",
+      "to_screen": "Search_Results_Anon",
+      "action": "ON_CLICK",
+      "label": "Search"
+    },
+    {
+      "from_screen": "Home_Anonymous",
+      "to_screen": "Shopping_Cart_Empty",
+      "action": "ON_CLICK",
+      "label": "Shopping Cart"
+    },
+    {
+      "from_screen": "Home_Anonymous",
+      "to_screen": "Contact_Us_Anon",
+      "action": "ON_CLICK",
+      "label": "123456789"
+    },
+    {
+      "from_screen": "Search_Results_Anon",
+      "to_screen": "Product_Detail_Anon",
+      "action": "ON_CLICK",
+      "label": "iMac"
+    },
+    {
+      "from_screen": "Shopping_Cart_Empty",
+      "to_screen": "Home_Anonymous",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Search_Results_Anon",
+      "to_screen": "Home_Anonymous",
+      "action": "ON_CLICK",
+      "label": "Home"
+    },
+    {
+      "from_screen": "Contact_Us_Anon",
+      "to_screen": "Contact_Submitted_Anon",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Contact_Submitted_Anon",
+      "to_screen": "Home_Anonymous",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "My_Account",
+      "to_screen": "Home_Authenticated",
+      "action": "ON_CLICK",
+      "label": "Home"
+    },
+    {
+      "from_screen": "My_Account",
+      "to_screen": "Reward_Points",
+      "action": "ON_CLICK",
+      "label": "Reward Points"
+    },
+    {
+      "from_screen": "Reward_Points",
+      "to_screen": "My_Account",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Home_Authenticated",
+      "to_screen": "Home_Authenticated_Desktop",
+      "action": "ON_CLICK",
+      "label": "Desktops"
+    },
+    {
+      "from_screen": "Home_Authenticated_Desktop",
+      "to_screen": "Category_Mac_Auth",
+      "action": "ON_CLICK",
+      "label": "Mac (1)"
+    },
+    {
+      "from_screen": "Home_Authenticated",
+      "to_screen": "Search_Results_Auth",
+      "action": "ON_CLICK",
+      "label": "Search"
+    },
+    {
+      "from_screen": "Home_Authenticated",
+      "to_screen": "Contact_Us_Auth",
+      "action": "ON_CLICK",
+      "label": "123456789"
+    },
+    {
+      "from_screen": "Category_Mac_Auth",
+      "to_screen": "Product_Detail_Auth",
+      "action": "ON_CLICK",
+      "label": "iMac"
+    },
+    {
+      "from_screen": "Search_Results_Auth",
+      "to_screen": "Product_Detail_Auth",
+      "action": "ON_CLICK",
+      "label": "iMac"
+    },
+    {
+      "from_screen": "Product_Detail_Auth",
+      "to_screen": "Product_Detail_Auth_Cart",
+      "action": "ON_CLICK",
+      "label": "Add to Cart"
+    },
+    {
+      "from_screen": "Product_Detail_Auth_Cart",
+      "to_screen": "Shopping_Cart_Auth",
+      "action": "ON_CLICK",
+      "label": "Shopping Cart"
+    },
+    {
+      "from_screen": "My_Account",
+      "to_screen": "Wishlist_Empty",
+      "action": "ON_CLICK",
+      "label": "Wish List"
+    },
+    {
+      "from_screen": "Wishlist_Empty",
+      "to_screen": "My_Account",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Shopping_Cart_Auth",
+      "to_screen": "Checkout_Initial",
+      "action": "ON_CLICK",
+      "label": "Checkout"
+    },
+    {
+      "from_screen": "Checkout_Initial",
+      "to_screen": "Checkout_Auth_Shipping",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Checkout_Auth_Shipping",
+      "to_screen": "Checkout_Auth_Shipping_options",
+      "action": "ON_CLICK",
+      "label": "Choose"
+    },
+    {
+      "from_screen": "Checkout_Auth_Shipping_options",
+      "to_screen": "Checkout_Auth_Shippement_method_selected",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Checkout_Auth_Shippement_method_selected",
+      "to_screen": "Checkout_Auth_Payment_options",
+      "action": "ON_CLICK",
+      "label": "Choose"
+    },
+    {
+      "from_screen": "Checkout_Auth_Payment_options",
+      "to_screen": "Checkout_Auth_Final",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Checkout_Auth_Final",
+      "to_screen": "Order_Success_Auth",
+      "action": "ON_CLICK",
+      "label": "Confirm Order"
+    },
+    {
+      "from_screen": "Order_Success_Auth",
+      "to_screen": "Home_Authenticated",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "Shopping_Cart_Auth",
+      "to_screen": "Home_Authenticated",
+      "action": "ON_CLICK",
+      "label": "Continue Shopping"
+    },
+    {
+      "from_screen": "Search_Results_Auth",
+      "to_screen": "Home_Authenticated",
+      "action": "ON_CLICK",
+      "label": "Home"
+    },
+    {
+      "from_screen": "Contact_Us_Auth",
+      "to_screen": "Contact_Submitted_Auth",
+      "action": "ON_CLICK",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Contact_Submitted_Auth",
+      "to_screen": "Home_Authenticated",
+      "action": "ON_CLICK",
+      "label": "Continue"
+    },
+    {
+      "from_screen": "My_Account",
+      "to_screen": "Home_Anonymous",
+      "action": "ON_CLICK",
+      "label": "Logout"
+    }
+  ]
+}

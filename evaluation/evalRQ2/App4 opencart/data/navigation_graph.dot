@@ -1,0 +1,140 @@
+digraph Nav {
+    rankdir=TB;
+    
+    // ============ ROOT STATES ============
+    Home_Anonymous [shape=box, label="Home (Anonymous)", style=filled, fillcolor=lightblue];
+    Home_Anonymous_drop_down [shape=box, label="Home Drop Down (Anonymous)", style=filled, fillcolor=lightblue];
+    Home_Authenticated [shape=box, label="Home (Authenticated)", style=filled, fillcolor=lightgreen];
+    
+    Home_Authenticated_Desktop  [shape=box, label="Home (Desktop clicked)"];
+    
+    // ============ AUTHENTICATION BRIDGE ============
+    Login_Page [shape=box, label="Login"];
+    Register_Account [shape=box, label="Register Account"];
+    Account_Created [shape=box, label="Account Created"];
+    
+    // ============ ANONYMOUS TREE ============
+    // Category_Mac_Anon [shape=box, label="Category: Mac"];
+    Product_Detail_Anon [shape=box, label="Product: iMac"];
+    Shopping_Cart_Empty [shape=box, label="Shopping Cart Empty"];
+    // Shopping_Cart_Anon [shape=box, label="Shopping Cart (5.00kg)"];
+    // Checkout_Anon [shape=box, label="Checkout"];
+    // Order_Success_Anon [shape=box, label="Order Success"];
+    Search_Results_Anon [shape=box, label="Search - imac"];
+    Contact_Us_Anon [shape=box, label="Contact Us"];
+    Contact_Submitted_Anon [shape=box, label="Contact Us Submitted"];
+    
+    // ============ AUTHENTICATED TREE ============
+    My_Account [shape=box, label="My Account"];
+    Category_Mac_Auth [shape=box, label="Category: Mac"];
+    Product_Detail_Auth [shape=box, label="Product: iMac"];
+    Product_Detail_Auth_Cart [shape=box, label="Product: iMac Added to cart"];
+    Wishlist_Empty [shape=box, label="My Wishlist (empty)"];
+    // Wishlist_Items [shape=box, label="My Wishlist (with items)"];
+    Shopping_Cart_Auth [shape=box, label="Shopping Cart"];
+    Reward_Points [shape=box, label="Reward Points Page"];
+    
+    // CHECKOUT STEPS - SEPARATE GUI STATES
+    Checkout_Initial [shape=box, label="Checkout (Payment Address)"];
+    Checkout_Auth_Shipping [shape=box, label="Checkout (Shipping Address)"];
+    Checkout_Auth_Shipping_options [shape=box, label="Shipping method options"];
+    Checkout_Auth_Shippement_method_selected [shape=box, label="Checkout (Shipping Selected)"];
+    Checkout_Auth_Payment_options [shape=box, label="Payment method options"];
+    Checkout_Auth_Final [shape=box, label="Checkout (Final Confirmation)"];
+    Order_Success_Auth [shape=box, label="Order Success"];
+    
+    Search_Results_Auth [shape=box, label="Search - imac"];
+    Contact_Us_Auth [shape=box, label="Contact Us"];
+    Contact_Submitted_Auth [shape=box, label="Contact Us Submitted"];
+    
+    // ============ AUTHENTICATION FLOW (Single Path) ============
+//     "login" -> "my_account" [label="Login"];
+// "login" -> "register_account" [label="Continue"];
+// "register_account" -> "account_created" [label="Continue"];
+// "account_created" -> "my_account" [label="Continue"];
+// "register_account" -> "login" [label="login page"];
+    Home_Anonymous_drop_down -> Login_Page [label="Login"];
+    Home_Anonymous_drop_down -> Register_Account [label="Register"];
+    Login_Page -> Register_Account [label="Continue"];
+    Register_Account -> Login_Page [label="login page"];
+    Register_Account -> Account_Created [label="Continue"];
+    Account_Created -> My_Account [label="Continue"];
+    Login_Page -> My_Account [label="Login"];
+    
+    // ============ ANONYMOUS NAVIGATION (Single Entry Per Function) ============
+    Home_Anonymous -> Home_Anonymous_drop_down [label="My Account"];
+    // Home_Anonymous -> Category_Mac_Anon [label="Desktops"];
+    Home_Anonymous -> Search_Results_Anon [label="Search"];
+    Home_Anonymous -> Shopping_Cart_Empty [label="Shopping Cart"];
+    Home_Anonymous -> Contact_Us_Anon [label="123456789"];
+    
+    // Product Access: Only via Category
+    // Category_Mac_Anon -> Product_Detail_Anon [label="iMac"];
+    Search_Results_Anon -> Product_Detail_Anon[label="iMac"]
+    
+    // Cart Access: Only via Home header (Add to Cart updates state but navigates to Home)
+    // Product_Detail_Anon -> Home_Anonymous [label="Add to Cart"];
+    Shopping_Cart_Empty -> Home_Anonymous [label="Continue"];
+    
+    // Cart With Items Flow
+    // Home_Anonymous -> Shopping_Cart_Anon [label="Shopping Cart (with items)"];
+    // Shopping_Cart_Anon -> Checkout_Anon [label="Checkout"];
+    // Checkout_Anon -> Order_Success_Anon [label="Confirm Order"];
+    // Order_Success_Anon -> Home_Authenticated [label="Continue"];
+    // Shopping_Cart_Anon -> Home_Anonymous [label="Continue Shopping"];
+    
+    // Search & Contact Terminal
+    Search_Results_Anon -> Home_Anonymous [label="Home"];
+    Contact_Us_Anon -> Contact_Submitted_Anon [label="Submit"];
+    Contact_Submitted_Anon -> Home_Anonymous [label="Continue"];
+    
+    // ============ AUTHENTICATED NAVIGATION ============
+    My_Account -> Home_Authenticated [label="Home"];
+    My_Account -> Reward_Points [label="Reward Points"];
+    Reward_Points -> My_Account [label="Continue"];
+    // Home_Authenticated -> My_Account [label="My Account"]
+      Home_Authenticated -> Home_Authenticated_Desktop [label="Desktops"];
+    
+    Home_Authenticated_Desktop -> Category_Mac_Auth [label="Mac (1)"];
+    
+    Home_Authenticated -> Search_Results_Auth [label="Search"];
+    // Home_Authenticated -> Shopping_Cart_Auth [label="Shopping Cart"];
+    Home_Authenticated -> Contact_Us_Auth [label="123456789"];
+    
+    // Product Access: Only via Category
+    Category_Mac_Auth -> Product_Detail_Auth [label="iMac"];
+    
+    Search_Results_Auth -> Product_Detail_Auth [label="iMac"];
+    Product_Detail_Auth ->   Product_Detail_Auth_Cart [label="Add to Cart"];
+    
+
+    Product_Detail_Auth_Cart -> Shopping_Cart_Auth [label="Shopping Cart"]
+    // Wishlist Access: Only via My Account
+    My_Account -> Wishlist_Empty [label="Wish List"];
+    Wishlist_Empty -> My_Account [label="Continue"];
+    // Product_Detail_Auth -> Wishlist_Items [label="Add to Wishlist"];
+    // Wishlist_Items -> My_Account [label="Continue"];
+    
+    // Cart Access: From Home or Wishlist (choosing Home as primary)
+    // Home_Authenticated -> Shopping_Cart_Auth [label="Shopping Cart"];
+    // Wishlist_Items -> Shopping_Cart_Auth [label="Add to Cart"];
+    
+    // AUTHENTICATED CHECKOUT DETAILED STEPS
+    Shopping_Cart_Auth -> Checkout_Initial [label="Checkout"];
+    Checkout_Initial -> Checkout_Auth_Shipping [label="Continue"];
+    Checkout_Auth_Shipping -> Checkout_Auth_Shipping_options [label="Choose"];
+    Checkout_Auth_Shipping_options ->  Checkout_Auth_Shippement_method_selected [label="Continue"];
+    Checkout_Auth_Shippement_method_selected -> Checkout_Auth_Payment_options [label="Choose"]
+    Checkout_Auth_Payment_options -> Checkout_Auth_Final [label="Continue"]
+    Checkout_Auth_Final -> Order_Success_Auth [label="Confirm Order"]
+    Order_Success_Auth -> Home_Authenticated [label="Continue"];
+    Shopping_Cart_Auth -> Home_Authenticated [label="Continue Shopping"];
+    
+    // Search & Contact Terminal
+    Search_Results_Auth -> Home_Authenticated [label="Home"];
+    Contact_Us_Auth -> Contact_Submitted_Auth [label="Submit"];
+    Contact_Submitted_Auth -> Home_Authenticated [label="Continue"];
+    
+    // Logout (Bridge back to Anonymous)
+    My_Account -> Home_Anonymous [label="Logout"];
+}

@@ -1,0 +1,262 @@
+{
+  "nodes": [
+    {
+      "id": "Start",
+      "name": "Start Gruyere",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Start",
+          "to_screen": "HomeAnon",
+          "action": "navigate",
+          "label": "Agree & Start"
+        }
+      ]
+    },
+    {
+      "id": "HomeAnon",
+      "name": "Gruyere: Home (Anon)",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "HomeAnon",
+          "to_screen": "SignUp",
+          "action": "navigate",
+          "label": "Sign up"
+        }
+      ]
+    },
+    {
+      "id": "SignUp",
+      "name": "Gruyere: Sign up",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "SignUp",
+          "to_screen": "AccountCreated",
+          "action": "navigate",
+          "label": "Create account"
+        },
+        {
+          "from_screen": "SignUp",
+          "to_screen": "HomeAnon",
+          "action": "navigate",
+          "label": "Home"
+        }
+      ]
+    },
+    {
+      "id": "AccountCreated",
+      "name": "Account created",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "AccountCreated",
+          "to_screen": "HomeAuth",
+          "action": "navigate",
+          "label": "Home"
+        }
+      ]
+    },
+    {
+      "id": "HomeAuth",
+      "name": "Gruyere: Home (Auth)",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "HomeAuth",
+          "to_screen": "HomeAnon",
+          "action": "navigate",
+          "label": "Sign out"
+        },
+        {
+          "from_screen": "HomeAuth",
+          "to_screen": "NewSnippet",
+          "action": "navigate",
+          "label": "New Snippet"
+        },
+        {
+          "from_screen": "HomeAuth",
+          "to_screen": "Upload",
+          "action": "navigate",
+          "label": "Upload"
+        },
+        {
+          "from_screen": "HomeAuth",
+          "to_screen": "MySnippetsEmpty",
+          "action": "navigate",
+          "label": "My Snippets"
+        },
+        {
+          "from_screen": "HomeAuth",
+          "to_screen": "Profile",
+          "action": "navigate",
+          "label": "Profile"
+        }
+      ]
+    },
+    {
+      "id": "NewSnippet",
+      "name": "Gruyere: New Snippet",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "NewSnippet",
+          "to_screen": "MySnippetsAdded",
+          "action": "navigate",
+          "label": "Submit"
+        }
+      ]
+    },
+    {
+      "id": "Upload",
+      "name": "Gruyere: Upload",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Upload",
+          "to_screen": "UploadComplete",
+          "action": "navigate",
+          "label": "Upload"
+        }
+      ]
+    },
+    {
+      "id": "UploadComplete",
+      "name": "Gruyere: Upload Complete",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "UploadComplete",
+          "to_screen": "HomeAuth",
+          "action": "navigate",
+          "label": "Home"
+        }
+      ]
+    },
+    {
+      "id": "MySnippetsEmpty",
+      "name": "My Snippets Empty",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "MySnippetsEmpty",
+          "to_screen": "HomeAuth",
+          "action": "navigate",
+          "label": "Home"
+        }
+      ]
+    },
+    {
+      "id": "MySnippetsAdded",
+      "name": "My Snippets Added",
+      "widgets": [],
+      "interactions": []
+    },
+    {
+      "id": "Profile",
+      "name": "Gruyere: Profile",
+      "widgets": [],
+      "interactions": [
+        {
+          "from_screen": "Profile",
+          "to_screen": "HomeAuth",
+          "action": "navigate",
+          "label": "Update"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from_screen": "Start",
+      "to_screen": "HomeAnon",
+      "action": "navigate",
+      "label": "Agree & Start"
+    },
+    {
+      "from_screen": "HomeAnon",
+      "to_screen": "SignUp",
+      "action": "navigate",
+      "label": "Sign up"
+    },
+    {
+      "from_screen": "SignUp",
+      "to_screen": "AccountCreated",
+      "action": "navigate",
+      "label": "Create account"
+    },
+    {
+      "from_screen": "SignUp",
+      "to_screen": "HomeAnon",
+      "action": "navigate",
+      "label": "Home"
+    },
+    {
+      "from_screen": "AccountCreated",
+      "to_screen": "HomeAuth",
+      "action": "navigate",
+      "label": "Home"
+    },
+    {
+      "from_screen": "HomeAuth",
+      "to_screen": "HomeAnon",
+      "action": "navigate",
+      "label": "Sign out"
+    },
+    {
+      "from_screen": "HomeAuth",
+      "to_screen": "NewSnippet",
+      "action": "navigate",
+      "label": "New Snippet"
+    },
+    {
+      "from_screen": "HomeAuth",
+      "to_screen": "Upload",
+      "action": "navigate",
+      "label": "Upload"
+    },
+    {
+      "from_screen": "HomeAuth",
+      "to_screen": "MySnippetsEmpty",
+      "action": "navigate",
+      "label": "My Snippets"
+    },
+    {
+      "from_screen": "HomeAuth",
+      "to_screen": "Profile",
+      "action": "navigate",
+      "label": "Profile"
+    },
+    {
+      "from_screen": "NewSnippet",
+      "to_screen": "MySnippetsAdded",
+      "action": "navigate",
+      "label": "Submit"
+    },
+    {
+      "from_screen": "Upload",
+      "to_screen": "UploadComplete",
+      "action": "navigate",
+      "label": "Upload"
+    },
+    {
+      "from_screen": "UploadComplete",
+      "to_screen": "HomeAuth",
+      "action": "navigate",
+      "label": "Home"
+    },
+    {
+      "from_screen": "MySnippetsEmpty",
+      "to_screen": "HomeAuth",
+      "action": "navigate",
+      "label": "Home"
+    },
+    {
+      "from_screen": "Profile",
+      "to_screen": "HomeAuth",
+      "action": "navigate",
+      "label": "Update"
+    }
+  ]
+}

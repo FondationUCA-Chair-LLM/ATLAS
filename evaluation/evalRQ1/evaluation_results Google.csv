@@ -1,0 +1,12 @@
+ai_index,ai_name,best_human_match_index,bert_score_f1,moverscore
+0,start - agree & start - home anon,8,0.9335346221923828,0.796428357691728
+1,start - agree & start - home anon - sign up - sign up - create account - account created,1,0.9422155022621155,0.8515750459410768
+2,start - agree & start - home anon - sign up - sign up - home - home anon,6,0.9321995973587036,0.8284349156364078
+3,start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth,6,0.9320857524871826,0.8212164401167944
+4,start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - sign out - home anon,4,0.9266201257705688,0.8258512802420813
+5,start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet,6,0.9199113249778748,0.8314560213306817
+6,start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty,6,0.9313536286354065,0.8406230549874514
+7,start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile,7,0.8906705975532532,0.8352114642584464
+8,start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - new snippet - new snippet - submit - my snippets added,6,0.9210970401763916,0.8259143064731017
+9,start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - my snippets - my snippets empty - home - home auth,6,0.9233313798904419,0.8183113465191184
+10,start - agree & start - home anon - sign up - sign up - create account - account created - home - home auth - profile - profile - update - home auth,7,0.8918488621711731,0.8244904991545854

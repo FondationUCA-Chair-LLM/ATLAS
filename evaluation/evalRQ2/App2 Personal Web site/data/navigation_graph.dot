@@ -1,0 +1,47 @@
+digraph Nav {
+  rankdir=LR;
+  
+  /* Main page states */
+  "Home" [label="Home"];
+  "Research" [label="Research"];
+  "Tools" [label="Tools"];
+  "ToolsCompanion" [label="Tools Companion Site"];
+  "Publications" [label="Publications"];
+  "PublicationsNLExec" [label="Publication NL Execution"];
+  "Teaching" [label="Teaching"];
+  "TeachingSE" [label="Teaching Cours software Engineering"];
+  "TeachingPhp" [label="Teaching Cours PHP"];
+  
+    //  "Projects" [label="Projects"];
+    //  "Contact" [label="Contact"];
+  //   "ProjectsTesting" [label="Projects Testing"];
+  //   "Search" [label="Search"];
+  
+  /* Navbar navigation (from Home) */
+  "Home" -> "Research" [label="Research"];
+  "Home" -> "Tools" [label="Tools"];
+  "Home" -> "Publications" [label="Publications"];
+  "Home" -> "Teaching" [label="Teaching"];
+    "Home" -> "Home" [label="Send"];
+//   "Home" -> "ProjectsTesting" [label="Testing"];
+     "Home" -> "Home" [label="Projects"];
+     "Home" -> "Home" [label="Contact"];
+    //  "Home" -> "Search" [label="Search icon"];
+  
+  /* Return to Home from any page */
+  "Research" -> "Home" [label="Home"];
+  "Tools" -> "Home" [label="Home"];
+  "Tools" -> "ToolsCompanion" [label="Companion Site"];
+  "Publications" -> "Home" [label="Home"];
+  "Teaching" -> "Home" [label="Home"];
+  //   "Projects" -> "Home" [label="Home"];
+  //   "Contact" -> "Home" [label="Home"];
+  
+  /* Specific interactions */
+//   "Projects" -> "ProjectsTesting" [label="Testing"];
+//   "Home" -> "Home" [label="Send"];
+//   "Home" -> "Home" [label="Send"];
+  "Teaching" -> "TeachingSE" [label="Cours software Engineering"];
+    "Teaching" -> "TeachingPhp" [label="Cours PHP"];
+  "Publications" -> "PublicationsNLExec" [label="On the Soundness and Consistency of LLM Agents for Executing Test Cases Written in Natural Language"];
+}

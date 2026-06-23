@@ -1,0 +1,17 @@
+{
+  "completedStages": [
+    "InputLoaderAgent",
+    "ElementExtractionAgent",
+    "PathGenerationAgent",
+    "ElementVerificationAgent",
+    "AssertionGenerationAgent",
+    "NLTestBuilderAgent",
+    "TestDataGenerationAgent",
+    "SemanticConsistencyAgent",
+    "CodeGenerationAgent"
+  ],
+  "totalPaths": 15,
+  "totalTestCases": 15,
+  "totalTestFiles": 2,
+  "errors": []
+}

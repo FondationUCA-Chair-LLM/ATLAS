@@ -1,0 +1,12 @@
+ai_index,ai_name,best_human_match_index,bert_score_f1,moverscore
+0,home - research - research,12,0.8423157334327698,0.6646132590502537
+1,home - tools - tools,12,0.8571171760559082,0.6681793183569256
+2,home - publications - publications,12,0.8459482192993164,0.6642175987854296
+3,home - teaching - teaching,12,0.8585086464881897,0.683512533109076
+4,home - send - home,16,0.8438451290130615,0.7448352522374189
+5,home - research - research - home - home,16,0.8322256803512573,0.7197128675209546
+6,home - tools - tools - home - home,16,0.8402776122093201,0.7336360401932673
+7,home - publications - publications - home - home,16,0.8457273244857788,0.7325752174861911
+8,home - publications - publications - on the soundness and consistency of l l m agents for executing test cases written in natural language - publications n l exec,12,0.8430021405220032,0.6686358800311855
+9,home - teaching - teaching - home - home,16,0.8313071727752686,0.7230911484032836
+10,home - teaching - teaching - cours software engineering - teaching s e,12,0.8574614524841309,0.6872756411993005

@@ -1,0 +1,480 @@
+{
+  "Login": [
+    {
+      "label": "Username",
+      "xpath": "//*[@id=\"page-\"]/form/div/div[2]/div[1]/input"
+    },
+    {
+      "label": "Password",
+      "xpath": "//*[@id=\"page-\"]/form/div/div[2]/div[2]/input"
+    },
+    {
+      "label": "Login",
+      "xpath": "//*[@id=\"page-\"]/form/div/div[2]/button"
+    },
+    {
+      "label": "Register",
+      "xpath": "//*[@id=\"page-\"]/form/div/h4/a"
+    }
+  ],
+  "Register": [
+    {
+      "label": "Username",
+      "xpath": "//*[@id=\"page-\"]/form/div/div[2]/div[1]/input"
+    },
+    {
+      "label": "Email",
+      "xpath": "//*[@id=\"page-\"]/form/div/div[2]/div[2]/input"
+    },
+    {
+      "label": "Password",
+      "xpath": "//*[@id=\"page-\"]/form/div/div[2]/div[3]/input"
+    },
+    {
+      "label": "Login",
+      "xpath": "//*[@id=\"page-\"]/form/div/div[2]/button"
+    }
+  ],
+  "Dashboard": [
+    {
+      "label": "Dashboard",
+      "xpath": "//*[@id=\"side-menu\"]/li[1]/a"
+    },
+    {
+      "label": "Vendors",
+      "xpath": "//*[@id=\"side-menu\"]/li[2]/a"
+    },
+    {
+      "label": "Customer",
+      "xpath": "//*[@id=\"side-menu\"]/li[3]/a"
+    },
+    {
+      "label": "Products",
+      "xpath": "//*[@id=\"side-menu\"]/li[4]/a"
+    },
+    {
+      "label": "Orders",
+      "xpath": "//*[@id=\"side-menu\"]/li[5]/a"
+    },
+    {
+      "label": "View Details - Vendors",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/div[1]/div/a"
+    },
+    {
+      "label": "View Details - Customers",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/div[2]/div/a"
+    },
+    {
+      "label": "View Details - Products",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/div[3]/div/a/div"
+    }
+  ],
+  "Vendors": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Go",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/form/input[2]"
+    },
+    {
+      "label": "+ Add Vendors",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/a/h4"
+    },
+    {
+      "label": "Edit",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[7]/a[1]"
+    },
+    {
+      "label": "Delete",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[7]/a[2]"
+    },
+    {
+      "label": "Buy",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[7]/a[3]"
+    }
+  ],
+  "VendorsSearchResults": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Back",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/a[1]"
+    }
+  ],
+  "AddVendor": [
+    {
+      "label": "Vendor Name:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[1]/div/input"
+    },
+    {
+      "label": "Contact :",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[2]/div/input"
+    },
+    {
+      "label": "Product",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div/div/select"
+    },
+    {
+      "label": "Quantity :",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[4]/div/input"
+    },
+    {
+      "label": "Price:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[5]/div/input"
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[6]/div/button"
+    }
+  ],
+  "AddVendorSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "EditVendor": [
+    {
+      "label": "Vendor Name",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[1]/div/input"
+    },
+    {
+      "label": "Contact",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[2]/div/input"
+    },
+    {
+      "label": "Product Catgory",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div[1]/div/select"
+    },
+    {
+      "label": "Product",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div[2]/div/input"
+    },
+    {
+      "label": "Quantity",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div[3]/div/input"
+    },
+    {
+      "label": "Price",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div[4]/div/input"
+    },
+    {
+      "label": "Remember me",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div[5]/div/div/label/input"
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div[6]/div/button"
+    }
+  ],
+  "EditVendorSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Success banner (Edited Success)",
+      "xpath": ""
+    }
+  ],
+  "DeleteVendorSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "ConfirmBuy": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Buy",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[4]/div/button"
+    }
+  ],
+  "BuySuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "Customers": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Go",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/form/input[2]"
+    },
+    {
+      "label": "+ Add Customer",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/a"
+    },
+    {
+      "label": "Edit",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[3]/a[1]"
+    },
+    {
+      "label": "Delete",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[3]/a[2]"
+    },
+    {
+      "label": "Sell",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[3]/a[3]"
+    }
+  ],
+  "CustomersSearchResults": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Back",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/a[1]"
+    }
+  ],
+  "AddCustomer": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Customer Name:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[1]/div/input"
+    },
+    {
+      "label": "Contact :",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[2]/div/input"
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div/button"
+    }
+  ],
+  "AddCustomerSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "EditCustomer": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "customer Name:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[1]/form/div[1]/div/input"
+    },
+    {
+      "label": "Contact :",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[1]/form/div[2]/div/input"
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/div/button"
+    }
+  ],
+  "EditCustomerSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "DeleteCustomerSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "SellProduct": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Product",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/div/table/tbody/tr[1]/td[1]/div/input"
+    },
+    {
+      "label": "Pending",
+      "xpath": "/html/body/div/section/div[1]/form/div[3]/input[1]"
+    },
+    {
+      "label": "Paid",
+      "xpath": "/html/body/div/section/div[1]/form/div[3]/input[2]"
+    },
+
+    {
+      "label": "Quantity",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/div/table/tbody/tr[1]/td[5]/input"
+    },
+    {
+      "label": "Price",
+      "xpath": ""
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[3]/div/button"
+    }
+  ],
+  "SellSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "Products": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Go",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/form/input[2]"
+    },
+    {
+      "label": "+ Add product",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/a"
+    },
+    {
+      "label": "Edit",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[6]/form/a[1]"
+    },
+    {
+      "label": "Delete",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[6]/form/a[2]"
+    }
+  ],
+  "ProductsSearchResults": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Back",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/a[1]"
+    }
+  ],
+  "AddProduct": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Product Category:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[1]/div/input"
+    },
+    {
+      "label": "Product Name:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[2]/div/input"
+    },
+    {
+      "label": "Product Price:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[3]/div/input"
+    },
+    {
+      "label": "Product Stock:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[4]/div/input"
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"page-wrapper\"]/div/form/div[5]/div/button"
+    }
+  ],
+  "AddProductSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "EditProduct": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Product Category:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[1]/form/div[1]/div/input"
+    },
+    {
+      "label": "Product Name:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[1]/form/div[2]/div/input"
+    },
+    {
+      "label": "Product Price:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[1]/form/div[3]/div/input"
+    },
+    {
+      "label": "Product Stock:",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[1]/form/div[4]/div/input"
+    },
+    {
+      "label": "Submit",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/div/button"
+    }
+  ],
+  "EditProductSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "DeleteProductSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "Orders": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Go",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/form/input[2]"
+    },
+    {
+      "label": "Paid",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[3]/a"
+    },
+    {
+      "label": "Delete",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[6]/a[2]"
+    },
+    {
+      "label": "BILL",
+      "xpath": "//*[@id=\"page-wrapper\"]/table/tbody/tr[1]/td[6]/a[3]"
+    }
+  ],
+  "OrdersSearchResults": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    },
+    {
+      "label": "Back",
+      "xpath": "//*[@id=\"page-wrapper\"]/div[2]/a"
+    }
+  ],
+  "UpdatePaidstatus": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "DeleteOrderSuccess": [
+    {
+      "label": "Search",
+      "xpath": "//*[@id=\"input_search\"]"
+    }
+  ],
+  "ViewBill": []
+}

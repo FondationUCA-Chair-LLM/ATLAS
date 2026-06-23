@@ -1,0 +1,88 @@
+{
+  "mappings": [
+    {
+      "stateId": "Home",
+      "stateName": "Home",
+      "images": [
+        "screenshots/home_1.png",
+        "screenshots/home_2.png",
+        "screenshots/home_3.png",
+        "screenshots/home_4.png",
+        "screenshots/home_5.png",
+        "screenshots/home_6.png",
+        "screenshots/home_7.png"
+      ],
+      "description": "Home page with Biography and Experience sections"
+    },
+    {
+      "stateId": "Research",
+      "stateName": "Research",
+      "images": [
+        "screenshots/research_1.png",
+        "screenshots/research_2.png",
+        "screenshots/research_3.png"
+      ],
+      "description": "Research topics and areas including Popular Topics"
+    },
+    {
+      "stateId": "Tools",
+      "stateName": "Tools",
+      "images": [
+        "screenshots/tools_1.png",
+        "screenshots/tools_2.png",
+        "screenshots/tools_3.png"
+      ],
+      "description": "Tools and software resources page"
+    },
+    {
+      "stateId": "ToolsCompanion",
+      "stateName": "ToolsCompanion",
+      "images": [
+        "screenshots/tools_companion_1.png",
+        "screenshots/tools_companion_2.png"
+      ],
+      "description": "ToolsCompanion page"
+    },
+    {
+      "stateId": "Publications",
+      "stateName": "Publications",
+      "images": ["screenshots/publication.png"],
+      "description": "Publications listing page"
+    },
+    {
+      "stateId": "PublicationsNLExec",
+      "stateName": "Publications with NL Exec",
+      "images": ["screenshots/publication_on_soundness.png"],
+      "description": "Publication details page for NL Exec paper"
+    },
+    {
+      "stateId": "Teaching",
+      "stateName": "Teaching",
+      "images": [
+        "screenshots/teaching_1.png",
+        "screenshots/teaching_2.png",
+        "screenshots/teaching_3.png"
+      ],
+      "description": "Teaching overview page"
+    },
+    {
+      "stateId": "TeachingSE",
+      "stateName": "Teaching Software Engineering",
+      "images": ["screenshots/teaching_software_eng.png"],
+      "description": "Software Engineering course details page"
+    },
+    {
+      "stateId": "TeachingPhp",
+      "stateName": "Teaching Cours PHP",
+      "images": ["screenshots/teaching_coursphp.png"],
+      "description": "Teaching Cours PHP course details page"
+    },
+
+    {
+      "stateId": "Search",
+      "stateName": "Search",
+      "images": ["screenshots/publication_searched.png"],
+      "description": "Search results page"
+    }
+  ]
+}

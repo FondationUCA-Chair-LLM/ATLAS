@@ -1,0 +1,147 @@
+{
+  "source": "manual",
+  "extractedAt": "2026-06-07T23:03:04.504Z",
+  "totalNodes": 7,
+  "totalEdges": 13,
+  "nodes": {
+    "Home": {
+      "id": "Home",
+      "name": "Home",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Research": {
+      "id": "Research",
+      "name": "Research",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Tools": {
+      "id": "Tools",
+      "name": "Tools",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Publications": {
+      "id": "Publications",
+      "name": "Publications",
+      "data": {
+        "widgets": []
+      }
+    },
+    "PublicationsNLExec": {
+      "id": "PublicationsNLExec",
+      "name": "Publication NL Execution",
+      "data": {
+        "widgets": []
+      }
+    },
+    "Teaching": {
+      "id": "Teaching",
+      "name": "Teaching",
+      "data": {
+        "widgets": []
+      }
+    },
+    "TeachingSE": {
+      "id": "TeachingSE",
+      "name": "Teaching Cours software Engineering",
+      "data": {
+        "widgets": []
+      }
+    }
+  },
+  "edges": {
+    "Home": [
+      {
+        "from": "Home",
+        "to": "Research",
+        "action": "ON_CLICK",
+        "label": "Research"
+      },
+      {
+        "from": "Home",
+        "to": "Tools",
+        "action": "ON_CLICK",
+        "label": "Tools"
+      },
+      {
+        "from": "Home",
+        "to": "Publications",
+        "action": "ON_CLICK",
+        "label": "Publications"
+      },
+      {
+        "from": "Home",
+        "to": "Teaching",
+        "action": "ON_CLICK",
+        "label": "Teaching"
+      },
+      {
+        "from": "Home",
+        "to": "Home",
+        "action": "ON_CLICK",
+        "label": "Send"
+      },
+      {
+        "from": "Home",
+        "to": "Home",
+        "action": "ON_CLICK",
+        "label": "Projects"
+      },
+      {
+        "from": "Home",
+        "to": "Home",
+        "action": "ON_CLICK",
+        "label": "Contact"
+      }
+    ],
+    "Research": [
+      {
+        "from": "Research",
+        "to": "Home",
+        "action": "ON_CLICK",
+        "label": "Home"
+      }
+    ],
+    "Tools": [
+      {
+        "from": "Tools",
+        "to": "Home",
+        "action": "ON_CLICK",
+        "label": "Home"
+      }
+    ],
+    "Publications": [
+      {
+        "from": "Publications",
+        "to": "Home",
+        "action": "ON_CLICK",
+        "label": "Home"
+      },
+      {
+        "from": "Publications",
+        "to": "PublicationsNLExec",
+        "action": "ON_CLICK",
+        "label": "On the Soundness and Consistency of LLM Agents for Executing Test Cases Written in Natural Language"
+      }
+    ],
+    "Teaching": [
+      {
+        "from": "Teaching",
+        "to": "Home",
+        "action": "ON_CLICK",
+        "label": "Home"
+      },
+      {
+        "from": "Teaching",
+        "to": "TeachingSE",
+        "action": "ON_CLICK",
+        "label": "Cours software Engineering"
+      }
+    ]
+  }
+}

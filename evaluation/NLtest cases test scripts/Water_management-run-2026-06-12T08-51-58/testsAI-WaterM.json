@@ -1,0 +1,543 @@
+[
+  {
+    "name": "login - login - dashboard - vendors - vendors",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - customer - customers",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Assert that 'Customer Name' is  displayed on this page",
+      "Assert that 'Contact no' is  displayed on this page",
+      "Assert that 'Dikshant23' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - products - products",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Products'",
+      "Type in 'www' in the field 'Search'",
+      "Assert that 'aw' is  displayed on this page",
+      "Assert that 'Contact no' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - orders - orders",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Orders'",
+      "Type in 'Handcrafted Wooden Sausages' in the field 'Search'",
+      "Assert that 'Customer Name' is  displayed on this page",
+      "Assert that 'Contact no' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Assert that 'Search' is not displayed on this page",
+      "Assert that 'Dashboard' is  displayed on this page",
+      "Assert that 'Product' is not displayed on this page",
+      "Assert that 'Water Bottle' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - vendors - vendors - go - vendors search results",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on 'Go'",
+      "Type in 'John' in the field 'Search'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Water Bottle' is not displayed on this page",
+      "Assert that 'Search' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - vendors - vendors - + add vendors - add vendor",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on '+ Add Vendors'",
+      "Type in 'Test Vendor2' in the field 'Vendor Name:'",
+      "Type in '2' in the field 'Contact :'",
+      "Select 'aw--2323' from 'Product'",
+      "Type in '2' in the field 'Quantity :'",
+      "Type in '2' in the field 'Price:'",
+      "Assert that 'Submit' is  displayed on this page",
+      "Assert that 'Product' is  displayed on this page",
+      "Assert that 'Quantity' is not displayed on this page"
+    ]
+  },
+  {
+    "name": "login - login - dashboard - vendors - vendors - edit - edit vendor",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on 'Edit'",
+      "Type in 'awdwad' in the field 'Vendor Name'",
+      "Type in '11113243132' in the field 'Contact'",
+      "Select 'Water Bottle--Bislery' from 'Product Catgory'",
+      "Type in 'patruus' in the field 'Product'",
+      "Type in '1243' in the field 'Quantity'",
+      "Type in '44' in the field 'Price'",
+      "Check 'Remember me'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Search' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - vendors - vendors - delete - delete vendor success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on 'Delete'",
+      "Type in 'John' in the field 'Search'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - vendors - vendors - buy - confirm buy",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on 'Buy'",
+      "Assert that 'Buy' is  displayed on this page",
+      "Assert that 'Search' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - vendors - vendors - go - vendors search results - back - vendors",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on 'Go'",
+      "Type in 'John' in the field 'Search'",
+      "Click on 'Back'",
+      "Type in 'John' in the field 'Search'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - vendors - vendors - + add vendors - add vendor - submit - add vendor success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on '+ Add Vendors'",
+      "Type in 'Test Vendor2' in the field 'Vendor Name:'",
+      "Type in '2' in the field 'Contact :'",
+      "Select 'aw--2323' from 'Product'",
+      "Type in '2' in the field 'Quantity :'",
+      "Type in '2' in the field 'Price:'",
+      "Click on 'Submit'",
+      "Type in 'John' in the field 'Search'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - vendors - vendors - edit - edit vendor - submit - edit vendor success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on 'Edit'",
+      "Type in 'awdwad' in the field 'Vendor Name'",
+      "Type in '11113243132' in the field 'Contact'",
+      "Select 'Water Bottle--Bislery' from 'Product Catgory'",
+      "Type in 'armarium' in the field 'Product'",
+      "Type in '1243' in the field 'Quantity'",
+      "Type in '44' in the field 'Price'",
+      "Check 'Remember me'",
+      "Click on 'Submit'",
+      "Type in 'John' in the field 'Search'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]},
+
+  {
+    "name": "login - login - dashboard - vendors - vendors - buy - confirm buy - buy - buy success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on 'Buy'",
+      "Click on 'Buy'",
+      "Type in 'John' in the field 'Search'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - customer - customers - go - customers search results",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on 'Go'",
+      "Type in 'Hello' in the field 'Search'",
+      "Assert that 'Customer Name' is  displayed on this page",
+      "Assert that 'Dikshant23' is not displayed on this page"
+    ]
+    },
+  {
+    "name": "login - login - dashboard - customer - customers - + add customer - add customer",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on '+ Add Customer'",
+      "Type in 'New Customer 1' in the field 'Customer Name:'",
+      "Type in '1235' in the field 'Contact :'",
+      "Assert that 'Submit' is  displayed on this page",
+      "Assert that 'Product' is not displayed on this page",
+      "Assert that 'Dashboard' is  displayed on this page"
+    ]
+    
+  },
+  {
+    
+    "name": "login - login - dashboard - customer - customers - edit - edit customer",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on 'Edit'",
+      "Type in 'Dikshant23 update' in the field 'customer Name:'",
+      "Type in '99750576266' in the field 'Contact :'",
+      "Assert that 'Dashboard' is not displayed on this page",
+      "Assert that 'Administrator' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - customer - customers - delete - delete customer success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on 'Delete'",
+      "Assert that 'Administrator' is not displayed on this page",
+      "Assert that 'Water Bottle' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - customer - customers - sell - sell product",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on 'Sell'",
+      "Check 'Pending'",
+      "Type in '12' in the field 'Quantity'",
+      "Type in '12' in the field 'Quantity'",
+      "Type in '12' in the field 'Quantity'",
+      "Type in '12' in the field 'Quantity'",
+      "Assert that 'Submit' is  displayed on this page",
+      "Assert that 'Dikshant23' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - customer - customers - go - customers search results - back - customers",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on 'Go'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on 'Back'",
+      "Type in 'Hello' in the field 'Search'",
+      "Assert that 'Customer Name' is  displayed on this page",
+      "Assert that 'Contact no' is  displayed on this page",
+      "Assert that 'Dikshant23' is  displayed on this page"
+    ]
+  },
+  {
+    "name": "login - login - dashboard - customer - customers - + add customer - add customer - submit - add customer success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on '+ Add Customer'",
+      "Type in 'New Customer 1' in the field 'Customer Name:'",
+      "Type in '1235' in the field 'Contact :'",
+      "Click on 'Submit'",
+      "Type in 'Hello' in the field 'Search'",
+      "Assert that 'Customer Name' is  displayed on this page",
+      "Assert that 'Contact no' is  displayed on this page",
+      "Assert that 'Dikshant23' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - customer - customers - edit - edit customer - submit - edit customer success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on 'Edit'",
+      "Type in 'Dikshant23 update' in the field 'customer Name:'",
+      "Type in '99750576266' in the field 'Contact :'",
+      "Click on 'Submit'",
+      "Type in 'Hello' in the field 'Search'",
+      "Assert that 'Customer Name' is  displayed on this page",
+      "Assert that 'Contact no' is  displayed on this page",
+      "Assert that 'Dikshant23' is  displayed on this page"
+    ]
+    
+  },
+  {
+    "name": "login - login - dashboard - customer - customers - sell - sell product - submit - sell success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Customer'",
+      "Type in 'Hello' in the field 'Search'",
+      "Click on 'Sell'",
+      "Check 'Pending'",
+      "Type in '12' in the field 'Quantity'",
+      "Type in '12' in the field 'Quantity'",
+      "Type in '12' in the field 'Quantity'",
+      "Type in '12' in the field 'Quantity'",
+      "Click on 'Submit'",
+      "Assert that 'Administrator' is not displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - products - products - go - products search results",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Products'",
+      "Type in 'www' in the field 'Search'",
+      "Click on 'Go'",
+      "Type in 'www' in the field 'Search'",
+      "Assert that 'Product' is  displayed on this page",
+      "Assert that 'Water Bottle' is not displayed on this page",
+      "Assert that 'Search' is  displayed on this page",
+      "Assert that 'Contact no' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - products - products - + add product - add product",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Products'",
+      "Type in 'www' in the field 'Search'",
+      "Click on '+ Add product'",
+      "Type in 'Bislery' in the field 'Product Name:'",
+      "Type in 'Water Bottle' in the field 'Product Category:'",
+      "Type in '19' in the field 'Product Price:'",
+      "Type in '1712' in the field 'Product Stock:'",
+      "Assert that 'Submit' is  displayed on this page",
+      "Assert that 'Product' is not displayed on this page",
+      "Assert that 'Dashboard' is  displayed on this page"
+    ]
+  },
+  {
+    "name": "login - login - dashboard - products - products - edit - edit product",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Products'",
+      "Type in 'www' in the field 'Search'",
+      "Click on 'Edit'",
+      "Type in 'Bislery' in the field 'Product Name:'",
+      "Type in 'Water Bottle' in the field 'Product Category:'",
+      "Type in '19' in the field 'Product Price:'",
+      "Type in '1712' in the field 'Product Stock:'",
+      "Assert that 'Submit' is  displayed on this page",
+      "Assert that 'Product' is not displayed on this page",
+      "Assert that 'Dashboard' is  displayed on this page"
+    ]
+  },
+  {
+    "name": "login - login - dashboard - products - products - go - products search results - back - products",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Products'",
+      "Type in 'www' in the field 'Search'",
+      "Click on 'Go'",
+      "Type in 'www' in the field 'Search'",
+      "Click on 'Back'",
+      "Type in 'www' in the field 'Search'",
+      "Assert that 'aw' is  displayed on this page",
+      "Assert that 'Contact no' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - products - products - + add product - add product - submit - add product success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Products'",
+      "Type in 'www' in the field 'Search'",
+      "Click on '+ Add product'",
+      "Type in 'Bislery' in the field 'Product Name:'",
+      "Type in 'Water Bottle' in the field 'Product Category:'",
+      "Type in '19' in the field 'Product Price:'",
+      "Type in '1712' in the field 'Product Stock:'",
+      "Click on 'Submit'",
+      "Type in 'www' in the field 'Search'",
+      "Assert that 'aw' is  displayed on this page",
+      "Assert that 'Contact no' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - products - products - edit - edit product - submit - edit product success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Products'",
+      "Type in 'www' in the field 'Search'",
+      "Click on 'Edit'",
+      "Type in 'Bislery' in the field 'Product Name:'",
+      "Type in 'Water Bottle' in the field 'Product Category:'",
+      "Type in '19' in the field 'Product Price:'",
+      "Type in '1712' in the field 'Product Stock:'",
+      "Click on 'Submit'",
+      "Type in 'www' in the field 'Search'",
+      "Assert that 'aw' is  displayed on this page",
+      "Assert that 'Contact no' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - orders - orders - paid - update paidstatus",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Orders'",
+      "Type in 'Ergonomic Aluminum Soap' in the field 'Search'",
+      "Click on 'Paid'",
+      "Type in 'Ergonomic Aluminum Soap' in the field 'Search'",
+      "Assert that 'Customer Name' is  displayed on this page",
+      "Assert that 'Contact no' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - orders - orders - delete - delete order success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Orders'",
+      "Type in 'Modern Plastic Bacon' in the field 'Search'",
+      "Click on 'Delete'",
+      "Type in 'Modern Plastic Bacon' in the field 'Search'",
+      "Assert that 'Customer Name' is  displayed on this page",
+      "Assert that 'Contact no' is not displayed on this page"
+    ]},
+  {
+    "name": "login - login - dashboard - orders - orders - b i l l - view bill",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Orders'",
+      "Type in 'Unbranded Silk Cheese' in the field 'Search'",
+      "Click on 'BILL'",
+      "Assert that 'Administrator' is not displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]}
+  ,  {
+    "name": "login - login - dashboard - vendors - vendors - + add vendors - add vendor - submit - add vendor success",
+    "actions": [
+      "Open the website 'http://localhost/watermanagement'",
+      "Type in 'toto' in the field 'Username'",
+      "Type in 'toto' in the field 'Password'",
+      "Click on 'Login'",
+      "Click on 'Vendors'",
+      "Type in 'John' in the field 'Search'",
+      "Click on '+ Add Vendors'",
+      "Type in 'Test Vendor2' in the field 'Vendor Name:'",
+      "Type in '2' in the field 'Contact :'",
+      "Select 'aw--2323' from 'Product'",
+      "Type in '2' in the field 'Quantity :'",
+      "Type in '2' in the field 'Price:'",
+      "Click on 'Submit'",
+      "Type in 'John' in the field 'Search'",
+      "Assert that 'Vendor Name' is  displayed on this page",
+      "Assert that 'Water Bottle' is  displayed on this page"
+    ]}
+]

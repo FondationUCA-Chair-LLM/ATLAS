@@ -1,0 +1,53 @@
+ai_index;ai_name;best_human_match_index;bert_score_f1;moverscore
+0;login - login - dashboard - vendors - vendors;25;0,917823136;0,816771484
+1;login - login - dashboard - customer - customers;25;0,90807426;0,810605845
+2;login - login - dashboard - products - products;24;0,91516614;0,83510454
+3;login - login - dashboard - orders - orders;25;0,909844935;0,80627964
+4;login - login - dashboard;18;0,925054312;0,788703533
+5;login - login - dashboard - vendors - vendors - go - vendors search results;17;0,905877113;0,806254633
+6;login - login - dashboard - vendors - vendors - + add vendors - add vendor;19;0,906504989;0,872234289
+7;login - login - dashboard - vendors - vendors - edit - edit vendor;19;0,906504452;0,849032711
+8;login - login - dashboard - vendors - vendors - delete - delete vendor success;17;0,905713856;0,822474314
+9;login - login - dashboard - vendors - vendors - buy - confirm buy;25;0,910827219;0,808642752
+10;login - login - dashboard - vendors - vendors - go - vendors search results - back - vendors;17;0,900702655;0,808966204
+11;login - login - dashboard - vendors - vendors - + add vendors - add vendor - submit - add vendor success;19;0,905584335;0,862662312
+12;login - login - dashboard - vendors - vendors - edit - edit vendor - submit - edit vendor success;19;0,900391161;0,846365215
+13;login - login - dashboard - vendors - vendors - buy - confirm buy - buy - buy success;17;0,902284741;0,803089657
+14;login - login - dashboard - customer - customers - go - customers search results;25;0,908087313;0,844788645
+15;login - login - dashboard - customer - customers - + add customer - add customer;21;0,904546499;0,824085975
+16;login - login - dashboard - customer - customers - edit - edit customer;25;0,901797831;0,836150489
+17;login - login - dashboard - customer - customers - delete - delete customer success;25;0,918617785;0,816039345
+18;login - login - dashboard - customer - customers - sell - sell product;17;0,898729265;0,820546488
+19;login - login - dashboard - customer - customers - go - customers search results - back - customers;17;0,896901131;0,810921779
+20;login - login - dashboard - customer - customers - + add customer - add customer - submit - add customer success;21;0,897913337;0,82632269
+21;login - login - dashboard - customer - customers - edit - edit customer - submit - edit customer success;19;0,894045055;0,829773812
+22;login - login - dashboard - customer - customers - sell - sell product - submit - sell success;19;0,903460324;0,838756532
+23;login - login - dashboard - products - products - go - products search results;17;0,906669855;0,790291574
+24;login - login - dashboard - products - products - + add product - add product;19;0,89817667;0,840422426
+25;login - login - dashboard - products - products - edit - edit product;19;0,897462487;0,835523269
+26;login - login - dashboard - products - products - go - products search results - back - products;17;0,901002109;0,808382265
+27;login - login - dashboard - products - products - + add product - add product - submit - add product success;19;0,891716778;0,835144059
+28;login - login - dashboard - products - products - edit - edit product - submit - edit product success;19;0,891102374;0,832049644
+29;login - login - dashboard - orders - orders - paid - update paidstatus;17;0,901088715;0,8109992
+30;login - login - dashboard - orders - orders - delete - delete order success;17;0,908968091;0,807782387
+31;login - login - dashboard - orders - orders - b i l l - view bill;25;0,905755401;0,794677481
+32;login - login - dashboard - vendors - vendors - + add vendors - add vendor - submit - add vendor success;19;0,905584335;0,862662312
+MEAN;;;0,904605414;0,824318409
+LOWER;;;;
+28;login - login - dashboard - products - products - edit - edit product - submit - edit product success;19;0,89110237;
+4;login - login - dashboard;18;;0,788703533
+Moverscore;Strong similarity;;;BERTScore (F1) Ñ Interpretation Scale
+;;;;
+;;;;Strong similarity
+;;;;
+;0.75 Ð 1.00;;;0.90 Ð 1.00
+;Nearly identical action sequences;;;Nearly identical meaning
+;Same UI flow, same operations;;;Actions likely equivalent step-by-step
+;;;;Minor wording differences only
+;Moderate similarity;;;
+;;;;Moderate similarity
+;0.60 Ð 0.75;;;
+;Same task, slightly different steps;;;0.80 Ð 0.90
+;Some reordered or missing actions;;;Same intent / same test flow
+;;;;Some steps differ or are reordered
+;;;;Missing or extra small actions
