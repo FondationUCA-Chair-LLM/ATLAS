@@ -1,0 +1,58 @@
+{
+  "global": {
+    "fakerSeed": 42,
+    "fakerLocale": "en",
+    "ollamaUrl": "http://localhost:11434",
+    "modelId": "gemma4:31b",
+    "visionModelId": "qwen3.6:27b",
+    "debug": false
+  },
+  "gruyere": {
+    "figmaToken": "figd_AHweFJjd5W4XgGV-ncn48pnZtyU6Dc05gPqG-lfb",
+    "figmaFileKey": "xSQFRYdiqfykBk1v2G9ida",
+    "useCachedElements": false,
+    "useCachedFigmaResponse": true,
+    "inputPath": "./data/gruyere",
+    "targetUrl": "https://google-gruyere.appspot.com/start",
+    "outputDir": "./out/gruyere",
+    "startNode": "Start",
+    "enableConsistencyCheck": true,
+    "generateInvalidTests": false
+  },
+  "opencart": {
+    "figmaToken": "",
+    "figmaFileKey": "",
+    "useCachedElements": false,
+    "useCachedFigmaResponse": true,
+    "inputPath": "./data/opencart",
+    "targetUrl": "http://localhost/upload",
+    "outputDir": "./out/opencart",
+    "startNode": "Home_Anonymous",
+    "enableConsistencyCheck": false,
+    "generateInvalidTests": false
+  },
+  "personal": {
+    "figmaToken": "",
+    "figmaFileKey": "",
+    "useCachedElements": false,
+    "useCachedFigmaResponse": true,
+    "inputPath": "./data/personal",
+    "targetUrl": "https://perso.limos.fr/~sesalva",
+    "outputDir": "./out/personal",
+    "startNode": "Home",
+    "enableConsistencyCheck": false,
+    "generateInvalidTests": false
+  },
+  "water-management": {
+    "figmaToken": "",
+    "figmaFileKey": "",
+    "useCachedElements": false,
+    "useCachedFigmaResponse": true,
+    "inputPath": "./data/water-management",
+    "targetUrl": "http://localhost/water-management",
+    "outputDir": "./out/water-management",
+    "startNode": "Login",
+    "enableConsistencyCheck": false,
+    "generateInvalidTests": true
+  }
+}

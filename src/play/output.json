@@ -1,0 +1,60 @@
+{
+  "testCaseName": "No Snippet After Sign Up",
+  "task": [
+    "Open the website 'https://google-gruyere.appspot.com/start'",
+    "Click on 'Agree & Start'",
+    "Click on 'Sign up'",
+    "Click on 'Create account'",
+    "Click on 'Home'",
+    "Click on 'My Snippets'"
+  ],
+  "UIactions": [
+    [
+      {
+        "description": 'link: Agree & Start',
+        "method": 'click',
+        "arguments": [],
+        "selector": 'xpath=/html[1]/body[1]/h2[1]/a[1]'
+      }
+    ],
+    [
+      {
+        "description": 'link: Sign up',
+        "method": 'click',
+        "arguments": [],
+        "selector": 'xpath=/html[1]/body[1]/div[1]/span[2]/a[2]'
+      }
+    ],
+    [
+      {
+        "description": 'button: Create account',
+        "method": 'click',
+        "arguments": [],
+        "selector": 'xpath=/html[1]/body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[3]/td[2]/input[1]'
+      }
+    ],
+    [
+      {
+        "description": 'link: Home',
+        "method": 'click',
+        "arguments": [],
+        "selector": 'xpath=/html[1]/body[1]/div[1]/span[1]/a[1]'
+      }
+    ],
+    [ undefined ]
+  ],
+  expectedTestCase: undefined,
+  pageContent: '{\n' +
+    '{"id": , "description": Home, "type": link}\n' +
+    '{"id": , "description": Sign in, "type": link}\n' +
+    '{"id": , "description": Sign up, "type": link}\n' +
+    '{"id": , "description": Refresh, "type": link}\n' +
+    `{"id": , "description": Cheddar Mac's site, "type": link}\n` +
+    '{"id": , "description": Home, "type": link}\n' +
+    '{"id": , "description": Sign in, "type": link}\n' +
+    '{"id": , "description": Sign up, "type": link}\n' +
+    '{"id": , "description": Refresh, "type": link}\n' +
+    `{"id": , "description": Cheddar Mac's site, "type": link}\n` +
+    '{"id": , "description": Home, "type": StaticText}\n' +
+    '{"id": , "description": Sign in | Sign up, "type": StaticText}\n'
+}
