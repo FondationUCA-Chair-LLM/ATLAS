@@ -8,8 +8,8 @@
     "debug": false
   },
   "gruyere": {
-    "figmaToken": "figd_AHweFJjd5W4XgGV-ncn48pnZtyU6Dc05gPqG-lfb",
-    "figmaFileKey": "xSQFRYdiqfykBk1v2G9ida",
+    "figmaToken": "",
+    "figmaFileKey": "",
     "useCachedElements": false,
     "useCachedFigmaResponse": true,
     "inputPath": "./data/gruyere",
